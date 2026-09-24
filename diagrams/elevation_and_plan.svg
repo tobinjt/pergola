@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 1100" width="100%" height="100%" style="background:#0f172a; font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;">
+  <defs>
+    <!-- Patterns and markers -->
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.7"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#fbbf24"/>
+    </marker>
+  </defs>
+
+  <!-- Background grid -->
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+
+  <!-- Title Header -->
+  <text x="40" y="45" font-size="24" font-weight="bold" fill="#f8fafc">4.0 m × 3.0 m Freestanding Pergola — Architectural Drawings</text>
+  <text x="40" y="70" font-size="14" fill="#94a3b8">Post Spacing: 4000 × 3000 mm | Roof Footprint: 4600 × 3600 mm | Under-Beam Clearance: 2200 mm</text>
+
+  <!-- ========================================== -->
+  <!-- 1. PLAN VIEW (TOP) -->
+  <!-- ========================================== -->
+  <g transform="translate(60, 110)">
+    <text x="0" y="0" font-size="16" font-weight="bold" fill="#38bdf8">1. PLAN VIEW (ROOF &amp; POST GRID)</text>
+
+    <!-- Outer Roof Outline (4600 x 3600 mm) scaled 1mm = 0.16px -> 736 x 576 px -->
+    <!-- Let scale: 1mm = 0.14px -> 4600 = 644px, 3600 = 504px -->
+    <!-- Let scale: 1mm = 0.12px -> 4600 = 552px, 3600 = 432px -->
+    <!-- Let scale: 1mm = 0.13px -> 4600 = 598px, 3600 = 468px -->
+    
+    <!-- Roof Boundary (Overhang) -->
+    <rect x="50" y="20" width="598" height="468" fill="#1e293b" stroke="#475569" stroke-width="1.5" stroke-dasharray="6,4" rx="4"/>
+    <text x="349" y="40" font-size="11" fill="#94a3b8" text-anchor="middle">ROOF OVERHANG BOUNDARY (4600 mm × 3600 mm)</text>
+
+    <!-- Beams (Front & Back Double Beams) running horizontally: y=60 (Back) and y=448 (Front) -->
+    <!-- Back Beam -->
+    <rect x="50" y="55" width="598" height="8" fill="#d97706" opacity="0.8"/>
+    <rect x="50" y="67" width="598" height="8" fill="#d97706" opacity="0.8"/>
+    <!-- Front Beam -->
+    <rect x="50" y="435" width="598" height="8" fill="#d97706" opacity="0.8"/>
+    <rect x="50" y="447" width="598" height="8" fill="#d97706" opacity="0.8"/>
+
+    <!-- 10 Rafters running vertically (3600 mm length = 468 px) spaced across 598 px -->
+    <!-- x start = 50, x end = 648. Spacing = 598 / 9 = 66.4 px (~510 mm) -->
+    <g fill="#0284c7" opacity="0.75">
+      <rect x="50" y="20" width="6" height="468"/>
+      <rect x="116" y="20" width="6" height="468"/>
+      <rect x="183" y="20" width="6" height="468"/>
+      <rect x="249" y="20" width="6" height="468"/>
+      <rect x="316" y="20" width="6" height="468"/>
+      <rect x="382" y="20" width="6" height="468"/>
+      <rect x="448" y="20" width="6" height="468"/>
+      <rect x="515" y="20" width="6" height="468"/>
+      <rect x="581" y="20" width="6" height="468"/>
+      <rect x="642" y="20" width="6" height="468"/>
+    </g>
+
+    <!-- 4 Posts (150x150 mm = ~20x20 px) -->
+    <!-- Post 1 (Top Left): x = 50 + 39 (300mm overhang = 39px) = 89, y = 20 + 39 = 59 -->
+    <!-- Post 2 (Top Right): x = 89 + 520 (4000mm = 520px) = 609, y = 59 -->
+    <!-- Post 3 (Bottom Left): x = 89, y = 59 + 390 (3000mm = 390px) = 449 -->
+    <!-- Post 4 (Bottom Right): x = 609, y = 449 -->
+    
+    <!-- Posts -->
+    <rect x="79" y="55" width="20" height="20" fill="#f59e0b" stroke="#fff" stroke-width="1.5"/>
+    <rect x="599" y="55" width="20" height="20" fill="#f59e0b" stroke="#fff" stroke-width="1.5"/>
+    <rect x="79" y="435" width="20" height="20" fill="#f59e0b" stroke="#fff" stroke-width="1.5"/>
+    <rect x="599" y="435" width="20" height="20" fill="#f59e0b" stroke="#fff" stroke-width="1.5"/>
+
+    <text x="89" y="50" font-size="11" font-weight="bold" fill="#fbbf24" text-anchor="middle">Post 1</text>
+    <text x="609" y="50" font-size="11" font-weight="bold" fill="#fbbf24" text-anchor="middle">Post 2</text>
+    <text x="89" y="475" font-size="11" font-weight="bold" fill="#fbbf24" text-anchor="middle">Post 3</text>
+    <text x="609" y="475" font-size="11" font-weight="bold" fill="#fbbf24" text-anchor="middle">Post 4</text>
+
+    <!-- Diagonal 3-4-5 Triangle Line -->
+    <line x1="89" y1="65" x2="609" y2="445" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="5,5"/>
+    <text x="360" y="240" font-size="12" font-weight="bold" fill="#f472b6" transform="rotate(36, 360, 240)">5000 mm Diagonal (Exact 3-4-5 Triangle)</text>
+
+    <!-- Dimension Lines: Post to Post (4000 mm) -->
+    <line x1="89" y1="510" x2="609" y2="510" stroke="#38bdf8" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="349" y="525" font-size="12" font-weight="bold" fill="#38bdf8" text-anchor="middle">4000 mm Post Centres</text>
+
+    <!-- Dimension Lines: Total Roof Length (4600 mm) -->
+    <line x1="50" y1="540" x2="648" y2="540" stroke="#94a3b8" stroke-width="1" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="349" y="555" font-size="11" fill="#cbd5e1" text-anchor="middle">4600 mm Overall Roof Length</text>
+
+    <!-- Dimension Lines: Post to Post (3000 mm) -->
+    <line x1="675" y1="65" x2="675" y2="445" stroke="#38bdf8" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="735" y="260" font-size="12" font-weight="bold" fill="#38bdf8" text-anchor="middle" transform="rotate(90, 735, 260)">3000 mm Post Centres</text>
+
+    <!-- Dimension Lines: Total Roof Width (3600 mm) -->
+    <line x1="710" y1="20" x2="710" y2="488" stroke="#94a3b8" stroke-width="1" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="765" y="260" font-size="11" fill="#cbd5e1" text-anchor="middle" transform="rotate(90, 765, 260)">3600 mm Roof Width</text>
+
+    <!-- Plan Legend -->
+    <g transform="translate(780, 40)">
+      <rect x="0" y="0" width="220" height="230" fill="#1e293b" stroke="#334155" rx="6"/>
+      <text x="15" y="25" font-size="13" font-weight="bold" fill="#f8fafc">Plan Legend</text>
+      
+      <rect x="15" y="45" width="16" height="16" fill="#f59e0b"/>
+      <text x="40" y="58" font-size="11" fill="#cbd5e1">150×150 mm Posts</text>
+
+      <rect x="15" y="75" width="16" height="8" fill="#d97706"/>
+      <text x="40" y="83" font-size="11" fill="#cbd5e1">47×225 mm Beams (Pair)</text>
+
+      <rect x="15" y="100" width="6" height="16" fill="#0284c7"/>
+      <text x="40" y="113" font-size="11" fill="#cbd5e1">47×150 mm Rafters (10x)</text>
+
+      <line x1="15" y1="140" x2="35" y2="140" stroke="#ec4899" stroke-width="2" stroke-dasharray="4,3"/>
+      <text x="40" y="143" font-size="11" fill="#cbd5e1">Squaring Diagonal (5 m)</text>
+
+      <text x="15" y="180" font-size="11" fill="#94a3b8">Overhangs: 300 mm</text>
+      <text x="15" y="200" font-size="11" fill="#94a3b8">Interior Clear: 3.85×2.85 m</text>
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 2. FRONT ELEVATION (BOTTOM) -->
+  <!-- ========================================== -->
+  <g transform="translate(60, 730)">
+    <text x="0" y="0" font-size="16" font-weight="bold" fill="#38bdf8">2. FRONT ELEVATION (4.0 m BEAM SPAN)</text>
+
+    <!-- Ground Datum Line (Patio) -->
+    <line x1="30" y1="260" x2="680" y2="260" stroke="#64748b" stroke-width="2"/>
+    <rect x="30" y="260" width="650" height="20" fill="#334155"/>
+    <text x="40" y="275" font-size="11" fill="#94a3b8">EXISTING PATIO PAVERS (DATUM: 0 mm)</text>
+
+    <!-- Concrete Piers below pavers -->
+    <rect x="69" y="270" width="40" height="50" fill="#475569" stroke="#64748b" stroke-dasharray="3,3"/>
+    <rect x="589" y="270" width="40" height="50" fill="#475569" stroke="#64748b" stroke-dasharray="3,3"/>
+    <text x="89" y="310" font-size="9" fill="#cbd5e1" text-anchor="middle">Pier Footing</text>
+    <text x="609" y="310" font-size="9" fill="#cbd5e1" text-anchor="middle">Pier Footing</text>
+
+    <!-- Standoff Post Shoes (+35 mm = ~5px) -->
+    <rect x="84" y="255" width="10" height="5" fill="#94a3b8"/>
+    <rect x="604" y="255" width="10" height="5" fill="#94a3b8"/>
+
+    <!-- Left Post (150 mm wide = 20px, height 2390 mm = ~239px) -->
+    <rect x="79" y="40" width="20" height="215" fill="#d97706" stroke="#b45309"/>
+    <!-- Right Post -->
+    <rect x="599" y="40" width="20" height="215" fill="#d97706" stroke="#b45309"/>
+
+    <!-- 45° Knee Braces (500x500 mm = ~50px leg) -->
+    <!-- Left Post Braces -->
+    <polygon points="99,105 99,90 145,40 160,40" fill="#f59e0b"/>
+    <!-- Right Post Braces -->
+    <polygon points="599,105 599,90 553,40 538,40" fill="#f59e0b"/>
+
+    <!-- Front Main Beam (47x225 mm = 598px wide x 23px high) sitting on post shoulder at y=40 -->
+    <!-- Beam from x=50 to x=648, with 45° chamfer on bottom ends -->
+    <path d="M 50,40 L 648,40 L 648,53 L 640,63 L 58,63 L 50,53 Z" fill="#b45309" stroke="#78350f" stroke-width="1.5"/>
+
+    <!-- Rafter Ends (10 rafter ends visible sitting on top of beam at y=25 to 40) -->
+    <g fill="#0284c7">
+      <rect x="50" y="25" width="6" height="15"/>
+      <rect x="116" y="25" width="6" height="15"/>
+      <rect x="183" y="25" width="6" height="15"/>
+      <rect x="249" y="25" width="6" height="15"/>
+      <rect x="316" y="25" width="6" height="15"/>
+      <rect x="382" y="25" width="6" height="15"/>
+      <rect x="448" y="25" width="6" height="15"/>
+      <rect x="515" y="25" width="6" height="15"/>
+      <rect x="581" y="25" width="6" height="15"/>
+      <rect x="642" y="25" width="6" height="15"/>
+    </g>
+
+    <!-- Top Purlin battens (running horizontally across top of rafters at y=21 to 25) -->
+    <rect x="50" y="21" width="598" height="4" fill="#38bdf8"/>
+
+    <!-- Elevation Dimension Lines: Headroom (2200 mm) -->
+    <line x1="45" y1="260" x2="45" y2="63" stroke="#38bdf8" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="35" y="165" font-size="12" font-weight="bold" fill="#38bdf8" text-anchor="middle" transform="rotate(-90, 35, 165)">2200 mm Headroom Clearance</text>
+
+    <!-- Total Height Dimension (2590 mm) -->
+    <line x1="675" y1="260" x2="675" y2="21" stroke="#fbbf24" stroke-width="1.5" marker-start="url(#arrow-amber)" marker-end="url(#arrow-amber)"/>
+    <text x="715" y="145" font-size="12" font-weight="bold" fill="#fbbf24" text-anchor="middle" transform="rotate(90, 715, 145)">2590 mm Total Height</text>
+
+    <!-- Post Span Dimension (4000 mm) -->
+    <line x1="89" y1="180" x2="609" y2="180" stroke="#f8fafc" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="349" y="172" font-size="12" font-weight="bold" fill="#f8fafc" text-anchor="middle">4000 mm Post Centres (3850 mm Clear Walkway)</text>
+
+    <!-- Callouts -->
+    <text x="175" y="85" font-size="10" fill="#fcd34d">45° Knee Braces</text>
+    <text x="349" y="55" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">Twin 47×225 mm C24 Beams (4600 mm Length)</text>
+  </g>
+</svg>

@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" width="100%" height="100%" style="background:#0f172a; font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;">
+  <defs>
+    <pattern id="grid2" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.7"/>
+    </pattern>
+    <marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#grid2)"/>
+
+  <!-- Title -->
+  <text x="40" y="45" font-size="22" font-weight="bold" fill="#f8fafc">Pergola Joinery &amp; Connection Details</text>
+  <text x="40" y="70" font-size="13" fill="#94a3b8">Post shoulders, M12 through-bolting, rafter birdsmouth seats, and standoff footing</text>
+
+  <!-- ========================================== -->
+  <!-- DETAIL A: POST SHOULDER & BEAM SANDWICH -->
+  <!-- ========================================== -->
+  <g transform="translate(60, 110)">
+    <text x="0" y="0" font-size="15" font-weight="bold" fill="#38bdf8">DETAIL A: POST NOTCH &amp; SANDWICH BEAMS</text>
+    
+    <!-- Post Body (150 mm = 150px) -->
+    <rect x="120" y="245" width="150" height="130" fill="#d97706" stroke="#b45309" stroke-width="2"/>
+    <text x="195" y="320" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">150×150 mm Post</text>
+
+    <!-- Post Tongue (56 mm wide = 56px, 225 mm high = 225px) -->
+    <rect x="167" y="20" width="56" height="225" fill="#f59e0b" stroke="#d97706" stroke-width="2"/>
+    <text x="195" y="130" font-size="11" fill="#78350f" font-weight="bold" text-anchor="middle" transform="rotate(-90, 195, 130)">56 mm Tongue</text>
+
+    <!-- Outer Beam (47 mm wide = 47px, 225 mm high) -->
+    <rect x="120" y="20" width="47" height="225" fill="#b45309" opacity="0.9" stroke="#78350f" stroke-width="1.5"/>
+    <text x="143" y="130" font-size="11" fill="#fff" font-weight="bold" text-anchor="middle" transform="rotate(-90, 143, 130)">Outer Beam 47 mm</text>
+
+    <!-- Inner Beam (47 mm wide = 47px, 225 mm high) -->
+    <rect x="223" y="20" width="47" height="225" fill="#b45309" opacity="0.9" stroke="#78350f" stroke-width="1.5"/>
+    <text x="246" y="130" font-size="11" fill="#fff" font-weight="bold" text-anchor="middle" transform="rotate(-90, 246, 130)">Inner Beam 47 mm</text>
+
+    <!-- Solid Bearing Shoulder Annotations -->
+    <path d="M 120,245 L 80,270" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="75" y="285" font-size="11" fill="#fbbf24" text-anchor="end">47 mm Solid Shoulder</text>
+
+    <path d="M 270,245 L 310,270" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="315" y="285" font-size="11" fill="#fbbf24">47 mm Solid Shoulder</text>
+
+    <!-- M12 Carriage Bolts -->
+    <circle cx="195" cy="70" r="8" fill="#38bdf8" stroke="#fff" stroke-width="1.5"/>
+    <circle cx="195" cy="175" r="8" fill="#38bdf8" stroke="#fff" stroke-width="1.5"/>
+    <text x="290" y="75" font-size="11" fill="#38bdf8">◄ M12 Carriage Bolt (Upper)</text>
+    <text x="290" y="180" font-size="11" fill="#38bdf8">◄ M12 Carriage Bolt (Lower)</text>
+
+    <!-- Width Dimensions -->
+    <line x1="120" y1="5" x2="270" y2="5" stroke="#38bdf8" stroke-width="1.5" marker-start="url(#arr)" marker-end="url(#arr)"/>
+    <text x="195" y="-3" font-size="11" fill="#38bdf8" text-anchor="middle">150 mm Assembled Width</text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- DETAIL B: RAFTER BIRDSMOUTH NOTCH -->
+  <!-- ========================================== -->
+  <g transform="translate(560, 110)">
+    <text x="0" y="0" font-size="15" font-weight="bold" fill="#38bdf8">DETAIL B: RAFTER BIRDSMOUTH SEAT</text>
+
+    <!-- Rafter Body (47x150 mm scaled: height 150px) -->
+    <path d="M 20,40 L 380,40 L 380,190 L 305,190 L 230,190 L 230,165 L 80,165 L 80,190 L 20,190 Z" fill="#0284c7" stroke="#0369a1" stroke-width="2"/>
+
+    <!-- Sandwich Beam Assembly underneath sitting into the 150mm notch -->
+    <rect x="80" y="165" width="150" height="150" fill="#b45309" stroke="#78350f" stroke-width="2" stroke-dasharray="4,3"/>
+    <text x="155" y="245" font-size="12" fill="#fff" font-weight="bold" text-anchor="middle">Twin Beams</text>
+    <text x="155" y="265" font-size="11" fill="#fcd34d" text-anchor="middle">(150 mm Wide)</text>
+
+    <!-- Notch Dimensions -->
+    <line x1="80" y1="150" x2="230" y2="150" stroke="#fbbf24" stroke-width="1.5" marker-start="url(#arr)" marker-end="url(#arr)"/>
+    <text x="155" y="142" font-size="11" fill="#fbbf24" font-weight="bold" text-anchor="middle">150 mm Notch Width</text>
+
+    <line x1="65" y1="165" x2="65" y2="190" stroke="#fbbf24" stroke-width="1.5" marker-start="url(#arr)" marker-end="url(#arr)"/>
+    <text x="55" y="182" font-size="11" fill="#fbbf24" font-weight="bold" text-anchor="end">25 mm</text>
+
+    <!-- Structural Screw through Rafter -->
+    <line x1="155" y1="30" x2="155" y2="210" stroke="#f43f5e" stroke-width="2.5" stroke-dasharray="6,3"/>
+    <text x="165" y="90" font-size="11" fill="#fda4af">6.0×100 mm Torx Screw</text>
+
+    <text x="290" y="110" font-size="12" fill="#cbd5e1">125 mm Uncut Meat</text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- DETAIL C: 45° TAIL CHAMFER -->
+  <!-- ========================================== -->
+  <g transform="translate(60, 530)">
+    <text x="0" y="0" font-size="15" font-weight="bold" fill="#38bdf8">DETAIL C: 45° CHAMFER TAIL PROFILE</text>
+
+    <!-- Beam End Profile -->
+    <path d="M 20,40 L 260,40 L 260,190 L 95,190 L 20,115 Z" fill="#b45309" stroke="#78350f" stroke-width="2"/>
+
+    <!-- 45° chamfer dimension lines -->
+    <line x1="20" y1="205" x2="95" y2="205" stroke="#fbbf24" stroke-width="1.5" marker-start="url(#arr)" marker-end="url(#arr)"/>
+    <text x="57" y="222" font-size="11" fill="#fbbf24" text-anchor="middle">75 mm</text>
+
+    <line x1="5" y1="115" x2="5" y2="190" stroke="#fbbf24" stroke-width="1.5" marker-start="url(#arr)" marker-end="url(#arr)"/>
+    <text x="-5" y="157" font-size="11" fill="#fbbf24" text-anchor="end">75 mm</text>
+
+    <text x="75" y="145" font-size="13" font-weight="bold" fill="#fff">45°</text>
+    <text x="170" y="120" font-size="12" fill="#cbd5e1">Sheds rainwater cleanly</text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- DETAIL D: STANDOFF POST BASE & PATIO PAVER -->
+  <!-- ========================================== -->
+  <g transform="translate(560, 530)">
+    <text x="0" y="0" font-size="15" font-weight="bold" fill="#38bdf8">DETAIL D: ELEVATED STANDOFF POST SHOE</text>
+
+    <!-- Timber Post Base -->
+    <rect x="120" y="30" width="120" height="70" fill="#d97706" stroke="#b45309" stroke-width="2"/>
+    <text x="180" y="70" font-size="12" fill="#fff" text-anchor="middle">150×150 Post</text>
+
+    <!-- Post Shoe Cup -->
+    <path d="M 115,60 L 115,100 L 245,100 L 245,60" fill="none" stroke="#94a3b8" stroke-width="3"/>
+    
+    <!-- 35 mm Standoff Stool -->
+    <rect x="165" y="100" width="30" height="25" fill="#64748b"/>
+    <text x="205" y="117" font-size="11" fill="#38bdf8">35 mm Standoff Air Gap</text>
+
+    <!-- Reinstated Cut Paver -->
+    <rect x="20" y="120" width="90" height="25" fill="#475569" stroke="#64748b"/>
+    <rect x="250" y="120" width="90" height="25" fill="#475569" stroke="#64748b"/>
+    <text x="65" y="137" font-size="10" fill="#cbd5e1" text-anchor="middle">Cut Paver</text>
+    <text x="295" y="137" font-size="10" fill="#cbd5e1" text-anchor="middle">Cut Paver</text>
+
+    <!-- Concrete Pier Footing -->
+    <rect x="100" y="125" width="160" height="70" fill="#334155" stroke="#475569" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <text x="180" y="170" font-size="11" fill="#94a3b8" text-anchor="middle">Concrete Pier Footing</text>
+
+    <!-- M12 Wedge Anchor -->
+    <line x1="180" y1="105" x2="180" y2="185" stroke="#38bdf8" stroke-width="3"/>
+  </g>
+</svg>
