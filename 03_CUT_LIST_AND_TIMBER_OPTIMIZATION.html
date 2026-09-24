@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03 — Cut List & Timber Optimization — Pergola 4x3m</title>
+  <style>
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-tertiary: #f1f5f9;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --border-subtle: #cbd5e1;
+  --brand: #d97706;
+  --brand-hover: #b45309;
+  --brand-light: #fef3c7;
+  --accent-blue: #0284c7;
+  --accent-green: #059669;
+  --accent-purple: #7c3aed;
+  --accent-red: #dc2626;
+  --code-bg: #0f172a;
+  --code-text: #f8fafc;
+  --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.06);
+}
+
+[data-theme="dark"] {
+  --bg-primary: #0b1120;
+  --bg-secondary: #0f172a;
+  --bg-tertiary: #1e293b;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --border: #334155;
+  --border-subtle: #475569;
+  --brand: #f59e0b;
+  --brand-hover: #d97706;
+  --brand-light: #78350f40;
+  --accent-blue: #38bdf8;
+  --accent-green: #34d399;
+  --accent-purple: #a78bfa;
+  --accent-red: #f87171;
+  --code-bg: #030712;
+  --code-text: #f8fafc;
+  --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.65;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  transition: background-color 0.2s, color 0.2s;
+  padding-bottom: 80px;
+}
+
+/* Header & Navigation */
+header.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.05);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.logo-icon {
+  font-size: 1.4rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.15s ease-in-out;
+}
+
+.nav-item:hover {
+  background-color: var(--bg-tertiary);
+  color: var(--brand);
+}
+
+.nav-item.active {
+  background-color: var(--brand);
+  color: #ffffff;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-action {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  transition: all 0.15s;
+}
+
+.btn-action:hover {
+  border-color: var(--brand);
+  color: var(--brand);
+}
+
+.btn-action-primary {
+  background-color: var(--brand);
+  color: #fff;
+  border-color: var(--brand);
+}
+
+.btn-action-primary:hover {
+  background-color: var(--brand-hover);
+  color: #fff;
+}
+
+/* Main Layout */
+.page-container {
+  max-width: 980px;
+  margin: 32px auto;
+  padding: 0 24px;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.2rem;
+  line-height: 1.25;
+  color: var(--text-primary);
+  margin-top: 10px;
+  margin-bottom: 16px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  color: var(--text-primary);
+  margin-top: 36px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 16px;
+  color: var(--text-secondary);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 32px 0;
+}
+
+ul, ol {
+  margin-left: 24px;
+  margin-bottom: 18px;
+  color: var(--text-secondary);
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Tables */
+.table-wrapper {
+  overflow-x: auto;
+  margin: 20px 0 28px 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  background: var(--bg-primary);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.92rem;
+}
+
+thead th {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  font-weight: 600;
+  padding: 12px 16px;
+  border-bottom: 2px solid var(--border);
+  white-space: nowrap;
+}
+
+tbody td {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--bg-secondary);
+}
+
+tbody tr:hover {
+  background-color: var(--bg-tertiary);
+}
+
+/* Code & Pre Blocks */
+pre {
+  background-color: var(--code-bg);
+  color: var(--code-text);
+  padding: 18px 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin: 18px 0 24px 0;
+  border: 1px solid var(--border-subtle);
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.88em;
+  background-color: var(--bg-tertiary);
+  color: var(--brand);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+/* Callouts */
+.callout {
+  border-left: 4px solid;
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 20px 0;
+  background-color: var(--bg-secondary);
+}
+
+.callout-header {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.callout-body {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
+.callout-body p:last-child {
+  margin-bottom: 0;
+}
+
+.callout-note {
+  border-color: var(--accent-blue);
+  background-color: var(--bg-secondary);
+}
+.callout-note .callout-header { color: var(--accent-blue); }
+
+.callout-tip {
+  border-color: var(--accent-green);
+  background-color: var(--bg-secondary);
+}
+.callout-tip .callout-header { color: var(--accent-green); }
+
+.callout-important {
+  border-color: var(--accent-purple);
+  background-color: var(--bg-secondary);
+}
+.callout-important .callout-header { color: var(--accent-purple); }
+
+.callout-warning, .callout-caution {
+  border-color: var(--accent-red);
+  background-color: var(--bg-secondary);
+}
+.callout-warning .callout-header, .callout-caution .callout-header { color: var(--accent-red); }
+
+/* Task lists */
+.contains-task-list {
+  list-style: none;
+  margin-left: 4px;
+}
+
+.task-list-item-checkbox {
+  margin-right: 8px;
+  accent-color: var(--brand);
+  transform: scale(1.15);
+}
+
+/* SVG Diagram Containers */
+.diagram-card {
+  margin: 28px 0;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: var(--card-shadow);
+  text-align: center;
+}
+
+.diagram-card img, .diagram-card svg {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.diagram-caption {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* Math rendering */
+.math-inline {
+  font-family: "Cambria Math", "Latin Modern Math", serif;
+  font-style: italic;
+  padding: 0 4px;
+  color: var(--brand);
+}
+
+/* Print Styles */
+@media print {
+  header.site-header, .no-print, .btn-action {
+    display: none !important;
+  }
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 11pt;
+    line-height: 1.4;
+  }
+  .page-container {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .table-wrapper {
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+    page-break-inside: avoid;
+  }
+  thead th {
+    background-color: #eee !important;
+    color: #000 !important;
+  }
+  tr, img, svg, .diagram-card {
+    page-break-inside: avoid;
+  }
+  h1, h2, h3 {
+    page-break-after: avoid;
+    color: #000 !important;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+}
+</style>
+</head>
+<body>
+  
+<header class="site-header">
+  <div class="header-container">
+    <a href="index.html" class="logo-area">
+      <span class="logo-icon">🌲</span>
+      <span>Pergola 4×3m Build Plan</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-item">Overview</a>
+<a href="01_PROJECT_SPECIFICATIONS.html" class="nav-item">01 Specs</a>
+<a href="02_BILL_OF_MATERIALS.html" class="nav-item">02 Materials</a>
+<a href="03_CUT_LIST_AND_TIMBER_OPTIMIZATION.html" class="nav-item active">03 Cut List</a>
+<a href="04_JOINERY_AND_CONNECTION_DETAILS.html" class="nav-item">04 Joinery</a>
+<a href="05_STEP_BY_STEP_BUILD_GUIDE.html" class="nav-item">05 Build Guide</a>
+<a href="06_TOOL_AND_SAFETY_CHECKLIST.html" class="nav-item">06 Tools</a>
+<a href="complete_build_manual.html" class="nav-item" style="font-weight:700; color:var(--brand);">📖 Full Manual</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn-action" onclick="toggleTheme()" title="Toggle Dark/Light Mode">🌓 Mode</button>
+      <button class="btn-action btn-action-primary" onclick="window.print()" title="Print Current Document">🖨️ Print</button>
+    </div>
+  </div>
+</header>
+
+  <main class="page-container">
+    <h1>03 — Cut List &amp; Timber Optimization</h1>
+<p>This document specifies the exact cutting schedule for every piece of timber in the pergola, along with stock optimization layouts to minimize waste from standard merchant lumber lengths (4.8 m, 3.6 m, 2.7 m, 2.4 m).</p>
+<hr />
+<h2>1. Master Component Cut Schedule</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:left">ID</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Count</th>
+<th style="text-align:left">Finished Dimensions (T × W × L)</th>
+<th style="text-align:left">Stock Purchased</th>
+<th style="text-align:left">Cut Details &amp; Features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>P-01 to P-04</strong></td>
+<td style="text-align:left">Corner Posts</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left"><strong>150 × 150 × 2390 mm</strong></td>
+<td style="text-align:left">4 × 2.7 m (150×150)</td>
+<td style="text-align:left">Top notched 47 mm deep × 225 mm tall on 2 opposing faces; bottom squared</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>B-01 to B-04</strong></td>
+<td style="text-align:left">Main Sandwich Beams</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left"><strong>47 × 225 × 4600 mm</strong></td>
+<td style="text-align:left">4 × 4.8 m (47×225)</td>
+<td style="text-align:left">45° chamfer (75×75 mm) cut on both bottom corners; pre-drilled for M12 coach bolts</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>R-01 to R-10</strong></td>
+<td style="text-align:left">Roof Rafters</td>
+<td style="text-align:left">10</td>
+<td style="text-align:left"><strong>47 × 150 × 3600 mm</strong></td>
+<td style="text-align:left">10 × 3.6 m (47×150)</td>
+<td style="text-align:left">45° chamfer (75×75 mm) cut on both bottom corners; two 150 mm wide × 25 mm deep birdsmouth notches</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>S-01 to S-10</strong></td>
+<td style="text-align:left">Top Shade Purlins</td>
+<td style="text-align:left">10</td>
+<td style="text-align:left"><strong>38 × 50 × 4600 mm</strong></td>
+<td style="text-align:left">10 × 4.8 m (38×50)</td>
+<td style="text-align:left">Ends cut square or 45° pencil chamfer (25×25 mm); pre-drilled for 5 mm screws</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>K-01 to K-08</strong></td>
+<td style="text-align:left">Corner Knee Braces</td>
+<td style="text-align:left">8</td>
+<td style="text-align:left"><strong>100 × 100 × ~735 mm</strong></td>
+<td style="text-align:left">3 × 2.4 m (or 2 × 3.0 m)</td>
+<td style="text-align:left">Both ends mitred at parallel 45° angles (450 mm × 450 mm right-angle leg projection)</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>2. Detailed Cutting Geometry</h2>
+<h3>2.1 Corner Posts (150 mm × 150 mm × 2390 mm)</h3>
+<ul>
+<li><strong>Starting Stock:</strong> 2700 mm length.</li>
+<li><strong>Bottom Cut:</strong> Trim 10–20 mm off the factory end to ensure a crisp, 90° square base to sit squarely inside the standoff post shoe.</li>
+<li><strong>Finished Height:</strong> Measure exactly <strong>2390 mm</strong> from the squared base to the top of the post.</li>
+<li><strong>Post Shoulder Notches (Top):</strong>
+<ul>
+<li>Measure down <strong>225 mm</strong> from the top end.</li>
+<li>Cut a shoulder notch <strong>47 mm deep</strong> into the outer and inner faces.</li>
+<li>Leaves a central <strong>56 mm tongue</strong> (<span class="math-inline">150 - 47 - 47 = 56\text{ mm}</span>) to receive the two 47 mm sandwich beams.</li>
+<li><em>Tip:</em> Kerf multiple saw cuts across the 225 mm face using a circular saw set to 47 mm depth, then chisel out and smooth with a router or chisel.</li>
+</ul>
+</li>
+</ul>
+<pre><code>       ◄── 150 mm ──►
+       ┌───┬─────┬───┐ ▲
+       │   │     │   │ │ 225 mm (Beam Depth)
+       │   │  T  │   │ │
+       └───┤     ├───┘ ▼
+         ▲ │     │
+  47 mm  │ │     │
+  Shoulder │     │
+  Cutout   │     │
+           │     │
+           │     │ (2165 mm timber to post base)
+           │     │
+           │     │
+           │     │
+           └─────┘
+</code></pre>
+<hr />
+<h3>2.2 Main Support Beams (47 mm × 225 mm × 4600 mm)</h3>
+<ul>
+<li><strong>Starting Stock:</strong> 4800 mm length.</li>
+<li><strong>Length Cut:</strong> Trim 100 mm off each end to achieve a clean <strong>4600 mm</strong> finished length.</li>
+<li><strong>Post Position Layout:</strong>
+<ul>
+<li>Mark post centreline at <strong>300 mm</strong> in from each end.</li>
+<li>Distance between post centrelines = <strong>4000 mm</strong>.</li>
+</ul>
+</li>
+<li><strong>Decorative Tail Chamfers (Both Ends):</strong>
+<ul>
+<li>From bottom corner, measure <strong>75 mm</strong> inward along the bottom edge, and <strong>75 mm</strong> upward along the vertical end edge.</li>
+<li>Connect points with a straight line at 45° and cut with the sliding mitre saw.</li>
+</ul>
+</li>
+</ul>
+<pre><code>        ◄──────────────────────── 4600 mm Total Beam Length ────────────────────────►
+        300 mm                                                                300 mm
+        Overhang               ◄─────── Post Centres: 4000 mm ───────►        Overhang
+       ┌─────────────────────────────────────────────────────────────────────────────┐
+       │     │                                                         │             │ 225 mm
+       /     │                                                         │             \
+      /  45° │                                                         │          45° \
+     └───────┴─────────────────────────────────────────────────────────┴───────────────┘
+     ◄ 75 mm ►                                                               ◄ 75 mm ►
+</code></pre>
+<hr />
+<h3>2.3 Roof Rafters (47 mm × 150 mm × 3600 mm)</h3>
+<ul>
+<li><strong>Starting Stock:</strong> 3600 mm length (standard merchant length; zero waste!).</li>
+<li><strong>Decorative Tail Chamfers:</strong>
+<ul>
+<li>Cut 45° chamfer (75 mm × 75 mm) on both bottom corners, exactly matching the beam tails.</li>
+</ul>
+</li>
+<li><strong>Birdsmouth Seat Notches:</strong>
+<ul>
+<li>Each rafter requires <strong>two 150 mm wide × 25 mm deep flat seat notches</strong> that drop over the sandwich beam pairs.</li>
+<li><strong>Notch 1 (Front Beam):</strong> Centred at <strong>300 mm</strong> from front end (cut from 225 mm to 375 mm).</li>
+<li><strong>Notch 2 (Rear Beam):</strong> Centred at <strong>3300 mm</strong> from front end (cut from 3225 mm to 3375 mm).</li>
+<li><em>Distance between notch centres:</em> Exactly <strong>3000 mm</strong> (locks the front and back beam frames in parallel!).</li>
+</ul>
+</li>
+</ul>
+<pre><code>       ◄─────────────────────── 3600 mm Total Rafter Length ───────────────────────►
+        300 mm                                                               300 mm
+       ┌───────────┬─────┬─────────────────────────────────────┬─────┬─────────────┐
+       │           │     │                                     │     │             │ 150 mm
+       /           │     │                                     │     │             \
+      /  45°       └──┬──┘ 25 mm deep                          └──┬──┘ 25 mm deep 45°\
+     └────────────────┴───────────────────────────────────────────┴─────────────────┘
+                   ◄150 mm►                                    ◄150 mm►
+                      ▲                                           ▲
+                      │◄────────── Notch Centres: 3000 mm ───────►│
+</code></pre>
+<hr />
+<h3>2.4 Corner Knee Braces (100 mm × 100 mm × ~735 mm)</h3>
+<ul>
+<li><strong>Geometry:</strong> 45° isosceles right triangle against post and beam/rafter.</li>
+<li><strong>Leg Projections:</strong> 450 mm along post vertical, 450 mm along beam/rafter horizontal.</li>
+<li><strong>Cut Angles:</strong> Both ends cut at <strong>45° parallel mitres</strong>.</li>
+<li><strong>Cut Blank Length:</strong> <strong>736 mm</strong> (long point to long point = 877 mm).</li>
+<li><strong>Nesting:</strong> 3 knee braces cut per 2.4 m timber board (<span class="math-inline">3 \times 736 = 2208\text{ mm} \le 2400\text{ mm}</span>).</li>
+<li>Total stock needed: <strong>3 lengths of 2.4 m</strong> (yields 9 braces — 8 needed + 1 test/spare).</li>
+</ul>
+<pre><code>                 ◄────── 450 mm to Corner ──────►
+               ┌─────────────────────────────────┐
+               │ Beam / Rafter                   │
+               └───────────────┬─────────────────┘
+                               │\  45° Mitre Cut
+                               │ \
+                               │  \
+         450 mm to Corner      │   \  Knee Brace
+                               │    \ (100x100 mm)
+                               │     \
+                               │ 45°  \
+                               ├───────┘
+                               │ Post
+                               │
+</code></pre>
+<hr />
+<h3>2.5 Top Shade Purlins (38 mm × 50 mm × 4600 mm)</h3>
+<ul>
+<li><strong>Starting Stock:</strong> 4800 mm length.</li>
+<li><strong>Finished Length:</strong> Trim to <strong>4600 mm</strong> (matching total beam length).</li>
+<li><strong>End Profiles:</strong> Clean 90° square crosscut or subtle 25 mm × 25 mm 45° chamfer.</li>
+<li><strong>Count:</strong> 10 battens laid flat (<span class="math-inline">50\text{ mm}</span> face horizontal, <span class="math-inline">38\text{ mm}</span> vertical).</li>
+</ul>
+<hr />
+<h2>3. Stock Optimization &amp; Merchant Order Summary</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:left">Stock Size</th>
+<th style="text-align:left">Standard Length</th>
+<th style="text-align:left">Qty to Buy</th>
+<th style="text-align:left">Used For</th>
+<th style="text-align:left">Waste / Offcuts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>150 × 150 mm C24 PAR</strong></td>
+<td style="text-align:left">2.7 m</td>
+<td style="text-align:left"><strong>4</strong></td>
+<td style="text-align:left">Posts P-01 to P-04</td>
+<td style="text-align:left">4 × ~310 mm offcuts (useful for test cuts)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>47 × 225 mm C24 PAR</strong></td>
+<td style="text-align:left">4.8 m</td>
+<td style="text-align:left"><strong>4</strong></td>
+<td style="text-align:left">Main Beams B-01 to B-04</td>
+<td style="text-align:left">4 × 200 mm offcuts</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>47 × 150 mm C24 PAR</strong></td>
+<td style="text-align:left">3.6 m</td>
+<td style="text-align:left"><strong>10</strong></td>
+<td style="text-align:left">Rafters R-01 to R-10</td>
+<td style="text-align:left"><strong>0 mm waste</strong> (exact fit)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>38 × 50 mm Treated Batten</strong></td>
+<td style="text-align:left">4.8 m</td>
+<td style="text-align:left"><strong>10</strong></td>
+<td style="text-align:left">Purlins S-01 to S-10</td>
+<td style="text-align:left">10 × 200 mm offcuts</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>100 × 100 mm C24 PAR</strong></td>
+<td style="text-align:left">2.4 m</td>
+<td style="text-align:left"><strong>3</strong></td>
+<td style="text-align:left">Knee Braces K-01 to K-08</td>
+<td style="text-align:left">3 × ~190 mm offcuts</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>38 × 75 mm Rough Timber</strong></td>
+<td style="text-align:left">3.0 m</td>
+<td style="text-align:left"><strong>4</strong></td>
+<td style="text-align:left">Temporary Post Braces</td>
+<td style="text-align:left">Reusable scrap timber</td>
+</tr>
+</tbody>
+</table></div>
+
+  </main>
+  
+<script>
+  function initTheme() {
+    const saved = localStorage.getItem('pergola-theme');
+    if (saved) {
+      document.documentElement.setAttribute('data-theme', saved);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  }
+  function toggleTheme() {
+    const current = document.documentElement.getAttribute('data-theme');
+    const target = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', target);
+    localStorage.setItem('pergola-theme', target);
+  }
+  initTheme();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01 — Project Specifications — Pergola 4x3m</title>
+  <style>
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-tertiary: #f1f5f9;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --border-subtle: #cbd5e1;
+  --brand: #d97706;
+  --brand-hover: #b45309;
+  --brand-light: #fef3c7;
+  --accent-blue: #0284c7;
+  --accent-green: #059669;
+  --accent-purple: #7c3aed;
+  --accent-red: #dc2626;
+  --code-bg: #0f172a;
+  --code-text: #f8fafc;
+  --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.06);
+}
+
+[data-theme="dark"] {
+  --bg-primary: #0b1120;
+  --bg-secondary: #0f172a;
+  --bg-tertiary: #1e293b;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --border: #334155;
+  --border-subtle: #475569;
+  --brand: #f59e0b;
+  --brand-hover: #d97706;
+  --brand-light: #78350f40;
+  --accent-blue: #38bdf8;
+  --accent-green: #34d399;
+  --accent-purple: #a78bfa;
+  --accent-red: #f87171;
+  --code-bg: #030712;
+  --code-text: #f8fafc;
+  --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.65;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  transition: background-color 0.2s, color 0.2s;
+  padding-bottom: 80px;
+}
+
+/* Header & Navigation */
+header.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.05);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.logo-icon {
+  font-size: 1.4rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.15s ease-in-out;
+}
+
+.nav-item:hover {
+  background-color: var(--bg-tertiary);
+  color: var(--brand);
+}
+
+.nav-item.active {
+  background-color: var(--brand);
+  color: #ffffff;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-action {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  transition: all 0.15s;
+}
+
+.btn-action:hover {
+  border-color: var(--brand);
+  color: var(--brand);
+}
+
+.btn-action-primary {
+  background-color: var(--brand);
+  color: #fff;
+  border-color: var(--brand);
+}
+
+.btn-action-primary:hover {
+  background-color: var(--brand-hover);
+  color: #fff;
+}
+
+/* Main Layout */
+.page-container {
+  max-width: 980px;
+  margin: 32px auto;
+  padding: 0 24px;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.2rem;
+  line-height: 1.25;
+  color: var(--text-primary);
+  margin-top: 10px;
+  margin-bottom: 16px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  color: var(--text-primary);
+  margin-top: 36px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 16px;
+  color: var(--text-secondary);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 32px 0;
+}
+
+ul, ol {
+  margin-left: 24px;
+  margin-bottom: 18px;
+  color: var(--text-secondary);
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Tables */
+.table-wrapper {
+  overflow-x: auto;
+  margin: 20px 0 28px 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  background: var(--bg-primary);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.92rem;
+}
+
+thead th {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  font-weight: 600;
+  padding: 12px 16px;
+  border-bottom: 2px solid var(--border);
+  white-space: nowrap;
+}
+
+tbody td {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--bg-secondary);
+}
+
+tbody tr:hover {
+  background-color: var(--bg-tertiary);
+}
+
+/* Code & Pre Blocks */
+pre {
+  background-color: var(--code-bg);
+  color: var(--code-text);
+  padding: 18px 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin: 18px 0 24px 0;
+  border: 1px solid var(--border-subtle);
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.88em;
+  background-color: var(--bg-tertiary);
+  color: var(--brand);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+/* Callouts */
+.callout {
+  border-left: 4px solid;
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 20px 0;
+  background-color: var(--bg-secondary);
+}
+
+.callout-header {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.callout-body {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
+.callout-body p:last-child {
+  margin-bottom: 0;
+}
+
+.callout-note {
+  border-color: var(--accent-blue);
+  background-color: var(--bg-secondary);
+}
+.callout-note .callout-header { color: var(--accent-blue); }
+
+.callout-tip {
+  border-color: var(--accent-green);
+  background-color: var(--bg-secondary);
+}
+.callout-tip .callout-header { color: var(--accent-green); }
+
+.callout-important {
+  border-color: var(--accent-purple);
+  background-color: var(--bg-secondary);
+}
+.callout-important .callout-header { color: var(--accent-purple); }
+
+.callout-warning, .callout-caution {
+  border-color: var(--accent-red);
+  background-color: var(--bg-secondary);
+}
+.callout-warning .callout-header, .callout-caution .callout-header { color: var(--accent-red); }
+
+/* Task lists */
+.contains-task-list {
+  list-style: none;
+  margin-left: 4px;
+}
+
+.task-list-item-checkbox {
+  margin-right: 8px;
+  accent-color: var(--brand);
+  transform: scale(1.15);
+}
+
+/* SVG Diagram Containers */
+.diagram-card {
+  margin: 28px 0;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: var(--card-shadow);
+  text-align: center;
+}
+
+.diagram-card img, .diagram-card svg {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.diagram-caption {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* Math rendering */
+.math-inline {
+  font-family: "Cambria Math", "Latin Modern Math", serif;
+  font-style: italic;
+  padding: 0 4px;
+  color: var(--brand);
+}
+
+/* Print Styles */
+@media print {
+  header.site-header, .no-print, .btn-action {
+    display: none !important;
+  }
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 11pt;
+    line-height: 1.4;
+  }
+  .page-container {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .table-wrapper {
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+    page-break-inside: avoid;
+  }
+  thead th {
+    background-color: #eee !important;
+    color: #000 !important;
+  }
+  tr, img, svg, .diagram-card {
+    page-break-inside: avoid;
+  }
+  h1, h2, h3 {
+    page-break-after: avoid;
+    color: #000 !important;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+}
+</style>
+</head>
+<body>
+  
+<header class="site-header">
+  <div class="header-container">
+    <a href="index.html" class="logo-area">
+      <span class="logo-icon">🌲</span>
+      <span>Pergola 4×3m Build Plan</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-item">Overview</a>
+<a href="01_PROJECT_SPECIFICATIONS.html" class="nav-item active">01 Specs</a>
+<a href="02_BILL_OF_MATERIALS.html" class="nav-item">02 Materials</a>
+<a href="03_CUT_LIST_AND_TIMBER_OPTIMIZATION.html" class="nav-item">03 Cut List</a>
+<a href="04_JOINERY_AND_CONNECTION_DETAILS.html" class="nav-item">04 Joinery</a>
+<a href="05_STEP_BY_STEP_BUILD_GUIDE.html" class="nav-item">05 Build Guide</a>
+<a href="06_TOOL_AND_SAFETY_CHECKLIST.html" class="nav-item">06 Tools</a>
+<a href="complete_build_manual.html" class="nav-item" style="font-weight:700; color:var(--brand);">📖 Full Manual</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn-action" onclick="toggleTheme()" title="Toggle Dark/Light Mode">🌓 Mode</button>
+      <button class="btn-action btn-action-primary" onclick="window.print()" title="Print Current Document">🖨️ Print</button>
+    </div>
+  </div>
+</header>
+
+  <main class="page-container">
+    <h1>01 — Project Specifications &amp; Structural Engineering</h1>
+<div class="diagram-card">
+  <img src="diagrams/elevation_and_plan.svg" alt="elevation_and_plan.svg" loading="lazy" />
+  <div class="diagram-caption">Architectural Drawing: elevation_and_plan.svg</div>
+</div>
+
+<p>This document establishes the structural parameters, dimensional constraints, and engineering considerations for the 4.0 m × 3.0 m freestanding timber pergola.</p>
+<hr />
+<h2>1. Dimensional Summary</h2>
+<h3>1.1 Plan View Geometry</h3>
+<ul>
+<li><strong>Post-to-Post Spacing (Centre-to-Centre):</strong>
+<ul>
+<li>Long direction (Beam run): <strong>4000 mm (4.00 m)</strong></li>
+<li>Short direction (Rafter run): <strong>3000 mm (3.00 m)</strong></li>
+<li>Diagonal (Corner-to-Corner check): <strong>5000 mm (5.00 m)</strong> <em>(Exact 3-4-5 right triangle)</em></li>
+</ul>
+</li>
+<li><strong>Post Outside-to-Outside Dimensions:</strong>
+<ul>
+<li>Long dimension: <span class="math-inline">4000\text{ mm} + 150\text{ mm} = \mathbf{4150\text{ mm}}</span></li>
+<li>Short dimension: <span class="math-inline">3000\text{ mm} + 150\text{ mm} = \mathbf{3150\text{ mm}}</span></li>
+</ul>
+</li>
+<li><strong>Usable Interior Clearance (Inside Face to Inside Face of Posts):</strong>
+<ul>
+<li>Long opening: <span class="math-inline">4000\text{ mm} - 150\text{ mm} = \mathbf{3850\text{ mm}}</span></li>
+<li>Short opening: <span class="math-inline">3000\text{ mm} - 150\text{ mm} = \mathbf{2850\text{ mm}}</span></li>
+</ul>
+</li>
+<li><strong>Cantilever Overhangs:</strong>
+<ul>
+<li>Beams: <strong>300 mm</strong> overhang beyond post centre on each end</li>
+<li>Rafters: <strong>300 mm</strong> overhang beyond beam centreline on each end</li>
+</ul>
+</li>
+<li><strong>Overall Roof Footprint:</strong>
+<ul>
+<li>Length: <span class="math-inline">4000\text{ mm} + (2 \times 300\text{ mm}) = \mathbf{4600\text{ mm}}</span></li>
+<li>Width: <span class="math-inline">3000\text{ mm} + (2 \times 300\text{ mm}) = \mathbf{3600\text{ mm}}</span></li>
+<li>Covered area: <span class="math-inline">4.6\text{ m} \times 3.6\text{ m} = \mathbf{16.56\text{ m}^2}</span></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>2. Vertical Elevations &amp; Height Budget</h2>
+<p>Every vertical elevation is calibrated from the <strong>finished patio paver level (0 mm datum)</strong>:</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:left">Component</th>
+<th style="text-align:left">Elevation / Dimension</th>
+<th style="text-align:left">Cumulative Top Elevation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Finished Patio Level</strong></td>
+<td style="text-align:left"><strong>Datum (0 mm)</strong></td>
+<td style="text-align:left">0 mm</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Standoff Post Base Clearance</strong></td>
+<td style="text-align:left">+35 mm air gap</td>
+<td style="text-align:left">+35 mm</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Clearance Under Main Beams</strong></td>
+<td style="text-align:left"><strong>2200 mm (~7 ft 2.5 in)</strong></td>
+<td style="text-align:left"><strong>+2200 mm</strong> <em>(Headroom)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Post Shoulder Cut Height</strong></td>
+<td style="text-align:left">Timber height: <span class="math-inline">2200 - 35 = 2165\text{ mm}</span></td>
+<td style="text-align:left">+2200 mm</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Main Support Beams (47×225 mm)</strong></td>
+<td style="text-align:left">Depth: 225 mm</td>
+<td style="text-align:left">+2425 mm</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Post Total Top Height (Tongue)</strong></td>
+<td style="text-align:left">Timber height: <span class="math-inline">2165 + 225 = 2390\text{ mm}</span></td>
+<td style="text-align:left">+2425 mm <em>(flush with beams)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Rafter Birdsmouth Seat</strong></td>
+<td style="text-align:left">Depth of notch: 25 mm into rafter</td>
+<td style="text-align:left">—</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Rafter (47×150 mm) Effective Rise</strong></td>
+<td style="text-align:left"><span class="math-inline">150\text{ mm} - 25\text{ mm} = +125\text{ mm}</span></td>
+<td style="text-align:left">+2550 mm</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Top Purlins (38×50 mm laid flat)</strong></td>
+<td style="text-align:left">Thickness: +38 mm</td>
+<td style="text-align:left"><strong>+2588 mm (~2.59 m)</strong></td>
+</tr>
+</tbody>
+</table></div>
+<pre><code> ▲ +2588 mm  ────────────────────────────────────────────────  Top of Purlins (38 mm)
+ │
+ │ +2550 mm  ════════════════════════════════════════════════  Top of Rafters (150 mm)
+ │           [ 25 mm birdsmouth notch locks over beam ]
+ │ +2425 mm  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  Top of Beams &amp; Post Tongue
+ │           │ 47x225 mm Sandwich Beams                      │
+ │ +2200 mm  ────────────────────────────────────────────────  Underside of Beams (Clearance)
+ │           │                                               │
+ │           │                                               │
+ │           │ 150x150 mm C24 Post                           │  Headroom: 2.20 m (~7 ft 3 in)
+ │           │                                               │
+ │           │                                               │
+ │   +35 mm  ────────────────────────────────────────────────  Bottom of Timber Post
+ │           [ Galvanised Elevated Standoff Base ]             Air gap for water drainage
+ ▼     0 mm  ════════════════════════════════════════════════  Finished Patio Pavers
+</code></pre>
+<hr />
+<h2>3. Structural Engineering &amp; Timber Calculations</h2>
+<h3>3.1 Timber Grade: C24 Softwood</h3>
+<ul>
+<li><strong>Bending Strength (<span class="math-inline">f_{m,k}</span>):</strong> <span class="math-inline">24\text{ N/mm}^2</span> (vs <span class="math-inline">16\text{ N/mm}^2</span> for C16).</li>
+<li><strong>Modulus of Elasticity (<span class="math-inline">E_{0,\text{mean}}</span>):</strong> <span class="math-inline">11.0\text{ kN/mm}^2</span> (denser, 35% stiffer than C16).</li>
+<li><strong>Density:</strong> ~420 kg/m³ (tighter growth rings, minimal knots, straighter grain).</li>
+<li><strong>Treatment:</strong> High-pressure copper azole preservative (Use Class 3 external above-ground), kiln-dried to &lt;20% moisture before profiling to planed-all-round (PAR) eased-edge.</li>
+</ul>
+<h3>3.2 Main Support Beam Sizing (4.0 m Span)</h3>
+<ul>
+<li>Each side uses a <strong>twin beam</strong> (sandwich assembly) of <strong>two 47 mm × 225 mm C24</strong> members flanking the notched post.</li>
+<li>Total combined beam width: <span class="math-inline">47\text{ mm} \times 2 = 94\text{ mm}</span>.</li>
+<li><strong>Effective Span with Knee Braces:</strong>
+<ul>
+<li>45° knee braces extend 500 mm horizontally from each post.</li>
+<li>Clear beam span: <span class="math-inline">3850\text{ mm}</span>.</li>
+<li>Effective unsupported span between brace points: <span class="math-inline">3850 - (2 \times 500) = \mathbf{2850\text{ mm} (2.85\text{ m})}</span>.</li>
+</ul>
+</li>
+<li><strong>Deflection Check:</strong>
+<ul>
+<li>For open rafters + purlins (dead load ~0.20 kN/m² + temporary snow load 0.60 kN/m²), total load per 4m beam is ~3.5 kN uniformly distributed.</li>
+<li>Maximum calculated deflection <span class="math-inline">\delta_{\text{max}} &lt; 3.2\text{ mm}</span>, which is well inside the strict British/Irish architectural limit of <span class="math-inline">L / 360 = 2850 / 360 \approx 7.9\text{ mm}</span>.</li>
+<li><strong>Result:</strong> Zero perceptible sag, exceptionally rigid.</li>
+</ul>
+</li>
+</ul>
+<h3>3.3 Rafter Sizing (3.0 m Span)</h3>
+<ul>
+<li>Rafters: <strong>47 mm × 150 mm C24</strong> spanning 3.0 m between front and back beams.</li>
+<li>Number of rafters: <strong>10 rafters total</strong> across the 4.6 m length (spaced at ~510 mm centres).</li>
+<li>Maximum rafter span is 3000 mm, reduced to 2000 mm by diagonal knee braces at the end bays.</li>
+<li>Rafter capacity far exceeds requirements for open pergola purlin loads.</li>
+</ul>
+<h3>3.4 Racking &amp; Wind Stability (Triangulation)</h3>
+<ul>
+<li>Freestanding outdoor pergolas are exposed to cyclic lateral wind pressure.</li>
+<li><strong>Primary Anti-Racking Mechanism:</strong>
+<ul>
+<li>Eight 45° solid timber knee braces (500 mm × 500 mm leg triangle).</li>
+<li>4 braces along the 4.0 m beam axis + 4 braces along the 3.0 m rafter axis.</li>
+<li>This triangulation prevents the rectangular frame from shearing into a parallelogram.</li>
+</ul>
+</li>
+<li><strong>Secondary Anti-Racking Mechanism:</strong>
+<ul>
+<li>25 mm birdsmouth notches cut into all 10 rafters lock the roof horizontally against the 150 mm wide beam assemblies, preventing any twisting or racking of the upper roof plane.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>4. Foundation &amp; Groundworks Engineering</h2>
+<h3>4.1 Wind Overturning &amp; Uplift</h3>
+<ul>
+<li>Although open rafters have low aerodynamic profile compared to a solid roof, high gusts (e.g. 80–100 km/h Irish winter storms) exert significant uplift and overturning moments on the 2.6 m high posts.</li>
+<li>Surface-anchoring into 30–50 mm patio pavers laid on loose sand will fail under lateral wind loads.</li>
+<li>Therefore, each post is anchored into a <strong>mass-concrete pier foundation</strong> excavated through the patio sub-base.</li>
+</ul>
+<h3>4.2 Concrete Pier Sizing</h3>
+<ul>
+<li><strong>Hole Dimensions:</strong> <span class="math-inline">300\text{ mm} \times 300\text{ mm}</span> square (or 300 mm diameter round) <span class="math-inline">\times</span> <strong>500 mm deep</strong> below patio paver level.</li>
+<li><strong>Concrete Volume per Pier:</strong> <span class="math-inline">\approx 0.045\text{ m}^3</span> (<span class="math-inline">\approx 100\text{ kg}</span> of cured concrete per post, providing <span class="math-inline">400\text{ kg}</span> total ballast weight anchoring the structure down).</li>
+<li><strong>Concrete Specification:</strong> Rapid-setting Postcrete (2.5 bags per hole) or standard C25/30 mix (1 part cement, 2 parts sharp sand, 3 parts 20 mm gravel).</li>
+<li><strong>Elevation of Pier Top:</strong> Poured to finish <strong>~30–40 mm below the top paver level</strong> (flush with the bedding sand), allowing the lifted patio paver to be notched/cut and re-bedded around the post shoe for an unbroken patio appearance.</li>
+</ul>
+<hr />
+<h2>5. Planning Permission &amp; Building Regulations</h2>
+<ul>
+<li><strong>Ireland (Planning and Development Regulations — Class 3 Exempted Development):</strong>
+<ul>
+<li>Freestanding pergolas and garden structures for domestic recreation situated to the rear of the house are <strong>exempt from planning permission</strong> provided:
+<ol>
+<li>The structure is located in the rear garden (not in front of the house building line).</li>
+<li>Total area of all garden structures does not reduce remaining private open garden space below <span class="math-inline">25\text{ m}^2</span>. (Our covered area is <span class="math-inline">16.5\text{ m}^2</span>).</li>
+<li>Height does not exceed 3.0 m (our total height is 2.59 m).</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><strong>United Kingdom (Permitted Development — Class E):</strong>
+<ul>
+<li>If within 2.0 m of a boundary fence/wall, the maximum permitted height for a flat roof / pergola is 2.5 m. Because this build has a total height of ~2.59 m, ensure the posts/overhangs are positioned <strong>at least 2.0 m away from boundary fences</strong>, or consult your local planning authority if located closer.</li>
+</ul>
+</li>
+</ul>
+
+  </main>
+  
+<script>
+  function initTheme() {
+    const saved = localStorage.getItem('pergola-theme');
+    if (saved) {
+      document.documentElement.setAttribute('data-theme', saved);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  }
+  function toggleTheme() {
+    const current = document.documentElement.getAttribute('data-theme');
+    const target = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', target);
+    localStorage.setItem('pergola-theme', target);
+  }
+  initTheme();
+</script>
+
+</body>
+</html>

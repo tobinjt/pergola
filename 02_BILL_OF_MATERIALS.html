@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02 — Bill of Materials (BOM) — Pergola 4x3m</title>
+  <style>
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-tertiary: #f1f5f9;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --border-subtle: #cbd5e1;
+  --brand: #d97706;
+  --brand-hover: #b45309;
+  --brand-light: #fef3c7;
+  --accent-blue: #0284c7;
+  --accent-green: #059669;
+  --accent-purple: #7c3aed;
+  --accent-red: #dc2626;
+  --code-bg: #0f172a;
+  --code-text: #f8fafc;
+  --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.06);
+}
+
+[data-theme="dark"] {
+  --bg-primary: #0b1120;
+  --bg-secondary: #0f172a;
+  --bg-tertiary: #1e293b;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --border: #334155;
+  --border-subtle: #475569;
+  --brand: #f59e0b;
+  --brand-hover: #d97706;
+  --brand-light: #78350f40;
+  --accent-blue: #38bdf8;
+  --accent-green: #34d399;
+  --accent-purple: #a78bfa;
+  --accent-red: #f87171;
+  --code-bg: #030712;
+  --code-text: #f8fafc;
+  --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.65;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  transition: background-color 0.2s, color 0.2s;
+  padding-bottom: 80px;
+}
+
+/* Header & Navigation */
+header.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.05);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.logo-icon {
+  font-size: 1.4rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.15s ease-in-out;
+}
+
+.nav-item:hover {
+  background-color: var(--bg-tertiary);
+  color: var(--brand);
+}
+
+.nav-item.active {
+  background-color: var(--brand);
+  color: #ffffff;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-action {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  transition: all 0.15s;
+}
+
+.btn-action:hover {
+  border-color: var(--brand);
+  color: var(--brand);
+}
+
+.btn-action-primary {
+  background-color: var(--brand);
+  color: #fff;
+  border-color: var(--brand);
+}
+
+.btn-action-primary:hover {
+  background-color: var(--brand-hover);
+  color: #fff;
+}
+
+/* Main Layout */
+.page-container {
+  max-width: 980px;
+  margin: 32px auto;
+  padding: 0 24px;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.2rem;
+  line-height: 1.25;
+  color: var(--text-primary);
+  margin-top: 10px;
+  margin-bottom: 16px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  color: var(--text-primary);
+  margin-top: 36px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 16px;
+  color: var(--text-secondary);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 32px 0;
+}
+
+ul, ol {
+  margin-left: 24px;
+  margin-bottom: 18px;
+  color: var(--text-secondary);
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Tables */
+.table-wrapper {
+  overflow-x: auto;
+  margin: 20px 0 28px 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  background: var(--bg-primary);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.92rem;
+}
+
+thead th {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  font-weight: 600;
+  padding: 12px 16px;
+  border-bottom: 2px solid var(--border);
+  white-space: nowrap;
+}
+
+tbody td {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--bg-secondary);
+}
+
+tbody tr:hover {
+  background-color: var(--bg-tertiary);
+}
+
+/* Code & Pre Blocks */
+pre {
+  background-color: var(--code-bg);
+  color: var(--code-text);
+  padding: 18px 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin: 18px 0 24px 0;
+  border: 1px solid var(--border-subtle);
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.88em;
+  background-color: var(--bg-tertiary);
+  color: var(--brand);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+/* Callouts */
+.callout {
+  border-left: 4px solid;
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 20px 0;
+  background-color: var(--bg-secondary);
+}
+
+.callout-header {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.callout-body {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
+.callout-body p:last-child {
+  margin-bottom: 0;
+}
+
+.callout-note {
+  border-color: var(--accent-blue);
+  background-color: var(--bg-secondary);
+}
+.callout-note .callout-header { color: var(--accent-blue); }
+
+.callout-tip {
+  border-color: var(--accent-green);
+  background-color: var(--bg-secondary);
+}
+.callout-tip .callout-header { color: var(--accent-green); }
+
+.callout-important {
+  border-color: var(--accent-purple);
+  background-color: var(--bg-secondary);
+}
+.callout-important .callout-header { color: var(--accent-purple); }
+
+.callout-warning, .callout-caution {
+  border-color: var(--accent-red);
+  background-color: var(--bg-secondary);
+}
+.callout-warning .callout-header, .callout-caution .callout-header { color: var(--accent-red); }
+
+/* Task lists */
+.contains-task-list {
+  list-style: none;
+  margin-left: 4px;
+}
+
+.task-list-item-checkbox {
+  margin-right: 8px;
+  accent-color: var(--brand);
+  transform: scale(1.15);
+}
+
+/* SVG Diagram Containers */
+.diagram-card {
+  margin: 28px 0;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: var(--card-shadow);
+  text-align: center;
+}
+
+.diagram-card img, .diagram-card svg {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.diagram-caption {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* Math rendering */
+.math-inline {
+  font-family: "Cambria Math", "Latin Modern Math", serif;
+  font-style: italic;
+  padding: 0 4px;
+  color: var(--brand);
+}
+
+/* Print Styles */
+@media print {
+  header.site-header, .no-print, .btn-action {
+    display: none !important;
+  }
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 11pt;
+    line-height: 1.4;
+  }
+  .page-container {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .table-wrapper {
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+    page-break-inside: avoid;
+  }
+  thead th {
+    background-color: #eee !important;
+    color: #000 !important;
+  }
+  tr, img, svg, .diagram-card {
+    page-break-inside: avoid;
+  }
+  h1, h2, h3 {
+    page-break-after: avoid;
+    color: #000 !important;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+}
+</style>
+</head>
+<body>
+  
+<header class="site-header">
+  <div class="header-container">
+    <a href="index.html" class="logo-area">
+      <span class="logo-icon">🌲</span>
+      <span>Pergola 4×3m Build Plan</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-item">Overview</a>
+<a href="01_PROJECT_SPECIFICATIONS.html" class="nav-item">01 Specs</a>
+<a href="02_BILL_OF_MATERIALS.html" class="nav-item active">02 Materials</a>
+<a href="03_CUT_LIST_AND_TIMBER_OPTIMIZATION.html" class="nav-item">03 Cut List</a>
+<a href="04_JOINERY_AND_CONNECTION_DETAILS.html" class="nav-item">04 Joinery</a>
+<a href="05_STEP_BY_STEP_BUILD_GUIDE.html" class="nav-item">05 Build Guide</a>
+<a href="06_TOOL_AND_SAFETY_CHECKLIST.html" class="nav-item">06 Tools</a>
+<a href="complete_build_manual.html" class="nav-item" style="font-weight:700; color:var(--brand);">📖 Full Manual</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn-action" onclick="toggleTheme()" title="Toggle Dark/Light Mode">🌓 Mode</button>
+      <button class="btn-action btn-action-primary" onclick="window.print()" title="Print Current Document">🖨️ Print</button>
+    </div>
+  </div>
+</header>
+
+  <main class="page-container">
+    <h1>02 — Bill of Materials (BOM) &amp; Shopping List</h1>
+<p>This document lists every piece of timber, hardware, concrete, fastener, and treatment required to build the 4.0 m × 3.0 m freestanding pergola. All items are specified using standard off-the-shelf commercial stock available at Irish and UK builders merchants (e.g. Chadwicks, Goodwins, Brooks, B&amp;Q, Wickes, Travis Perkins).</p>
+<hr />
+<h2>1. Timber Materials</h2>
+<div class="callout callout-important"><div class="callout-header"><span class="callout-icon">📌</span> Important</div><div class="callout-body"><p>Specify <strong>C24 structural grade, Smooth Planed All Round (PAR / Eased-Edge), pressure-treated (tanalised) softwood</strong>. Kiln-dried treated timber is straighter, lighter, and ready to oil.</p></div></div>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:left">Item</th>
+<th style="text-align:left">Component</th>
+<th style="text-align:left">Finished Cross-Section</th>
+<th style="text-align:left">Commercial Stock Length to Order</th>
+<th style="text-align:left">Quantity</th>
+<th style="text-align:left">Notes / Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>T-01</strong></td>
+<td style="text-align:left"><strong>Corner Posts</strong></td>
+<td style="text-align:left">150 mm × 150 mm (6″ × 6″)</td>
+<td style="text-align:left"><strong>2.7 m</strong> (or 3.0 m)</td>
+<td style="text-align:left"><strong>4 lengths</strong></td>
+<td style="text-align:left">Cut to 2390 mm; enables squaring factory ends</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>T-02</strong></td>
+<td style="text-align:left"><strong>Main Support Beams</strong></td>
+<td style="text-align:left">47 mm × 225 mm (2″ × 9″)</td>
+<td style="text-align:left"><strong>4.8 m</strong></td>
+<td style="text-align:left"><strong>4 lengths</strong></td>
+<td style="text-align:left">Cut to 4600 mm; 2 front beam boards, 2 back</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>T-03</strong></td>
+<td style="text-align:left"><strong>Rafters (Crossbeams)</strong></td>
+<td style="text-align:left">47 mm × 150 mm (2″ × 6″)</td>
+<td style="text-align:left"><strong>3.6 m</strong></td>
+<td style="text-align:left"><strong>10 lengths</strong></td>
+<td style="text-align:left">Exact 3600 mm finished length (zero waste!)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>T-04</strong></td>
+<td style="text-align:left"><strong>Top Purlins (Battens)</strong></td>
+<td style="text-align:left">38 mm × 50 mm (or 47×50 mm)</td>
+<td style="text-align:left"><strong>4.8 m</strong></td>
+<td style="text-align:left"><strong>10 lengths</strong></td>
+<td style="text-align:left">Cut to 4600 mm; laid flat on rafters</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>T-05</strong></td>
+<td style="text-align:left"><strong>Corner Knee Braces</strong></td>
+<td style="text-align:left">100 mm × 100 mm (4″ × 4″)</td>
+<td style="text-align:left"><strong>2.4 m</strong></td>
+<td style="text-align:left"><strong>2 lengths</strong></td>
+<td style="text-align:left">Cut into eight 45° diagonal struts (~750 mm)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>T-06</strong></td>
+<td style="text-align:left"><strong>Temporary Bracing</strong></td>
+<td style="text-align:left">38 mm × 75 mm (or 25×50 mm)</td>
+<td style="text-align:left"><strong>3.0 m</strong></td>
+<td style="text-align:left"><strong>4 lengths</strong></td>
+<td style="text-align:left">Budget rough timber for bracing posts during erection</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>2. Concrete, Groundworks &amp; Post Anchors</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:left">Item</th>
+<th style="text-align:left">Component</th>
+<th style="text-align:left">Specification</th>
+<th style="text-align:left">Quantity</th>
+<th style="text-align:left">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>G-01</strong></td>
+<td style="text-align:left"><strong>Elevated Standoff Post Bases</strong></td>
+<td style="text-align:left">Heavy-duty galvanised or black powder-coated <strong>150 mm (6″) square post base</strong> with <strong>35–50 mm bottom standoff plate</strong> (e.g. Simpson Strong-Tie APB150, ABU66, or equivalent)</td>
+<td style="text-align:left"><strong>4 units</strong></td>
+<td style="text-align:left">Elevates timber off wet patio to permanently prevent rot</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>G-02</strong></td>
+<td style="text-align:left"><strong>Concrete Pier Foundation</strong></td>
+<td style="text-align:left"><strong>Postcrete (Rapid Set Concrete)</strong> 20 kg bags (e.g. Blue Circle / Kilsaran / Hanson)</td>
+<td style="text-align:left"><strong>10 bags</strong></td>
+<td style="text-align:left">2.5 bags per 300×300×500 mm hole. Fast 15-minute set</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>G-03</strong></td>
+<td style="text-align:left"><strong>Foundation Anchors</strong></td>
+<td style="text-align:left"><strong>M12 × 100 mm (or 120 mm) Through-Bolts / Wedge Anchors</strong> (Hot-Dip Galvanised or A4 Stainless Steel) with washers and nuts</td>
+<td style="text-align:left"><strong>4 units</strong></td>
+<td style="text-align:left">Anchors standoff base down into cured concrete pier</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>G-04</strong></td>
+<td style="text-align:left"><strong>Paver Bedding Sand</strong></td>
+<td style="text-align:left">Kiln-dried paving sand / sharp sand</td>
+<td style="text-align:left"><strong>1 bag (25 kg)</strong></td>
+<td style="text-align:left">For re-bedding cut pavers around post collars</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>3. Structural Fasteners &amp; Hardware Schedule</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:left">Item</th>
+<th style="text-align:left">Fastener Type</th>
+<th style="text-align:left">Specification &amp; Dimensions</th>
+<th style="text-align:left">Quantity</th>
+<th style="text-align:left">Where Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>F-01</strong></td>
+<td style="text-align:left"><strong>M12 Carriage / Coach Bolts</strong></td>
+<td style="text-align:left">M12 × <strong>160 mm</strong> Hot-Dip Galvanised (or A2 Stainless Steel) with round dome head and square neck</td>
+<td style="text-align:left"><strong>16 bolts</strong></td>
+<td style="text-align:left">Through-bolting the two 47 mm beams through the 56 mm post tongue (4 bolts per post)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>F-02</strong></td>
+<td style="text-align:left"><strong>M12 Large Washers</strong></td>
+<td style="text-align:left">M12 Form G / Penny Washers (Galvanised or Stainless)</td>
+<td style="text-align:left"><strong>16 washers</strong></td>
+<td style="text-align:left">Placed under nuts on inner face to prevent timber crushing</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>F-03</strong></td>
+<td style="text-align:left"><strong>M12 Hex Nuts / Nyloc</strong></td>
+<td style="text-align:left">M12 Galvanised or Stainless Hex Nuts (or Nylon locking nuts)</td>
+<td style="text-align:left"><strong>16 nuts</strong></td>
+<td style="text-align:left">Torqued by hand socket wrench on M12 coach bolts</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>F-04</strong></td>
+<td style="text-align:left"><strong>Rafter Structural Screws</strong></td>
+<td style="text-align:left"><strong>6.0 mm × 100 mm (or 120 mm)</strong> Exterior Coated Structural Wood Screws (Torx T30 drive, washer/countersunk head)</td>
+<td style="text-align:left"><strong>1 box (50 pcs)</strong></td>
+<td style="text-align:left">Fastening rafters down through birdsmouth notches into beams</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>F-05</strong></td>
+<td style="text-align:left"><strong>Knee Brace Screws</strong></td>
+<td style="text-align:left"><strong>6.0 mm × 140 mm (or 160 mm)</strong> Heavy Exterior Structural Screws (Torx T30 drive)</td>
+<td style="text-align:left"><strong>1 box (50 pcs)</strong></td>
+<td style="text-align:left">Securing 45° knee braces to posts, beams, and rafters</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>F-06</strong></td>
+<td style="text-align:left"><strong>Purlin Screws</strong></td>
+<td style="text-align:left"><strong>5.0 mm × 80 mm</strong> Exterior Green/Brown Coated Decking Screws (Torx T25 drive)</td>
+<td style="text-align:left"><strong>1 box (150 pcs)</strong></td>
+<td style="text-align:left">Screwing top purlins down into each rafter intersection</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>F-07</strong></td>
+<td style="text-align:left"><strong>Post-to-Base Screws</strong></td>
+<td style="text-align:left">Heavy structural timber connector screws (e.g. Simpson Strong-Tie SD 6.3×64 mm or M8 Coach Screws)</td>
+<td style="text-align:left"><strong>16–24 pcs</strong></td>
+<td style="text-align:left">Securing bottom of 150×150 posts into standoff shoe flanges</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>4. Preservatives, Finishes &amp; Consumables</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:left">Item</th>
+<th style="text-align:left">Product</th>
+<th style="text-align:left">Specification</th>
+<th style="text-align:left">Quantity</th>
+<th style="text-align:left">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>C-01</strong></td>
+<td style="text-align:left"><strong>End-Grain Preserver</strong></td>
+<td style="text-align:left">Ronseal End Grain Preserver or Cuprinol End Grain Protector (Green or Clear)</td>
+<td style="text-align:left"><strong>1 × 2.5 L tin</strong></td>
+<td style="text-align:left"><strong>Crucial:</strong> Apply generously to every freshly cut notch, tail chamfer, and post bottom</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>C-02</strong></td>
+<td style="text-align:left"><strong>Exterior UV Wood Oil</strong></td>
+<td style="text-align:left">Osmo UV-Protection-Oil Extra (420 Clear or 425 Oak) / Sadolin Classic Woodstain</td>
+<td style="text-align:left"><strong>2 × 2.5 L tins</strong></td>
+<td style="text-align:left">Microporous, breathable oil. Prevents timber greyout and water ingress without peeling</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>C-03</strong></td>
+<td style="text-align:left"><strong>Diamond Angle Grinder Blade</strong></td>
+<td style="text-align:left">115 mm (or 125 mm) Continuous Rim Diamond Tile/Paver Cutting Blade</td>
+<td style="text-align:left"><strong>1 disc</strong></td>
+<td style="text-align:left">Fitted to 115mm angle grinder to cleanly notch lifted patio pavers</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>C-04</strong></td>
+<td style="text-align:left"><strong>Long Wood Auger Drill Bit</strong></td>
+<td style="text-align:left"><strong>13 mm diameter × 250 mm+ length</strong> hex-shank wood auger bit</td>
+<td style="text-align:left"><strong>1 bit</strong></td>
+<td style="text-align:left">For drilling clean, straight M12 through-bolt holes with Bosch GSR 12V</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>C-05</strong></td>
+<td style="text-align:left"><strong>Masonry Drill Bit</strong></td>
+<td style="text-align:left"><strong>12 mm × 160 mm SDS-Plus / straight shank masonry bit</strong></td>
+<td style="text-align:left"><strong>1 bit</strong></td>
+<td style="text-align:left">For drilling anchor holes into concrete pier footings</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>C-06</strong></td>
+<td style="text-align:left"><strong>Pilot Wood Drill Bit</strong></td>
+<td style="text-align:left">4.5 mm or 5.0 mm × 150 mm long wood drill bit</td>
+<td style="text-align:left"><strong>1 bit</strong></td>
+<td style="text-align:left">For effortless screw piloting with Bosch GSR 12V in Gear 1</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>5. Lighting &amp; Accessories</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:left">Item</th>
+<th style="text-align:left">Component</th>
+<th style="text-align:left">Specification</th>
+<th style="text-align:left">Quantity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>L-01</strong></td>
+<td style="text-align:left"><strong>Festoon String Lights</strong></td>
+<td style="text-align:left">20 m – 25 m Heavy-Duty Outdoor Festoon Light String with IP65 waterproof rating, E27/B22 shatterproof warm white (2700K) LED filament bulbs</td>
+<td style="text-align:left"><strong>1 set</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>L-02</strong></td>
+<td style="text-align:left"><strong>Screw Eye Hooks</strong></td>
+<td style="text-align:left">M5 or M6 × 40 mm A4 Stainless Steel Screw Eye Hooks</td>
+<td style="text-align:left"><strong>1 pack (10 pcs)</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>L-03</strong></td>
+<td style="text-align:left"><strong>Small Carabiners</strong></td>
+<td style="text-align:left">Stainless steel 40 mm spring snap hooks (for easy winter light removal)</td>
+<td style="text-align:left"><strong>1 pack (10 pcs)</strong></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>6. Estimated Budget Overview</h2>
+<ul>
+<li><em>Timber Package (C24 Smooth Planed):</em> ~€600 – €750 / £520 – £650</li>
+<li><em>Post Bases &amp; Concrete Groundworks:</em> ~€120 – €160 / £100 – £140</li>
+<li><em>Fasteners, Coach Bolts &amp; Screws:</em> ~€70 – €95 / £60 – £80</li>
+<li><em>Preservatives &amp; UV Finishing Oil:</em> ~€90 – €130 / £80 – £115</li>
+<li><em>Lighting &amp; Consumables:</em> ~€50 – €80 / £45 – £70</li>
+<li><strong>Total Approximate Project Material Cost:</strong> <strong>~€930 – €1,215 (approx. £800 – £1,050)</strong></li>
+</ul>
+
+  </main>
+  
+<script>
+  function initTheme() {
+    const saved = localStorage.getItem('pergola-theme');
+    if (saved) {
+      document.documentElement.setAttribute('data-theme', saved);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  }
+  function toggleTheme() {
+    const current = document.documentElement.getAttribute('data-theme');
+    const target = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', target);
+    localStorage.setItem('pergola-theme', target);
+  }
+  initTheme();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Master Build Manual — 4x3m Pergola</title>
+  <style>
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-tertiary: #f1f5f9;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --border-subtle: #cbd5e1;
+  --brand: #d97706;
+  --brand-hover: #b45309;
+  --brand-light: #fef3c7;
+  --accent-blue: #0284c7;
+  --accent-green: #059669;
+  --accent-purple: #7c3aed;
+  --accent-red: #dc2626;
+  --code-bg: #0f172a;
+  --code-text: #f8fafc;
+  --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.06);
+}
+
+[data-theme="dark"] {
+  --bg-primary: #0b1120;
+  --bg-secondary: #0f172a;
+  --bg-tertiary: #1e293b;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --border: #334155;
+  --border-subtle: #475569;
+  --brand: #f59e0b;
+  --brand-hover: #d97706;
+  --brand-light: #78350f40;
+  --accent-blue: #38bdf8;
+  --accent-green: #34d399;
+  --accent-purple: #a78bfa;
+  --accent-red: #f87171;
+  --code-bg: #030712;
+  --code-text: #f8fafc;
+  --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.65;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  transition: background-color 0.2s, color 0.2s;
+  padding-bottom: 80px;
+}
+
+/* Header & Navigation */
+header.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.05);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.logo-icon {
+  font-size: 1.4rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.15s ease-in-out;
+}
+
+.nav-item:hover {
+  background-color: var(--bg-tertiary);
+  color: var(--brand);
+}
+
+.nav-item.active {
+  background-color: var(--brand);
+  color: #ffffff;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-action {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  transition: all 0.15s;
+}
+
+.btn-action:hover {
+  border-color: var(--brand);
+  color: var(--brand);
+}
+
+.btn-action-primary {
+  background-color: var(--brand);
+  color: #fff;
+  border-color: var(--brand);
+}
+
+.btn-action-primary:hover {
+  background-color: var(--brand-hover);
+  color: #fff;
+}
+
+/* Main Layout */
+.page-container {
+  max-width: 980px;
+  margin: 32px auto;
+  padding: 0 24px;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.2rem;
+  line-height: 1.25;
+  color: var(--text-primary);
+  margin-top: 10px;
+  margin-bottom: 16px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  color: var(--text-primary);
+  margin-top: 36px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 16px;
+  color: var(--text-secondary);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 32px 0;
+}
+
+ul, ol {
+  margin-left: 24px;
+  margin-bottom: 18px;
+  color: var(--text-secondary);
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Tables */
+.table-wrapper {
+  overflow-x: auto;
+  margin: 20px 0 28px 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  background: var(--bg-primary);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.92rem;
+}
+
+thead th {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  font-weight: 600;
+  padding: 12px 16px;
+  border-bottom: 2px solid var(--border);
+  white-space: nowrap;
+}
+
+tbody td {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--bg-secondary);
+}
+
+tbody tr:hover {
+  background-color: var(--bg-tertiary);
+}
+
+/* Code & Pre Blocks */
+pre {
+  background-color: var(--code-bg);
+  color: var(--code-text);
+  padding: 18px 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin: 18px 0 24px 0;
+  border: 1px solid var(--border-subtle);
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.88em;
+  background-color: var(--bg-tertiary);
+  color: var(--brand);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+/* Callouts */
+.callout {
+  border-left: 4px solid;
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 20px 0;
+  background-color: var(--bg-secondary);
+}
+
+.callout-header {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.callout-body {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
+.callout-body p:last-child {
+  margin-bottom: 0;
+}
+
+.callout-note {
+  border-color: var(--accent-blue);
+  background-color: var(--bg-secondary);
+}
+.callout-note .callout-header { color: var(--accent-blue); }
+
+.callout-tip {
+  border-color: var(--accent-green);
+  background-color: var(--bg-secondary);
+}
+.callout-tip .callout-header { color: var(--accent-green); }
+
+.callout-important {
+  border-color: var(--accent-purple);
+  background-color: var(--bg-secondary);
+}
+.callout-important .callout-header { color: var(--accent-purple); }
+
+.callout-warning, .callout-caution {
+  border-color: var(--accent-red);
+  background-color: var(--bg-secondary);
+}
+.callout-warning .callout-header, .callout-caution .callout-header { color: var(--accent-red); }
+
+/* Task lists */
+.contains-task-list {
+  list-style: none;
+  margin-left: 4px;
+}
+
+.task-list-item-checkbox {
+  margin-right: 8px;
+  accent-color: var(--brand);
+  transform: scale(1.15);
+}
+
+/* SVG Diagram Containers */
+.diagram-card {
+  margin: 28px 0;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: var(--card-shadow);
+  text-align: center;
+}
+
+.diagram-card img, .diagram-card svg {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.diagram-caption {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* Math rendering */
+.math-inline {
+  font-family: "Cambria Math", "Latin Modern Math", serif;
+  font-style: italic;
+  padding: 0 4px;
+  color: var(--brand);
+}
+
+/* Print Styles */
+@media print {
+  header.site-header, .no-print, .btn-action {
+    display: none !important;
+  }
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 11pt;
+    line-height: 1.4;
+  }
+  .page-container {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .table-wrapper {
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+    page-break-inside: avoid;
+  }
+  thead th {
+    background-color: #eee !important;
+    color: #000 !important;
+  }
+  tr, img, svg, .diagram-card {
+    page-break-inside: avoid;
+  }
+  h1, h2, h3 {
+    page-break-after: avoid;
+    color: #000 !important;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+}
+</style>
+</head>
+<body>
+  
+<header class="site-header">
+  <div class="header-container">
+    <a href="index.html" class="logo-area">
+      <span class="logo-icon">🌲</span>
+      <span>Pergola 4×3m Build Plan</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-item">Overview</a>
+<a href="01_PROJECT_SPECIFICATIONS.html" class="nav-item">01 Specs</a>
+<a href="02_BILL_OF_MATERIALS.html" class="nav-item">02 Materials</a>
+<a href="03_CUT_LIST_AND_TIMBER_OPTIMIZATION.html" class="nav-item">03 Cut List</a>
+<a href="04_JOINERY_AND_CONNECTION_DETAILS.html" class="nav-item">04 Joinery</a>
+<a href="05_STEP_BY_STEP_BUILD_GUIDE.html" class="nav-item">05 Build Guide</a>
+<a href="06_TOOL_AND_SAFETY_CHECKLIST.html" class="nav-item">06 Tools</a>
+<a href="complete_build_manual.html" class="nav-item active" style="font-weight:700; color:var(--brand);">📖 Full Manual</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn-action" onclick="toggleTheme()" title="Toggle Dark/Light Mode">🌓 Mode</button>
+      <button class="btn-action btn-action-primary" onclick="window.print()" title="Print Current Document">🖨️ Print</button>
+    </div>
+  </div>
+</header>
+
+  <main class="page-container">
+    
+<div style="text-align:center; padding: 40px 0 20px 0;">
+  <h1 style="font-size:2.8rem; margin-bottom:8px;">🌲 4.0 m × 3.0 m Freestanding Pergola</h1>
+  <p style="font-size:1.2rem; color:var(--brand); font-weight:600;">Complete Master Construction Handbook & Architectural Specifications</p>
+  <p style="color:var(--text-muted);">Author: John Tobin & Antigravity Pair Programming | Location: Ireland/UK Patio Build</p>
+</div>
+<hr />
+
+<section id="section-0" style="margin-top: 40px;">
+  <h1>4.0 m × 3.0 m Freestanding Timber Pergola Master Plan</h1>
+<div class="diagram-card">
+  <img src="diagrams/elevation_and_plan.svg" alt="elevation_and_plan.svg" loading="lazy" />
+  <div class="diagram-caption">Architectural Drawing: elevation_and_plan.svg</div>
+</div>
+
+<p>A comprehensive, carpentry-grade design and construction package for a <strong>4.0 m × 3.0 m freestanding garden pergola</strong> built over an existing stone/brick paved patio.</p>
+<hr />
+<h2>🌲 Design Summary</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:left">Feature</th>
+<th style="text-align:left">Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Structure Type</strong></td>
+<td style="text-align:left">Freestanding, self-supporting on 4 corner posts</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Post Spacing</strong></td>
+<td style="text-align:left"><strong>4000 mm × 3000 mm</strong> (centre-to-centre) — full 4×3 m usable patio area</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Roof Footprint</strong></td>
+<td style="text-align:left"><strong>4600 mm × 3600 mm</strong> (incorporating 300 mm decorative overhangs on all sides)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Headroom Clearance</strong></td>
+<td style="text-align:left"><strong>2200 mm (~7 ft 3 in)</strong> under lowest support beams</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Overall Structure Height</strong></td>
+<td style="text-align:left"><strong>~2595 mm (~8 ft 6 in)</strong> to top of purlins</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Foundation &amp; Anchoring</strong></td>
+<td style="text-align:left">Concrete pier footings (~450–600 mm deep) poured beneath lifted pavers; heavy-duty elevated standoff post bases (+35 mm water clearance); pavers precision-cut and reinstated for a seamless patio finish</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Timber Specification</strong></td>
+<td style="text-align:left">Smooth planed (PAR / Eased-Edge) pressure-treated softwood, structural grade <strong>C24</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Corner Posts</strong></td>
+<td style="text-align:left"><strong>150 mm × 150 mm (nominal 6×6)</strong> solid timber with notched shoulders</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Main Support Beams</strong></td>
+<td style="text-align:left">Twin sandwich beams along 4.0 m span: <strong>47 mm × 225 mm (2×9) C24</strong>, 4600 mm length</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Rafters (Crossbeams)</strong></td>
+<td style="text-align:left"><strong>47 mm × 150 mm (2×6) C24</strong>, 3600 mm length, spaced ~510 mm centres, notched with 25 mm birdsmouth seats</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Top Purlins (Shade Battens)</strong></td>
+<td style="text-align:left"><strong>38 mm × 50 mm</strong>, 4600 mm length, spaced ~360 mm centres (~45% dappled shade)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Lateral Bracing</strong></td>
+<td style="text-align:left">8 × 45° timber knee braces (500 mm leg length) connecting posts to beams and rafters</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Tail Detailing</strong></td>
+<td style="text-align:left">Clean modern <strong>45° angled chamfer cuts</strong> on all beam and rafter overhangs</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Main Fasteners</strong></td>
+<td style="text-align:left">Hot-dip galvanised / stainless <strong>M12 carriage/coach bolts</strong> through notched post joints (torqued with hand ratchet); exterior structural screws for rafters and braces</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Finishing</strong></td>
+<td style="text-align:left">All cut ends treated with end-grain preserver; coated with exterior UV wood oil (e.g. Osmo / Sadolin)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Lighting</strong></td>
+<td style="text-align:left">Warm white festoon string lights suspended from stainless screw eye hooks</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>📐 Exact Dimensional Grid &amp; Geometry</h2>
+<pre><code>           ◄────────────────── Total Roof Length: 4600 mm ──────────────────►
+          Overhang                                                    Overhang
+           300 mm            ◄────── Post Centres: 4000 mm ──────►     300 mm
+         ┌─────────┬───────────────────────────────────────────────┬─────────┐
+         │         │ [Post 1]                             [Post 2] │         │
+       ▲ │         │  150x150                              150x150 │         │
+       │ │         └───────────────────────────────────────────────┘         │
+       │ │                                                                   │
+Total  │ │                                                                   │
+Roof   │ │   ◄─── Usable Interior Patio Clearance: 3850 x 2850 mm ───►       │
+Depth: │ │                                                                   │
+3600 mm│ │                                                                   │
+       │ │                                                                   │
+       │ │         ┌───────────────────────────────────────────────┐         │
+       ▼ │         │ [Post 3]                             [Post 4] │         │
+         │         │  150x150                              150x150 │         │
+         └─────────┴───────────────────────────────────────────────┴─────────┘
+                   ▲                                               ▲
+                   │◄───────────── Post Centres: 3000 mm ─────────►│
+</code></pre>
+<div class="callout callout-tip"><div class="callout-header"><span class="callout-icon">💡</span> Tip</div><div class="callout-body"><p><strong>Perfect 3-4-5 Triangle for On-Site Squaring:</strong>
+The post centres form a classic right triangle: <strong>3.0 m × 4.0 m × 5.0 m</strong> diagonal (<span class="math-inline">√(3^2 + 4^2} = 5.0\text{ m)</span>).
+When laying out string lines, measuring exactly <strong>5000 mm</strong> diagonally between opposite post centres guarantees a 100% square layout without complex math!</p></div></div>
+<hr />
+<h2>📚 Document Index</h2>
+<ol>
+<li>[<strong>01_PROJECT_SPECIFICATIONS.md</strong>](file:///Users/johntobin/src/pergola/01_PROJECT_SPECIFICATIONS.md) — Structural design calculations, elevations, height budgets, and building regulation notes.</li>
+<li>[<strong>02_BILL_OF_MATERIALS.md</strong>](file:///Users/johntobin/src/pergola/02_BILL_OF_MATERIALS.md) — Comprehensive shopping list of timber, post shoes, concrete, fasteners, and treatments.</li>
+<li>[<strong>03_CUT_LIST_AND_TIMBER_OPTIMIZATION.md</strong>](file:///Users/johntobin/src/pergola/03_CUT_LIST_AND_TIMBER_OPTIMIZATION.md) — Dimensioned cut list with stock nesting to minimise timber wastage from standard lumber lengths (4.8 m, 3.6 m, 2.4 m).</li>
+<li>[<strong>04_JOINERY_AND_CONNECTION_DETAILS.md</strong>](file:///Users/johntobin/src/pergola/04_JOINERY_AND_CONNECTION_DETAILS.md) — Technical joinery diagrams for post shoulder notching, birdsmouth cuts, 45° chamfer tails, and bolt patterns.</li>
+<li>[<strong>05_STEP_BY_STEP_BUILD_GUIDE.md</strong>](file:///Users/johntobin/src/pergola/05_STEP_BY_STEP_BUILD_GUIDE.md) — Phased construction manual from patio paver lifting and concrete pier pouring to timber assembly and finishing.</li>
+<li>[<strong>06_TOOL_AND_SAFETY_CHECKLIST.md</strong>](file:///Users/johntobin/src/pergola/06_TOOL_AND_SAFETY_CHECKLIST.md) — Tool recommendations tailored to your Bosch GSR 12V-35 FC drill/driver, router, and mitre saw, plus safety gear.</li>
+<li>[<strong>diagrams/</strong>](file:///Users/johntobin/src/pergola/diagrams) — Architectural scale SVG schematics of elevations, plans, and joinery.</li>
+</ol>
+
+</section>
+<hr />
+
+<section id="section-1" class="page-break" style="margin-top: 40px;">
+  <h1>01 — Project Specifications &amp; Structural Engineering</h1>
+<div class="diagram-card">
+  <img src="diagrams/elevation_and_plan.svg" alt="elevation_and_plan.svg" loading="lazy" />
+  <div class="diagram-caption">Architectural Drawing: elevation_and_plan.svg</div>
+</div>
+
+<p>This document establishes the structural parameters, dimensional constraints, and engineering considerations for the 4.0 m × 3.0 m freestanding timber pergola.</p>
+<hr />
+<h2>1. Dimensional Summary</h2>
+<h3>1.1 Plan View Geometry</h3>
+<ul>
+<li><strong>Post-to-Post Spacing (Centre-to-Centre):</strong>
+<ul>
+<li>Long direction (Beam run): <strong>4000 mm (4.00 m)</strong></li>
+<li>Short direction (Rafter run): <strong>3000 mm (3.00 m)</strong></li>
+<li>Diagonal (Corner-to-Corner check): <strong>5000 mm (5.00 m)</strong> <em>(Exact 3-4-5 right triangle)</em></li>
+</ul>
+</li>
+<li><strong>Post Outside-to-Outside Dimensions:</strong>
+<ul>
+<li>Long dimension: <span class="math-inline">4000\text{ mm} + 150\text{ mm} = \mathbf{4150\text{ mm}}</span></li>
+<li>Short dimension: <span class="math-inline">3000\text{ mm} + 150\text{ mm} = \mathbf{3150\text{ mm}}</span></li>
+</ul>
+</li>
+<li><strong>Usable Interior Clearance (Inside Face to Inside Face of Posts):</strong>
+<ul>
+<li>Long opening: <span class="math-inline">4000\text{ mm} - 150\text{ mm} = \mathbf{3850\text{ mm}}</span></li>
+<li>Short opening: <span class="math-inline">3000\text{ mm} - 150\text{ mm} = \mathbf{2850\text{ mm}}</span></li>
+</ul>
+</li>
+<li><strong>Cantilever Overhangs:</strong>
+<ul>
+<li>Beams: <strong>300 mm</strong> overhang beyond post centre on each end</li>
+<li>Rafters: <strong>300 mm</strong> overhang beyond beam centreline on each end</li>
+</ul>
+</li>
+<li><strong>Overall Roof Footprint:</strong>
+<ul>
+<li>Length: <span class="math-inline">4000\text{ mm} + (2 \times 300\text{ mm}) = \mathbf{4600\text{ mm}}</span></li>
+<li>Width: <span class="math-inline">3000\text{ mm} + (2 \times 300\text{ mm}) = \mathbf{3600\text{ mm}}</span></li>
+<li>Covered area: <span class="math-inline">4.6\text{ m} \times 3.6\text{ m} = \mathbf{16.56\text{ m}^2}</span></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>2. Vertical Elevations &amp; Height Budget</h2>
+<p>Every vertical elevation is calibrated from the <strong>finished patio paver level (0 mm datum)</strong>:</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:left">Component</th>
+<th style="text-align:left">Elevation / Dimension</th>
+<th style="text-align:left">Cumulative Top Elevation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Finished Patio Level</strong></td>
+<td style="text-align:left"><strong>Datum (0 mm)</strong></td>
+<td style="text-align:left">0 mm</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Standoff Post Base Clearance</strong></td>
+<td style="text-align:left">+35 mm air gap</td>
+<td style="text-align:left">+35 mm</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Clearance Under Main Beams</strong></td>
+<td style="text-align:left"><strong>2200 mm (~7 ft 2.5 in)</strong></td>
+<td style="text-align:left"><strong>+2200 mm</strong> <em>(Headroom)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Post Shoulder Cut Height</strong></td>
+<td style="text-align:left">Timber height: <span class="math-inline">2200 - 35 = 2165\text{ mm}</span></td>
+<td style="text-align:left">+2200 mm</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Main Support Beams (47×225 mm)</strong></td>
+<td style="text-align:left">Depth: 225 mm</td>
+<td style="text-align:left">+2425 mm</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Post Total Top Height (Tongue)</strong></td>
+<td style="text-align:left">Timber height: <span class="math-inline">2165 + 225 = 2390\text{ mm}</span></td>
+<td style="text-align:left">+2425 mm <em>(flush with beams)</em></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Rafter Birdsmouth Seat</strong></td>
+<td style="text-align:left">Depth of notch: 25 mm into rafter</td>
+<td style="text-align:left">—</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Rafter (47×150 mm) Effective Rise</strong></td>
+<td style="text-align:left"><span class="math-inline">150\text{ mm} - 25\text{ mm} = +125\text{ mm}</span></td>
+<td style="text-align:left">+2550 mm</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Top Purlins (38×50 mm laid flat)</strong></td>
+<td style="text-align:left">Thickness: +38 mm</td>
+<td style="text-align:left"><strong>+2588 mm (~2.59 m)</strong></td>
+</tr>
+</tbody>
+</table></div>
+<pre><code> ▲ +2588 mm  ────────────────────────────────────────────────  Top of Purlins (38 mm)
+ │
+ │ +2550 mm  ════════════════════════════════════════════════  Top of Rafters (150 mm)
+ │           [ 25 mm birdsmouth notch locks over beam ]
+ │ +2425 mm  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  Top of Beams &amp; Post Tongue
+ │           │ 47x225 mm Sandwich Beams                      │
+ │ +2200 mm  ────────────────────────────────────────────────  Underside of Beams (Clearance)
+ │           │                                               │
+ │           │                                               │
+ │           │ 150x150 mm C24 Post                           │  Headroom: 2.20 m (~7 ft 3 in)
+ │           │                                               │
+ │           │                                               │
+ │   +35 mm  ────────────────────────────────────────────────  Bottom of Timber Post
+ │           [ Galvanised Elevated Standoff Base ]             Air gap for water drainage
+ ▼     0 mm  ════════════════════════════════════════════════  Finished Patio Pavers
+</code></pre>
+<hr />
+<h2>3. Structural Engineering &amp; Timber Calculations</h2>
+<h3>3.1 Timber Grade: C24 Softwood</h3>
+<ul>
+<li><strong>Bending Strength (<span class="math-inline">f_{m,k}</span>):</strong> <span class="math-inline">24\text{ N/mm}^2</span> (vs <span class="math-inline">16\text{ N/mm}^2</span> for C16).</li>
+<li><strong>Modulus of Elasticity (<span class="math-inline">E_{0,\text{mean}}</span>):</strong> <span class="math-inline">11.0\text{ kN/mm}^2</span> (denser, 35% stiffer than C16).</li>
+<li><strong>Density:</strong> ~420 kg/m³ (tighter growth rings, minimal knots, straighter grain).</li>
+<li><strong>Treatment:</strong> High-pressure copper azole preservative (Use Class 3 external above-ground), kiln-dried to &lt;20% moisture before profiling to planed-all-round (PAR) eased-edge.</li>
+</ul>
+<h3>3.2 Main Support Beam Sizing (4.0 m Span)</h3>
+<ul>
+<li>Each side uses a <strong>twin beam</strong> (sandwich assembly) of <strong>two 47 mm × 225 mm C24</strong> members flanking the notched post.</li>
+<li>Total combined beam width: <span class="math-inline">47\text{ mm} \times 2 = 94\text{ mm}</span>.</li>
+<li><strong>Effective Span with Knee Braces:</strong>
+<ul>
+<li>45° knee braces extend 500 mm horizontally from each post.</li>
+<li>Clear beam span: <span class="math-inline">3850\text{ mm}</span>.</li>
+<li>Effective unsupported span between brace points: <span class="math-inline">3850 - (2 \times 500) = \mathbf{2850\text{ mm} (2.85\text{ m})}</span>.</li>
+</ul>
+</li>
+<li><strong>Deflection Check:</strong>
+<ul>
+<li>For open rafters + purlins (dead load ~0.20 kN/m² + temporary snow load 0.60 kN/m²), total load per 4m beam is ~3.5 kN uniformly distributed.</li>
+<li>Maximum calculated deflection <span class="math-inline">\delta_{\text{max}} &lt; 3.2\text{ mm}</span>, which is well inside the strict British/Irish architectural limit of <span class="math-inline">L / 360 = 2850 / 360 \approx 7.9\text{ mm}</span>.</li>
+<li><strong>Result:</strong> Zero perceptible sag, exceptionally rigid.</li>
+</ul>
+</li>
+</ul>
+<h3>3.3 Rafter Sizing (3.0 m Span)</h3>
+<ul>
+<li>Rafters: <strong>47 mm × 150 mm C24</strong> spanning 3.0 m between front and back beams.</li>
+<li>Number of rafters: <strong>10 rafters total</strong> across the 4.6 m length (spaced at ~510 mm centres).</li>
+<li>Maximum rafter span is 3000 mm, reduced to 2000 mm by diagonal knee braces at the end bays.</li>
+<li>Rafter capacity far exceeds requirements for open pergola purlin loads.</li>
+</ul>
+<h3>3.4 Racking &amp; Wind Stability (Triangulation)</h3>
+<ul>
+<li>Freestanding outdoor pergolas are exposed to cyclic lateral wind pressure.</li>
+<li><strong>Primary Anti-Racking Mechanism:</strong>
+<ul>
+<li>Eight 45° solid timber knee braces (500 mm × 500 mm leg triangle).</li>
+<li>4 braces along the 4.0 m beam axis + 4 braces along the 3.0 m rafter axis.</li>
+<li>This triangulation prevents the rectangular frame from shearing into a parallelogram.</li>
+</ul>
+</li>
+<li><strong>Secondary Anti-Racking Mechanism:</strong>
+<ul>
+<li>25 mm birdsmouth notches cut into all 10 rafters lock the roof horizontally against the 150 mm wide beam assemblies, preventing any twisting or racking of the upper roof plane.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>4. Foundation &amp; Groundworks Engineering</h2>
+<h3>4.1 Wind Overturning &amp; Uplift</h3>
+<ul>
+<li>Although open rafters have low aerodynamic profile compared to a solid roof, high gusts (e.g. 80–100 km/h Irish winter storms) exert significant uplift and overturning moments on the 2.6 m high posts.</li>
+<li>Surface-anchoring into 30–50 mm patio pavers laid on loose sand will fail under lateral wind loads.</li>
+<li>Therefore, each post is anchored into a <strong>mass-concrete pier foundation</strong> excavated through the patio sub-base.</li>
+</ul>
+<h3>4.2 Concrete Pier Sizing</h3>
+<ul>
+<li><strong>Hole Dimensions:</strong> <span class="math-inline">300\text{ mm} \times 300\text{ mm}</span> square (or 300 mm diameter round) <span class="math-inline">\times</span> <strong>500 mm deep</strong> below patio paver level.</li>
+<li><strong>Concrete Volume per Pier:</strong> <span class="math-inline">\approx 0.045\text{ m}^3</span> (<span class="math-inline">\approx 100\text{ kg}</span> of cured concrete per post, providing <span class="math-inline">400\text{ kg}</span> total ballast weight anchoring the structure down).</li>
+<li><strong>Concrete Specification:</strong> Rapid-setting Postcrete (2.5 bags per hole) or standard C25/30 mix (1 part cement, 2 parts sharp sand, 3 parts 20 mm gravel).</li>
+<li><strong>Elevation of Pier Top:</strong> Poured to finish <strong>~30–40 mm below the top paver level</strong> (flush with the bedding sand), allowing the lifted patio paver to be notched/cut and re-bedded around the post shoe for an unbroken patio appearance.</li>
+</ul>
+<hr />
+<h2>5. Planning Permission &amp; Building Regulations</h2>
+<ul>
+<li><strong>Ireland (Planning and Development Regulations — Class 3 Exempted Development):</strong>
+<ul>
+<li>Freestanding pergolas and garden structures for domestic recreation situated to the rear of the house are <strong>exempt from planning permission</strong> provided:
+<ol>
+<li>The structure is located in the rear garden (not in front of the house building line).</li>
+<li>Total area of all garden structures does not reduce remaining private open garden space below <span class="math-inline">25\text{ m}^2</span>. (Our covered area is <span class="math-inline">16.5\text{ m}^2</span>).</li>
+<li>Height does not exceed 3.0 m (our total height is 2.59 m).</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><strong>United Kingdom (Permitted Development — Class E):</strong>
+<ul>
+<li>If within 2.0 m of a boundary fence/wall, the maximum permitted height for a flat roof / pergola is 2.5 m. Because this build has a total height of ~2.59 m, ensure the posts/overhangs are positioned <strong>at least 2.0 m away from boundary fences</strong>, or consult your local planning authority if located closer.</li>
+</ul>
+</li>
+</ul>
+
+</section>
+<hr />
+
+<section id="section-2" class="page-break" style="margin-top: 40px;">
+  <h1>02 — Bill of Materials (BOM) &amp; Shopping List</h1>
+<p>This document lists every piece of timber, hardware, concrete, fastener, and treatment required to build the 4.0 m × 3.0 m freestanding pergola. All items are specified using standard off-the-shelf commercial stock available at Irish and UK builders merchants (e.g. Chadwicks, Goodwins, Brooks, B&amp;Q, Wickes, Travis Perkins).</p>
+<hr />
+<h2>1. Timber Materials</h2>
+<div class="callout callout-important"><div class="callout-header"><span class="callout-icon">📌</span> Important</div><div class="callout-body"><p>Specify <strong>C24 structural grade, Smooth Planed All Round (PAR / Eased-Edge), pressure-treated (tanalised) softwood</strong>. Kiln-dried treated timber is straighter, lighter, and ready to oil.</p></div></div>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:left">Item</th>
+<th style="text-align:left">Component</th>
+<th style="text-align:left">Finished Cross-Section</th>
+<th style="text-align:left">Commercial Stock Length to Order</th>
+<th style="text-align:left">Quantity</th>
+<th style="text-align:left">Notes / Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>T-01</strong></td>
+<td style="text-align:left"><strong>Corner Posts</strong></td>
+<td style="text-align:left">150 mm × 150 mm (6″ × 6″)</td>
+<td style="text-align:left"><strong>2.7 m</strong> (or 3.0 m)</td>
+<td style="text-align:left"><strong>4 lengths</strong></td>
+<td style="text-align:left">Cut to 2390 mm; enables squaring factory ends</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>T-02</strong></td>
+<td style="text-align:left"><strong>Main Support Beams</strong></td>
+<td style="text-align:left">47 mm × 225 mm (2″ × 9″)</td>
+<td style="text-align:left"><strong>4.8 m</strong></td>
+<td style="text-align:left"><strong>4 lengths</strong></td>
+<td style="text-align:left">Cut to 4600 mm; 2 front beam boards, 2 back</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>T-03</strong></td>
+<td style="text-align:left"><strong>Rafters (Crossbeams)</strong></td>
+<td style="text-align:left">47 mm × 150 mm (2″ × 6″)</td>
+<td style="text-align:left"><strong>3.6 m</strong></td>
+<td style="text-align:left"><strong>10 lengths</strong></td>
+<td style="text-align:left">Exact 3600 mm finished length (zero waste!)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>T-04</strong></td>
+<td style="text-align:left"><strong>Top Purlins (Battens)</strong></td>
+<td style="text-align:left">38 mm × 50 mm (or 47×50 mm)</td>
+<td style="text-align:left"><strong>4.8 m</strong></td>
+<td style="text-align:left"><strong>10 lengths</strong></td>
+<td style="text-align:left">Cut to 4600 mm; laid flat on rafters</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>T-05</strong></td>
+<td style="text-align:left"><strong>Corner Knee Braces</strong></td>
+<td style="text-align:left">100 mm × 100 mm (4″ × 4″)</td>
+<td style="text-align:left"><strong>2.4 m</strong></td>
+<td style="text-align:left"><strong>2 lengths</strong></td>
+<td style="text-align:left">Cut into eight 45° diagonal struts (~750 mm)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>T-06</strong></td>
+<td style="text-align:left"><strong>Temporary Bracing</strong></td>
+<td style="text-align:left">38 mm × 75 mm (or 25×50 mm)</td>
+<td style="text-align:left"><strong>3.0 m</strong></td>
+<td style="text-align:left"><strong>4 lengths</strong></td>
+<td style="text-align:left">Budget rough timber for bracing posts during erection</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>2. Concrete, Groundworks &amp; Post Anchors</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:left">Item</th>
+<th style="text-align:left">Component</th>
+<th style="text-align:left">Specification</th>
+<th style="text-align:left">Quantity</th>
+<th style="text-align:left">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>G-01</strong></td>
+<td style="text-align:left"><strong>Elevated Standoff Post Bases</strong></td>
+<td style="text-align:left">Heavy-duty galvanised or black powder-coated <strong>150 mm (6″) square post base</strong> with <strong>35–50 mm bottom standoff plate</strong> (e.g. Simpson Strong-Tie APB150, ABU66, or equivalent)</td>
+<td style="text-align:left"><strong>4 units</strong></td>
+<td style="text-align:left">Elevates timber off wet patio to permanently prevent rot</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>G-02</strong></td>
+<td style="text-align:left"><strong>Concrete Pier Foundation</strong></td>
+<td style="text-align:left"><strong>Postcrete (Rapid Set Concrete)</strong> 20 kg bags (e.g. Blue Circle / Kilsaran / Hanson)</td>
+<td style="text-align:left"><strong>10 bags</strong></td>
+<td style="text-align:left">2.5 bags per 300×300×500 mm hole. Fast 15-minute set</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>G-03</strong></td>
+<td style="text-align:left"><strong>Foundation Anchors</strong></td>
+<td style="text-align:left"><strong>M12 × 100 mm (or 120 mm) Through-Bolts / Wedge Anchors</strong> (Hot-Dip Galvanised or A4 Stainless Steel) with washers and nuts</td>
+<td style="text-align:left"><strong>4 units</strong></td>
+<td style="text-align:left">Anchors standoff base down into cured concrete pier</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>G-04</strong></td>
+<td style="text-align:left"><strong>Paver Bedding Sand</strong></td>
+<td style="text-align:left">Kiln-dried paving sand / sharp sand</td>
+<td style="text-align:left"><strong>1 bag (25 kg)</strong></td>
+<td style="text-align:left">For re-bedding cut pavers around post collars</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>3. Structural Fasteners &amp; Hardware Schedule</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:left">Item</th>
+<th style="text-align:left">Fastener Type</th>
+<th style="text-align:left">Specification &amp; Dimensions</th>
+<th style="text-align:left">Quantity</th>
+<th style="text-align:left">Where Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>F-01</strong></td>
+<td style="text-align:left"><strong>M12 Carriage / Coach Bolts</strong></td>
+<td style="text-align:left">M12 × <strong>160 mm</strong> Hot-Dip Galvanised (or A2 Stainless Steel) with round dome head and square neck</td>
+<td style="text-align:left"><strong>16 bolts</strong></td>
+<td style="text-align:left">Through-bolting the two 47 mm beams through the 56 mm post tongue (4 bolts per post)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>F-02</strong></td>
+<td style="text-align:left"><strong>M12 Large Washers</strong></td>
+<td style="text-align:left">M12 Form G / Penny Washers (Galvanised or Stainless)</td>
+<td style="text-align:left"><strong>16 washers</strong></td>
+<td style="text-align:left">Placed under nuts on inner face to prevent timber crushing</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>F-03</strong></td>
+<td style="text-align:left"><strong>M12 Hex Nuts / Nyloc</strong></td>
+<td style="text-align:left">M12 Galvanised or Stainless Hex Nuts (or Nylon locking nuts)</td>
+<td style="text-align:left"><strong>16 nuts</strong></td>
+<td style="text-align:left">Torqued by hand socket wrench on M12 coach bolts</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>F-04</strong></td>
+<td style="text-align:left"><strong>Rafter Structural Screws</strong></td>
+<td style="text-align:left"><strong>6.0 mm × 100 mm (or 120 mm)</strong> Exterior Coated Structural Wood Screws (Torx T30 drive, washer/countersunk head)</td>
+<td style="text-align:left"><strong>1 box (50 pcs)</strong></td>
+<td style="text-align:left">Fastening rafters down through birdsmouth notches into beams</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>F-05</strong></td>
+<td style="text-align:left"><strong>Knee Brace Screws</strong></td>
+<td style="text-align:left"><strong>6.0 mm × 140 mm (or 160 mm)</strong> Heavy Exterior Structural Screws (Torx T30 drive)</td>
+<td style="text-align:left"><strong>1 box (50 pcs)</strong></td>
+<td style="text-align:left">Securing 45° knee braces to posts, beams, and rafters</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>F-06</strong></td>
+<td style="text-align:left"><strong>Purlin Screws</strong></td>
+<td style="text-align:left"><strong>5.0 mm × 80 mm</strong> Exterior Green/Brown Coated Decking Screws (Torx T25 drive)</td>
+<td style="text-align:left"><strong>1 box (150 pcs)</strong></td>
+<td style="text-align:left">Screwing top purlins down into each rafter intersection</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>F-07</strong></td>
+<td style="text-align:left"><strong>Post-to-Base Screws</strong></td>
+<td style="text-align:left">Heavy structural timber connector screws (e.g. Simpson Strong-Tie SD 6.3×64 mm or M8 Coach Screws)</td>
+<td style="text-align:left"><strong>16–24 pcs</strong></td>
+<td style="text-align:left">Securing bottom of 150×150 posts into standoff shoe flanges</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>4. Preservatives, Finishes &amp; Consumables</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:left">Item</th>
+<th style="text-align:left">Product</th>
+<th style="text-align:left">Specification</th>
+<th style="text-align:left">Quantity</th>
+<th style="text-align:left">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>C-01</strong></td>
+<td style="text-align:left"><strong>End-Grain Preserver</strong></td>
+<td style="text-align:left">Ronseal End Grain Preserver or Cuprinol End Grain Protector (Green or Clear)</td>
+<td style="text-align:left"><strong>1 × 2.5 L tin</strong></td>
+<td style="text-align:left"><strong>Crucial:</strong> Apply generously to every freshly cut notch, tail chamfer, and post bottom</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>C-02</strong></td>
+<td style="text-align:left"><strong>Exterior UV Wood Oil</strong></td>
+<td style="text-align:left">Osmo UV-Protection-Oil Extra (420 Clear or 425 Oak) / Sadolin Classic Woodstain</td>
+<td style="text-align:left"><strong>2 × 2.5 L tins</strong></td>
+<td style="text-align:left">Microporous, breathable oil. Prevents timber greyout and water ingress without peeling</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>C-03</strong></td>
+<td style="text-align:left"><strong>Diamond Angle Grinder Blade</strong></td>
+<td style="text-align:left">115 mm (or 125 mm) Continuous Rim Diamond Tile/Paver Cutting Blade</td>
+<td style="text-align:left"><strong>1 disc</strong></td>
+<td style="text-align:left">Fitted to 115mm angle grinder to cleanly notch lifted patio pavers</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>C-04</strong></td>
+<td style="text-align:left"><strong>Long Wood Auger Drill Bit</strong></td>
+<td style="text-align:left"><strong>13 mm diameter × 250 mm+ length</strong> hex-shank wood auger bit</td>
+<td style="text-align:left"><strong>1 bit</strong></td>
+<td style="text-align:left">For drilling clean, straight M12 through-bolt holes with Bosch GSR 12V</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>C-05</strong></td>
+<td style="text-align:left"><strong>Masonry Drill Bit</strong></td>
+<td style="text-align:left"><strong>12 mm × 160 mm SDS-Plus / straight shank masonry bit</strong></td>
+<td style="text-align:left"><strong>1 bit</strong></td>
+<td style="text-align:left">For drilling anchor holes into concrete pier footings</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>C-06</strong></td>
+<td style="text-align:left"><strong>Pilot Wood Drill Bit</strong></td>
+<td style="text-align:left">4.5 mm or 5.0 mm × 150 mm long wood drill bit</td>
+<td style="text-align:left"><strong>1 bit</strong></td>
+<td style="text-align:left">For effortless screw piloting with Bosch GSR 12V in Gear 1</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>5. Lighting &amp; Accessories</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:left">Item</th>
+<th style="text-align:left">Component</th>
+<th style="text-align:left">Specification</th>
+<th style="text-align:left">Quantity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>L-01</strong></td>
+<td style="text-align:left"><strong>Festoon String Lights</strong></td>
+<td style="text-align:left">20 m – 25 m Heavy-Duty Outdoor Festoon Light String with IP65 waterproof rating, E27/B22 shatterproof warm white (2700K) LED filament bulbs</td>
+<td style="text-align:left"><strong>1 set</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>L-02</strong></td>
+<td style="text-align:left"><strong>Screw Eye Hooks</strong></td>
+<td style="text-align:left">M5 or M6 × 40 mm A4 Stainless Steel Screw Eye Hooks</td>
+<td style="text-align:left"><strong>1 pack (10 pcs)</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>L-03</strong></td>
+<td style="text-align:left"><strong>Small Carabiners</strong></td>
+<td style="text-align:left">Stainless steel 40 mm spring snap hooks (for easy winter light removal)</td>
+<td style="text-align:left"><strong>1 pack (10 pcs)</strong></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>6. Estimated Budget Overview</h2>
+<ul>
+<li><em>Timber Package (C24 Smooth Planed):</em> ~€600 – €750 / £520 – £650</li>
+<li><em>Post Bases &amp; Concrete Groundworks:</em> ~€120 – €160 / £100 – £140</li>
+<li><em>Fasteners, Coach Bolts &amp; Screws:</em> ~€70 – €95 / £60 – £80</li>
+<li><em>Preservatives &amp; UV Finishing Oil:</em> ~€90 – €130 / £80 – £115</li>
+<li><em>Lighting &amp; Consumables:</em> ~€50 – €80 / £45 – £70</li>
+<li><strong>Total Approximate Project Material Cost:</strong> <strong>~€930 – €1,215 (approx. £800 – £1,050)</strong></li>
+</ul>
+
+</section>
+<hr />
+
+<section id="section-3" class="page-break" style="margin-top: 40px;">
+  <h1>03 — Cut List &amp; Timber Optimization</h1>
+<p>This document specifies the exact cutting schedule for every piece of timber in the pergola, along with stock optimization layouts to minimize waste from standard merchant lumber lengths (4.8 m, 3.6 m, 2.7 m, 2.4 m).</p>
+<hr />
+<h2>1. Master Component Cut Schedule</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:left">ID</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Count</th>
+<th style="text-align:left">Finished Dimensions (T × W × L)</th>
+<th style="text-align:left">Stock Purchased</th>
+<th style="text-align:left">Cut Details &amp; Features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>P-01 to P-04</strong></td>
+<td style="text-align:left">Corner Posts</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left"><strong>150 × 150 × 2390 mm</strong></td>
+<td style="text-align:left">4 × 2.7 m (150×150)</td>
+<td style="text-align:left">Top notched 47 mm deep × 225 mm tall on 2 opposing faces; bottom squared</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>B-01 to B-04</strong></td>
+<td style="text-align:left">Main Sandwich Beams</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left"><strong>47 × 225 × 4600 mm</strong></td>
+<td style="text-align:left">4 × 4.8 m (47×225)</td>
+<td style="text-align:left">45° chamfer (75×75 mm) cut on both bottom corners; pre-drilled for M12 coach bolts</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>R-01 to R-10</strong></td>
+<td style="text-align:left">Roof Rafters</td>
+<td style="text-align:left">10</td>
+<td style="text-align:left"><strong>47 × 150 × 3600 mm</strong></td>
+<td style="text-align:left">10 × 3.6 m (47×150)</td>
+<td style="text-align:left">45° chamfer (75×75 mm) cut on both bottom corners; two 150 mm wide × 25 mm deep birdsmouth notches</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>S-01 to S-10</strong></td>
+<td style="text-align:left">Top Shade Purlins</td>
+<td style="text-align:left">10</td>
+<td style="text-align:left"><strong>38 × 50 × 4600 mm</strong></td>
+<td style="text-align:left">10 × 4.8 m (38×50)</td>
+<td style="text-align:left">Ends cut square or 45° pencil chamfer (25×25 mm); pre-drilled for 5 mm screws</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>K-01 to K-08</strong></td>
+<td style="text-align:left">Corner Knee Braces</td>
+<td style="text-align:left">8</td>
+<td style="text-align:left"><strong>100 × 100 × ~735 mm</strong></td>
+<td style="text-align:left">3 × 2.4 m (or 2 × 3.0 m)</td>
+<td style="text-align:left">Both ends mitred at parallel 45° angles (450 mm × 450 mm right-angle leg projection)</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>2. Detailed Cutting Geometry</h2>
+<h3>2.1 Corner Posts (150 mm × 150 mm × 2390 mm)</h3>
+<ul>
+<li><strong>Starting Stock:</strong> 2700 mm length.</li>
+<li><strong>Bottom Cut:</strong> Trim 10–20 mm off the factory end to ensure a crisp, 90° square base to sit squarely inside the standoff post shoe.</li>
+<li><strong>Finished Height:</strong> Measure exactly <strong>2390 mm</strong> from the squared base to the top of the post.</li>
+<li><strong>Post Shoulder Notches (Top):</strong>
+<ul>
+<li>Measure down <strong>225 mm</strong> from the top end.</li>
+<li>Cut a shoulder notch <strong>47 mm deep</strong> into the outer and inner faces.</li>
+<li>Leaves a central <strong>56 mm tongue</strong> (<span class="math-inline">150 - 47 - 47 = 56\text{ mm}</span>) to receive the two 47 mm sandwich beams.</li>
+<li><em>Tip:</em> Kerf multiple saw cuts across the 225 mm face using a circular saw set to 47 mm depth, then chisel out and smooth with a router or chisel.</li>
+</ul>
+</li>
+</ul>
+<pre><code>       ◄── 150 mm ──►
+       ┌───┬─────┬───┐ ▲
+       │   │     │   │ │ 225 mm (Beam Depth)
+       │   │  T  │   │ │
+       └───┤     ├───┘ ▼
+         ▲ │     │
+  47 mm  │ │     │
+  Shoulder │     │
+  Cutout   │     │
+           │     │
+           │     │ (2165 mm timber to post base)
+           │     │
+           │     │
+           │     │
+           └─────┘
+</code></pre>
+<hr />
+<h3>2.2 Main Support Beams (47 mm × 225 mm × 4600 mm)</h3>
+<ul>
+<li><strong>Starting Stock:</strong> 4800 mm length.</li>
+<li><strong>Length Cut:</strong> Trim 100 mm off each end to achieve a clean <strong>4600 mm</strong> finished length.</li>
+<li><strong>Post Position Layout:</strong>
+<ul>
+<li>Mark post centreline at <strong>300 mm</strong> in from each end.</li>
+<li>Distance between post centrelines = <strong>4000 mm</strong>.</li>
+</ul>
+</li>
+<li><strong>Decorative Tail Chamfers (Both Ends):</strong>
+<ul>
+<li>From bottom corner, measure <strong>75 mm</strong> inward along the bottom edge, and <strong>75 mm</strong> upward along the vertical end edge.</li>
+<li>Connect points with a straight line at 45° and cut with the sliding mitre saw.</li>
+</ul>
+</li>
+</ul>
+<pre><code>        ◄──────────────────────── 4600 mm Total Beam Length ────────────────────────►
+        300 mm                                                                300 mm
+        Overhang               ◄─────── Post Centres: 4000 mm ───────►        Overhang
+       ┌─────────────────────────────────────────────────────────────────────────────┐
+       │     │                                                         │             │ 225 mm
+       /     │                                                         │             \
+      /  45° │                                                         │          45° \
+     └───────┴─────────────────────────────────────────────────────────┴───────────────┘
+     ◄ 75 mm ►                                                               ◄ 75 mm ►
+</code></pre>
+<hr />
+<h3>2.3 Roof Rafters (47 mm × 150 mm × 3600 mm)</h3>
+<ul>
+<li><strong>Starting Stock:</strong> 3600 mm length (standard merchant length; zero waste!).</li>
+<li><strong>Decorative Tail Chamfers:</strong>
+<ul>
+<li>Cut 45° chamfer (75 mm × 75 mm) on both bottom corners, exactly matching the beam tails.</li>
+</ul>
+</li>
+<li><strong>Birdsmouth Seat Notches:</strong>
+<ul>
+<li>Each rafter requires <strong>two 150 mm wide × 25 mm deep flat seat notches</strong> that drop over the sandwich beam pairs.</li>
+<li><strong>Notch 1 (Front Beam):</strong> Centred at <strong>300 mm</strong> from front end (cut from 225 mm to 375 mm).</li>
+<li><strong>Notch 2 (Rear Beam):</strong> Centred at <strong>3300 mm</strong> from front end (cut from 3225 mm to 3375 mm).</li>
+<li><em>Distance between notch centres:</em> Exactly <strong>3000 mm</strong> (locks the front and back beam frames in parallel!).</li>
+</ul>
+</li>
+</ul>
+<pre><code>       ◄─────────────────────── 3600 mm Total Rafter Length ───────────────────────►
+        300 mm                                                               300 mm
+       ┌───────────┬─────┬─────────────────────────────────────┬─────┬─────────────┐
+       │           │     │                                     │     │             │ 150 mm
+       /           │     │                                     │     │             \
+      /  45°       └──┬──┘ 25 mm deep                          └──┬──┘ 25 mm deep 45°\
+     └────────────────┴───────────────────────────────────────────┴─────────────────┘
+                   ◄150 mm►                                    ◄150 mm►
+                      ▲                                           ▲
+                      │◄────────── Notch Centres: 3000 mm ───────►│
+</code></pre>
+<hr />
+<h3>2.4 Corner Knee Braces (100 mm × 100 mm × ~735 mm)</h3>
+<ul>
+<li><strong>Geometry:</strong> 45° isosceles right triangle against post and beam/rafter.</li>
+<li><strong>Leg Projections:</strong> 450 mm along post vertical, 450 mm along beam/rafter horizontal.</li>
+<li><strong>Cut Angles:</strong> Both ends cut at <strong>45° parallel mitres</strong>.</li>
+<li><strong>Cut Blank Length:</strong> <strong>736 mm</strong> (long point to long point = 877 mm).</li>
+<li><strong>Nesting:</strong> 3 knee braces cut per 2.4 m timber board (<span class="math-inline">3 \times 736 = 2208\text{ mm} \le 2400\text{ mm}</span>).</li>
+<li>Total stock needed: <strong>3 lengths of 2.4 m</strong> (yields 9 braces — 8 needed + 1 test/spare).</li>
+</ul>
+<pre><code>                 ◄────── 450 mm to Corner ──────►
+               ┌─────────────────────────────────┐
+               │ Beam / Rafter                   │
+               └───────────────┬─────────────────┘
+                               │\  45° Mitre Cut
+                               │ \
+                               │  \
+         450 mm to Corner      │   \  Knee Brace
+                               │    \ (100x100 mm)
+                               │     \
+                               │ 45°  \
+                               ├───────┘
+                               │ Post
+                               │
+</code></pre>
+<hr />
+<h3>2.5 Top Shade Purlins (38 mm × 50 mm × 4600 mm)</h3>
+<ul>
+<li><strong>Starting Stock:</strong> 4800 mm length.</li>
+<li><strong>Finished Length:</strong> Trim to <strong>4600 mm</strong> (matching total beam length).</li>
+<li><strong>End Profiles:</strong> Clean 90° square crosscut or subtle 25 mm × 25 mm 45° chamfer.</li>
+<li><strong>Count:</strong> 10 battens laid flat (<span class="math-inline">50\text{ mm}</span> face horizontal, <span class="math-inline">38\text{ mm}</span> vertical).</li>
+</ul>
+<hr />
+<h2>3. Stock Optimization &amp; Merchant Order Summary</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:left">Stock Size</th>
+<th style="text-align:left">Standard Length</th>
+<th style="text-align:left">Qty to Buy</th>
+<th style="text-align:left">Used For</th>
+<th style="text-align:left">Waste / Offcuts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>150 × 150 mm C24 PAR</strong></td>
+<td style="text-align:left">2.7 m</td>
+<td style="text-align:left"><strong>4</strong></td>
+<td style="text-align:left">Posts P-01 to P-04</td>
+<td style="text-align:left">4 × ~310 mm offcuts (useful for test cuts)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>47 × 225 mm C24 PAR</strong></td>
+<td style="text-align:left">4.8 m</td>
+<td style="text-align:left"><strong>4</strong></td>
+<td style="text-align:left">Main Beams B-01 to B-04</td>
+<td style="text-align:left">4 × 200 mm offcuts</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>47 × 150 mm C24 PAR</strong></td>
+<td style="text-align:left">3.6 m</td>
+<td style="text-align:left"><strong>10</strong></td>
+<td style="text-align:left">Rafters R-01 to R-10</td>
+<td style="text-align:left"><strong>0 mm waste</strong> (exact fit)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>38 × 50 mm Treated Batten</strong></td>
+<td style="text-align:left">4.8 m</td>
+<td style="text-align:left"><strong>10</strong></td>
+<td style="text-align:left">Purlins S-01 to S-10</td>
+<td style="text-align:left">10 × 200 mm offcuts</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>100 × 100 mm C24 PAR</strong></td>
+<td style="text-align:left">2.4 m</td>
+<td style="text-align:left"><strong>3</strong></td>
+<td style="text-align:left">Knee Braces K-01 to K-08</td>
+<td style="text-align:left">3 × ~190 mm offcuts</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>38 × 75 mm Rough Timber</strong></td>
+<td style="text-align:left">3.0 m</td>
+<td style="text-align:left"><strong>4</strong></td>
+<td style="text-align:left">Temporary Post Braces</td>
+<td style="text-align:left">Reusable scrap timber</td>
+</tr>
+</tbody>
+</table></div>
+
+</section>
+<hr />
+
+<section id="section-4" class="page-break" style="margin-top: 40px;">
+  <h1>04 — Joinery &amp; Connection Details</h1>
+<div class="diagram-card">
+  <img src="diagrams/joinery_details.svg" alt="joinery_details.svg" loading="lazy" />
+  <div class="diagram-caption">Architectural Drawing: joinery_details.svg</div>
+</div>
+
+<p>This guide details the structural joinery cuts, fastener configurations, and step-by-step techniques to create high-strength, professional connections using your tools (mitre saw, router, handheld circular saw, and Bosch GSR 12V-35 FC drill/driver).</p>
+<hr />
+<h2>1. Post Top Shoulder (Sandwich Beam Joint)</h2>
+<h3>1.1 Assembly Geometry</h3>
+<p>The two 47 mm × 225 mm main support beams sandwich the top of each 150 mm × 150 mm post. Rather than relying on bolt shear strength alone, the weight rests directly on <strong>solid timber shoulders</strong>:</p>
+<ul>
+<li><strong>Post Thickness:</strong> 150 mm</li>
+<li><strong>Shoulder Cut Depth:</strong> 47 mm on the outer face, 47 mm on the inner face</li>
+<li><strong>Central Tongue Width:</strong> <span class="math-inline">150 - (2 \times 47) = \mathbf{56\text{ mm}}</span></li>
+<li><strong>Shoulder Height:</strong> Exactly <strong>225 mm</strong> (matching beam depth)</li>
+<li><strong>Total Sandwich Thickness:</strong> <span class="math-inline">47\text{ mm (Outer Beam)} + 56\text{ mm (Tongue)} + 47\text{ mm (Inner Beam)} = \mathbf{150\text{ mm}}</span>
+<em>(The assembled beam sandwich is completely flush with the sides of the post!)</em></li>
+</ul>
+<pre><code>              ┌─────────┬──────────────┬─────────┐
+              │  Beam   │ Post Tongue  │  Beam   │
+              │ (47 mm) │   (56 mm)    │ (47 mm) │
+              │         │              │         │
+              │  [o] M12 Coach Bolt    │   (O) Hex Nut &amp; Washer
+              │         │              │         │
+              │  [o] M12 Coach Bolt    │   (O) Hex Nut &amp; Washer
+              │         │              │         │
+              ├─────────┴──────────────┴─────────┤
+              │ ◄────── 47 mm ──────►  │         │ ◄── Solid 47 mm Bearing Shoulder
+              │                                  │
+              │         150x150 mm Post          │
+              │                                  │
+</code></pre>
+<h3>1.2 Cutting Technique (Circular Saw + Router / Chisel)</h3>
+<ol>
+<li><strong>Marking:</strong> Using a speed square, scribe lines at 225 mm down from the post top on opposite faces. Mark 47 mm depth lines on the top and side edges.</li>
+<li><strong>Saw Kerfing:</strong> Set your circular saw blade depth to exactly <strong>47 mm</strong>. Make closely spaced parallel cuts (every 10–15 mm) across the 225 mm waste area on both faces.</li>
+<li><strong>Chiseling:</strong> Knock out the waste wood fingers with a sharp 25 mm (1″) wood chisel.</li>
+<li><strong>Router Clean-up:</strong> Set your router with a straight mortising bit (or flush-trim bit with a scrap-wood guide clamped to the post) set to 47 mm depth. Run the router across the shoulder to create a dead-flat, glass-smooth bearing surface.</li>
+<li><strong>Preserver:</strong> Generously saturate the exposed end-grain shoulders and tongue with <strong>Ronseal End Grain Preserver</strong>; allow to soak in for 15 minutes and repeat.</li>
+</ol>
+<hr />
+<h2>2. Main Beam Bolting Pattern (M12 Carriage Bolts)</h2>
+<h3>2.1 Fastener Specification</h3>
+<ul>
+<li><strong>Bolt:</strong> M12 × 160 mm Hot-Dip Galvanised / Stainless Carriage / Coach Bolt (round smooth dome head on the outside, square neck, threaded shaft).</li>
+<li><strong>Washer:</strong> M12 Form G Large Washer (penny washer) on the inside face.</li>
+<li><strong>Nut:</strong> M12 Hex Nut (torqued with hand ratchet / socket wrench).</li>
+<li><strong>Quantity per Corner:</strong> <strong>4 bolts per post</strong> (arranged in a 2×2 staggered grid) = <strong>16 bolts total</strong>.</li>
+</ul>
+<pre><code>                ◄───────── 150 mm Post Width ─────────►
+               ┌───────────────────────────────────────┐ ▲
+               │           50 mm        50 mm          │ │
+               │             │            │            │ │ 50 mm
+               │             ● Bolt 1                  │ │
+               │                          ● Bolt 2     │ │ 65 mm  225 mm Beam Depth
+               │             ● Bolt 3                  │ │ 65 mm
+               │                          ● Bolt 4     │ │ 45 mm
+               │                                       │ ▼
+               ├───────────────────────────────────────┤
+</code></pre>
+<h3>2.2 Drilling with the Bosch GSR 12V-35 FC</h3>
+<ol>
+<li>Clamp both 47 mm beams securely into the post notches using two heavy-duty F-clamps or quick-grip clamps.</li>
+<li>Fit a <strong>13 mm diameter wood auger bit</strong> into your Bosch drill.</li>
+<li>Set the drill to <strong>Gear 1 (Low Speed / High Torque)</strong>.</li>
+<li>Drill steadily from the exterior face through all three layers (47 mm beam + 56 mm tongue + 47 mm beam = 150 mm total). The auger bit will pull itself through without straining the 12V motor. Clear wood shavings frequently.</li>
+<li>Tap each M12 coach bolt through with a rubber mallet until the square neck bites firmly into the timber.</li>
+<li>Slip the large penny washer and hex nut onto the inside. Hand-tighten with a <strong>19 mm socket on a 1/2″ or 3/8″ ratchet wrench</strong>. The bolt head will draw flush into the exterior wood face with tremendous clamping pressure.</li>
+</ol>
+<hr />
+<h2>3. Rafter Birdsmouth Notch Joinery</h2>
+<p>Each of the 10 rafters rests on top of the front and back beam assemblies. To prevent twisting and lock the frame square, each rafter features two <strong>flat seat notches</strong>:</p>
+<ul>
+<li><strong>Notch Width:</strong> <strong>150 mm</strong> (exact match for the twin-beam sandwich width)</li>
+<li><strong>Notch Depth:</strong> <strong>25 mm</strong> (leaving <span class="math-inline">150 - 25 = 125\text{ mm}</span> of solid timber meat above the beam)</li>
+<li><strong>Notch Spacing:</strong> Exactly <strong>3000 mm</strong> on-centre between front and back notches.</li>
+</ul>
+<pre><code>       ◄────────────────────────── 150 mm Wide Notch ──────────────────────────►
+      ┌────────────────────────────────────────────────────────────────────────┐
+      │  Rafter (47x150 mm)                                                    │
+      │                                                                        │
+      │                      125 mm Uncut Meat                                 │
+      │                                                                        │
+      ├──────────────────────┐                          ┌──────────────────────┤
+      │ 25 mm Notch Depth    │                          │                      │
+      └──────────────────────┤                          ├──────────────────────┘
+                             │   Sandwich Beam (150 mm) │
+                             │                          │
+</code></pre>
+<h3>3.1 Batch-Cutting Rafters</h3>
+<ol>
+<li><strong>Master Template:</strong> Cut the first rafter with extreme care. Check its fit across your raised beams. Mark it as <strong>&quot;MASTER TEMPLATE&quot;</strong>.</li>
+<li><strong>Transfer:</strong> Trace the notches and end chamfers from the master template onto the remaining 9 rafters.</li>
+<li><strong>Cutting with Mitre Saw / Circular Saw:</strong>
+<ul>
+<li>Clamp 3 or 4 rafters side-by-side.</li>
+<li>Set circular saw depth to <strong>25 mm</strong>.</li>
+<li>Cut multiple kerfs across the 150 mm marked zone.</li>
+<li>Knock out with a chisel and clean flat with your router or hand rasp.</li>
+</ul>
+</li>
+<li><strong>Fastening:</strong> Drive one <strong>6.0 mm × 100 mm Torx structural screw</strong> straight down through the rafter into the post tongue / beam top, or toenail two screws from each side. Pre-drill a 4.5 mm pilot hole with your Bosch drill.</li>
+</ol>
+<hr />
+<h2>4. 45° Corner Knee Braces</h2>
+<p>Knee braces provide diagonal triangulation against wind gusts and racking:</p>
+<ul>
+<li><strong>Dimensions:</strong> 100 mm × 100 mm C24 timber.</li>
+<li><strong>Mitre Angles:</strong> Cut at 45° on your sliding compound mitre saw.</li>
+<li><strong>Leg Distances:</strong> Scribed at 450 mm down from post top, and 450 mm inward along beam/rafter.</li>
+<li><strong>Fastening:</strong>
+<ul>
+<li>Pre-drill a 15 mm deep counterbore using a 20 mm spade/forstner bit on the outer face of the brace (to recess the screw head).</li>
+<li>Drill a 5.0 mm pilot hole with your Bosch drill.</li>
+<li>Drive a <strong>6.0 mm × 140 mm Torx structural screw</strong> in Gear 1 through each end into the post and beam.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>5. Elevated Standoff Post Base Details</h2>
+<ul>
+<li><strong>Bracket:</strong> Simpson Strong-Tie APB150 (or equivalent heavy galvanised 150 mm square standoff bracket).</li>
+<li><strong>Clearance Gap:</strong> 35 mm to 50 mm between concrete/paver and the bottom of the timber.</li>
+<li><strong>Anchorage:</strong>
+<ul>
+<li>1 × M12 × 100 mm wedge anchor drilled into the centre of the cured concrete pier.</li>
+<li>Torqued to 50 Nm.</li>
+</ul>
+</li>
+<li><strong>Post Connection:</strong> Four heavy-duty connector screws or M8 coach screws driven through the bracket side flanges into the bottom corners of the post.</li>
+</ul>
+
+</section>
+<hr />
+
+<section id="section-5" class="page-break" style="margin-top: 40px;">
+  <h1>05 — Step-by-Step Construction Guide</h1>
+<p>This manual walks through the entire construction process from groundworks and concrete footings to timber framing, joinery, and finishing.</p>
+<hr />
+<h2>Phase 1: Site Setting Out &amp; Squaring (The 3-4-5 Method)</h2>
+<ol>
+<li><strong>Locate Corner 1 (Reference Post):</strong>
+<ul>
+<li>Choose the primary corner on your patio (e.g. rear-left corner). Mark this point on the paver surface with builder's chalk or masking tape.</li>
+</ul>
+</li>
+<li><strong>Establish the 4.0 m Baseline (Beam Line):</strong>
+<ul>
+<li>Stretch a tight builder's string line <strong>4000 mm</strong> from Post 1 to Post 2. Align this with your patio joint or reference edge. Mark Post 2.</li>
+</ul>
+</li>
+<li><strong>Establish the 3.0 m Perpendicular Line (Rafter Line):</strong>
+<ul>
+<li>From Post 1, run a second string line <strong>3000 mm</strong> towards Post 3.</li>
+</ul>
+</li>
+<li><strong>Square with the 5.0 m Diagonal:</strong>
+<ul>
+<li>Measure the diagonal distance between Post 2 and Post 3.</li>
+<li>Adjust the angle until the diagonal measures <strong>exactly 5000 mm</strong> (<span class="math-inline">√(4.0^2 + 3.0^2} = 5.0\text{ m)</span>).</li>
+<li>Once diagonal 2–3 is 5000 mm, the corner at Post 1 is a mathematically perfect 90° right angle!</li>
+</ul>
+</li>
+<li><strong>Locate Post 4:</strong>
+<ul>
+<li>Measure 4000 mm from Post 3, and 3000 mm from Post 2.</li>
+<li>Check the opposite diagonal (Post 1 to Post 4) — it must also measure <strong>exactly 5000 mm</strong>.</li>
+<li>When both diagonals match at 5000 mm, mark all 4 post centre points clearly on the patio pavers.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2>Phase 2: Lifting Patio Pavers &amp; Digging Footings</h2>
+<ol>
+<li><strong>Remove Pavers:</strong>
+<ul>
+<li>Using a bolster chisel, flat spade, or pry bar, gently lift the patio paver directly under each marked post location.</li>
+<li>Stack the lifted pavers carefully aside on a pallet or cardboard (they will be cut and re-laid later).</li>
+</ul>
+</li>
+<li><strong>Excavate Pier Holes:</strong>
+<ul>
+<li>Scrape away the sand bedding and dig down through the hardcore (MOT sub-base) using a digging spade, post-hole digger, or SDS breaker.</li>
+<li><strong>Dimensions:</strong> Dig a hole <strong>300 mm × 300 mm square</strong> (or 300 mm diameter round) to a depth of <strong>500 mm</strong> below finished patio level.</li>
+<li>Compact the bottom of each hole firmly with a hand tamper or timber offcut.</li>
+<li>Pour 50 mm of clean coarse gravel into the bottom of each hole for drainage.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2>Phase 3: Pouring Concrete Piers</h2>
+<ol>
+<li><strong>Concrete Elevation Datum:</strong>
+<ul>
+<li>The concrete pier should finish <strong>~35 mm below the finished paver level</strong> (flush with the sand bedding layer).</li>
+<li>This leaves exact room for the lifted paver to be cut and re-bedded over the pier.</li>
+</ul>
+</li>
+<li><strong>Pouring Postcrete (Rapid Set):</strong>
+<ul>
+<li>Fill the hole 1/3 full with clean water.</li>
+<li>Pour in 1 bag of Postcrete powder slowly without mixing; allow water to absorb.</li>
+<li>Add more water and pour in the second bag (and additional 0.5 bag to reach the desired height).</li>
+<li>Tap the side of the hole to release trapped air bubbles.</li>
+<li>Use a small hand float or trowel to smooth the top surface dead-flat and level (use a pocket spirit level).</li>
+<li>Allow to cure for 1 to 2 hours (Postcrete hardens in 15 minutes, but attains full anchor strength after 2–4 hours).</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2>Phase 4: Cutting &amp; Reinstating Patio Pavers</h2>
+<ol>
+<li><strong>Dry-Fit Anchor Bracket:</strong>
+<ul>
+<li>Set your elevated standoff post shoe (150 mm square) on top of the concrete pier to mark its outline.</li>
+</ul>
+</li>
+<li><strong>Mark the Paver:</strong>
+<ul>
+<li>Place the lifted paver over the hole. Scribe the square cutout needed to accommodate the post base collar and standoff plate.</li>
+</ul>
+</li>
+<li><strong>Precision Cutting:</strong>
+<ul>
+<li>Fit the <strong>115 mm continuous rim diamond blade</strong> to your angle grinder.</li>
+<li>Wear full safety goggles, ear protection, and an FFP3 dust mask.</li>
+<li>Cut neatly along your scribed lines on the stone/brick paver.</li>
+</ul>
+</li>
+<li><strong>Re-bedding:</strong>
+<ul>
+<li>Spread fresh paving sand over the concrete pier around the anchor point.</li>
+<li>Tap the cut paver back into position using a rubber mallet until it sits 100% flush and level with the surrounding patio.</li>
+<li>Brush kiln-dried jointing sand into the joints.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2>Phase 5: Anchoring Standoff Post Bases</h2>
+<ol>
+<li><strong>Drilling Anchor Holes:</strong>
+<ul>
+<li>Position the standoff post bracket directly over the centre point.</li>
+<li>Mark the central anchor hole on the concrete pier.</li>
+<li>Drill a <strong>12 mm hole × 100 mm deep</strong> into the concrete using your masonry drill bit.</li>
+<li>Vacuum or blow all dust out of the hole.</li>
+</ul>
+</li>
+<li><strong>Setting the Anchor:</strong>
+<ul>
+<li>Insert the M12 wedge anchor through the base bracket into the drilled hole.</li>
+<li>Tap it down firmly with a hammer until seated.</li>
+<li>Tighten the nut with a 19 mm socket wrench to expand the wedge collar and lock the bracket rigidly to the concrete.</li>
+</ul>
+</li>
+<li><strong>Level Verification:</strong>
+<ul>
+<li>Place a spirit level across all four post bases. Use thin stainless shims if slight adjustment is needed so all 4 bases sit at the exact same datum height.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2>Phase 6: Timber Post Preparation (Cutting &amp; Notching)</h2>
+<div class="callout callout-tip"><div class="callout-header"><span class="callout-icon">💡</span> Tip</div><div class="callout-body"><p>Perform all cutting, notching, and end-grain sealing on sawhorses on the ground before erecting posts!</p></div></div>
+<ol>
+<li><strong>Trim Base:</strong> Square the factory ends of all four 150×150 mm posts.</li>
+<li><strong>Length Measurement:</strong> Measure exactly <strong>2390 mm</strong> from the squared base to the top of the post. Crosscut square using your circular saw (making 4 cuts from each face to sever the 150 mm post cleanly).</li>
+<li><strong>Cut Top Shoulder Notches:</strong>
+<ul>
+<li>Scribe a line 225 mm down from the top on two opposite faces.</li>
+<li>Mark 47 mm depth on top and side edges.</li>
+<li>Make parallel kerf cuts with your circular saw set to 47 mm depth.</li>
+<li>Chisel out waste timber.</li>
+<li>Flatten shoulders dead-smooth with your router.</li>
+</ul>
+</li>
+<li><strong>Chemical Preservation:</strong>
+<ul>
+<li>Brush <strong>two heavy coats of Ronseal End Grain Preserver</strong> onto:
+<ul>
+<li>The bottom end-grain of the post (where it sits in the bracket).</li>
+<li>The top shoulders and central tongue.</li>
+</ul>
+</li>
+<li>Allow to dry for 30 minutes.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2>Phase 7: Raising Posts &amp; Temporary Bracing</h2>
+<ol>
+<li><strong>Slot Posts into Bases:</strong>
+<ul>
+<li>Stand Post 1 into its standoff shoe bracket.</li>
+<li>Secure loosely with structural timber screws through the bracket flanges.</li>
+</ul>
+</li>
+<li><strong>Plumb and Brace:</strong>
+<ul>
+<li>Place a 120 cm (or 180 cm) spirit level against two adjacent faces of the post.</li>
+<li>Adjust until the post is dead plumb (vertical in both directions).</li>
+<li>Fasten two temporary diagonal timber braces (38×75 mm) from the post down to stakes or weighted blocks on the patio.</li>
+</ul>
+</li>
+<li><strong>Repeat for Posts 2, 3, and 4:</strong>
+<ul>
+<li>Plumb each post and lock with temporary bracing.</li>
+<li>Tighten the structural connector screws in the bottom standoff shoes.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2>Phase 8: Main Sandwich Beams Installation</h2>
+<ol>
+<li><strong>Prepare Beams on Ground:</strong>
+<ul>
+<li>Cut all four 47×225 mm beams to <strong>4600 mm</strong> length.</li>
+<li>Cut matching 45° chamfers (75×75 mm) on both bottom end corners using your sliding mitre saw.</li>
+<li>Measure 300 mm from each end to mark post centreline.</li>
+<li>Treat all cut ends with End Grain Preserver.</li>
+</ul>
+</li>
+<li><strong>Mount Front Sandwich Beams (Posts 1 &amp; 2):</strong>
+<ul>
+<li>Lift the outer 47 mm beam into place so it rests on the outer post shoulders. Clamp with F-clamps.</li>
+<li>Lift the inner 47 mm beam onto the inner post shoulders. Clamp firmly.</li>
+<li>Verify that the beam overhangs are equal (300 mm at each end) and check beam with a spirit level.</li>
+</ul>
+</li>
+<li><strong>Drill &amp; Bolt (Bosch GSR 12V-35 FC):</strong>
+<ul>
+<li>Fit the <strong>13 mm wood auger bit</strong> to your Bosch drill in <strong>Gear 1</strong>.</li>
+<li>Drill the 4 staggered through-bolt holes through the outer beam, post tongue, and inner beam (150 mm total depth).</li>
+<li>Tap M12 × 160 mm carriage bolts through from the exterior.</li>
+<li>Fit M12 penny washers and hex nuts on the inside.</li>
+<li>Hand-tighten firmly with a <strong>19 mm socket on a ratchet wrench</strong>.</li>
+</ul>
+</li>
+<li><strong>Repeat for Rear Sandwich Beams (Posts 3 &amp; 4).</strong></li>
+</ol>
+<hr />
+<h2>Phase 9: Installing Corner Knee Braces</h2>
+<ol>
+<li><strong>Cut Braces:</strong>
+<ul>
+<li>Cut 8 knee braces from 100×100 mm timber on your sliding mitre saw at 45° parallel mitres (450 mm leg length, ~735 mm overall blank).</li>
+<li>Coat cut mitre faces with End Grain Preserver.</li>
+</ul>
+</li>
+<li><strong>Install 4 Beam Braces:</strong>
+<ul>
+<li>Fit braces between posts and the underside of the main beams.</li>
+<li>Pre-drill counterbores with a spade bit, drill 5 mm pilot holes with Bosch drill, and drive <strong>6.0 mm × 140 mm Torx structural screws</strong> to draw the joint rock-solid.</li>
+</ul>
+</li>
+<li><strong>Install 4 Side Braces:</strong>
+<ul>
+<li>Install braces along the 3.0 m sides connecting posts to the outer rafter locations.</li>
+</ul>
+</li>
+<li><strong>Remove Temporary Ground Bracing:</strong>
+<ul>
+<li>With the knee braces installed, the structure is now 100% self-supporting and rigid. Remove all temporary diagonal ground battens.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2>Phase 10: Rafter Preparation &amp; Installation</h2>
+<ol>
+<li><strong>Master Template:</strong>
+<ul>
+<li>Take one 47×150 mm × 3600 mm rafter.</li>
+<li>Cut 45° chamfers (75×75 mm) on both ends.</li>
+<li>Mark and cut the two 150 mm wide × 25 mm deep birdsmouth seat notches (centred at 300 mm and 3300 mm).</li>
+<li>Test fit across the raised beams. It should drop over both front and rear beam assemblies with a snug friction fit!</li>
+</ul>
+</li>
+<li><strong>Batch Cutting:</strong>
+<ul>
+<li>Use this master rafter to trace the notch locations onto the other 9 rafters.</li>
+<li>Cut all notches and chamfers. Treat all cut notches with End Grain Preserver.</li>
+</ul>
+</li>
+<li><strong>Installation &amp; Spacing:</strong>
+<ul>
+<li>Mark rafter positions across the 4600 mm beam:
+<ul>
+<li>Rafters 1 &amp; 10: Flush with outer post faces / overhang edges.</li>
+<li>Rafters 2 through 9: Evenly spaced at <strong>~510 mm centres</strong>.</li>
+</ul>
+</li>
+<li>Drop rafters into position into their birdsmouth seats.</li>
+<li>Secure each rafter by driving a <strong>6.0 mm × 100 mm Torx structural screw</strong> straight down into the beam/tongue (pre-drill 4.5 mm pilot hole).</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2>Phase 11: Top Shade Purlin Installation</h2>
+<ol>
+<li><strong>Preparation:</strong>
+<ul>
+<li>Trim 10 battens (38×50 mm) to <strong>4600 mm</strong>.</li>
+<li>Coat ends with preserver.</li>
+</ul>
+</li>
+<li><strong>Layout &amp; Spacing:</strong>
+<ul>
+<li>Across the 3600 mm rafter depth, mark purlin positions spaced <strong>~360 mm centres</strong> (10 purlins total).</li>
+</ul>
+</li>
+<li><strong>Fixing:</strong>
+<ul>
+<li>Lay purlins flat (50 mm wide face down, 38 mm high).</li>
+<li>Pre-drill pilot holes at each intersection with your Bosch drill to prevent splitting.</li>
+<li>Secure with <strong>5.0 mm × 80 mm exterior coated decking screws</strong>.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2>Phase 12: Wood Protection &amp; Finishing</h2>
+<ol>
+<li><strong>Sanding:</strong>
+<ul>
+<li>Lightly hand-sand any sharp cut edges with 120-grit sandpaper to break hard corners.</li>
+</ul>
+</li>
+<li><strong>UV Wood Oil Application:</strong>
+<ul>
+<li>Apply a generous coat of <strong>Osmo UV-Protection-Oil Extra 420</strong> (or Sadolin Classic) using a quality 75 mm flat natural bristle brush.</li>
+<li>Work along the grain of the wood.</li>
+<li>Allow to dry for 12 hours.</li>
+<li>Apply a second coat. The microporous finish repels water droplets while allowing timber to breathe without peeling or cracking.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2>Phase 13: Lighting Installation</h2>
+<ol>
+<li><strong>Screw Eye Hooks:</strong>
+<ul>
+<li>Screw stainless steel M5/M6 eye hooks into the inside faces of the main beams or rafter undersides every 1.5–2.0 m.</li>
+</ul>
+</li>
+<li><strong>Hang Festoon Lights:</strong>
+<ul>
+<li>String heavy-duty IP65 festoon lights around the perimeter or in a zig-zag canopy pattern using small stainless carabiners.</li>
+<li>Plug into an outdoor IP66 weatherproof RCD electrical socket.</li>
+</ul>
+</li>
+</ol>
+
+</section>
+<hr />
+
+<section id="section-6" class="page-break" style="margin-top: 40px;">
+  <h1>06 — Tool &amp; Safety Checklist</h1>
+<p>This checklist is tailored specifically to your workshop tools (Bosch GSR 12V-35 FC, router, planned mitre saw and circular saw), detailing setup parameters, blade choices, accessories, and safety precautions.</p>
+<hr />
+<h2>1. Power Tool Inventory &amp; Setup Recommendations</h2>
+<h3>1.1 Bosch GSR 12V-35 FC Drill / Driver</h3>
+<ul>
+<li><strong>Primary Roles:</strong>
+<ul>
+<li>Drilling 13 mm through-holes for M12 carriage bolts (using 13 mm wood auger bit).</li>
+<li>Drilling 4.5 mm / 5.0 mm pilot holes for structural screws.</li>
+<li>Driving 5.0 mm × 80 mm purlin decking screws and 6.0 mm rafter screws.</li>
+</ul>
+</li>
+<li><strong>Gear &amp; Clutch Settings:</strong>
+<ul>
+<li><strong>Auger Drilling (13 mm):</strong> Set to <strong>Gear 1 (Low Speed / Max Torque)</strong> with the torque collar in <strong>Drill Mode</strong>. Let the lead screw pull the bit through; do not force it.</li>
+<li><strong>Driving Screws:</strong> Set to <strong>Gear 1</strong> for high torque when driving 6.0 mm structural screws. Use <strong>Gear 2</strong> for rapid driving of 5.0 mm purlin screws.</li>
+</ul>
+</li>
+<li><strong>Battery Tip:</strong> Have two 12V batteries on hand with the charger active at your outdoor workstation.</li>
+</ul>
+<hr />
+<h3>1.2 Sliding Compound Mitre Saw (To Purchase)</h3>
+<ul>
+<li><strong>Recommended Specs:</strong>
+<ul>
+<li>Blade diameter: <strong>216 mm (8.5″)</strong> or <strong>254 mm (10″)</strong> sliding compound mitre saw (e.g. Bosch Professional GCM 8 SJL, DeWalt DWS774, or Evolution R210SMS+).</li>
+<li>Sliding action gives <strong>300 mm+ crosscut capacity</strong>, allowing you to cut the 225 mm wide beams and 150 mm rafters in a single clean stroke.</li>
+</ul>
+</li>
+<li><strong>Blade Selection:</strong>
+<ul>
+<li><strong>40-tooth to 48-tooth TCT negative rake blade:</strong> Produces furniture-quality, tear-out-free 45° chamfers on both beams and rafters.</li>
+</ul>
+</li>
+<li><strong>Depth-Stop / Trenching Feature:</strong>
+<ul>
+<li>Most sliding mitre saws have an adjustable trenching stop. You can set this to 25 mm depth to cut the birdsmouth notches rapidly across multiple rafters!</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3>1.3 Handheld Circular Saw (Recommended Addition)</h3>
+<ul>
+<li><strong>Recommended Specs:</strong>
+<ul>
+<li>Blade diameter: <strong>165 mm or 190 mm</strong> (e.g. Bosch GKS 190 or Makita 5007 / HS7601).</li>
+<li>Cutting depth at 90°: min 55 mm – 66 mm.</li>
+</ul>
+</li>
+<li><strong>Primary Roles:</strong>
+<ul>
+<li>Crosscutting the <strong>150 mm × 150 mm posts</strong> to length (making 4 cuts from each face).</li>
+<li>Cutting the <strong>47 mm deep shoulder kerfs</strong> across post tops.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3>1.4 Wood Router</h3>
+<ul>
+<li><strong>Recommended Bits:</strong>
+<ul>
+<li><strong>Straight 2-flute carbide mortising bit (12 mm or 19 mm diameter)</strong>.</li>
+<li>Optional: <strong>Flush trim bit with top bearing</strong>.</li>
+</ul>
+</li>
+<li><strong>Primary Roles:</strong>
+<ul>
+<li>Flattening the 47 mm post shoulders to a dead-smooth bearing surface.</li>
+<li>Cleaning the bottom of the 25 mm birdsmouth rafter notches.</li>
+<li>Optional: Easing / rounding over fresh cut edges with a 3 mm (1/8″) roundover bit to match the factory planed timber.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3>1.5 Angle Grinder</h3>
+<ul>
+<li><strong>Recommended Specs:</strong>
+<ul>
+<li>Standard 115 mm (4.5″) or 125 mm (5″) angle grinder.</li>
+<li>Fitted with a <strong>Continuous Rim or Turbo Diamond Masonry/Tile Blade</strong>.</li>
+</ul>
+</li>
+<li><strong>Primary Role:</strong>
+<ul>
+<li>Precision cutting of lifted stone/brick patio pavers to fit snugly around the post standoff brackets.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>2. Hand Tools Checklist</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>19 mm Socket &amp; Ratchet Wrench (1/2″ or 3/8″):</strong> For torquing M12 carriage bolt hex nuts.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>120 cm (or 180 cm) Stabila / Stanley Box Spirit Level:</strong> For plumbing posts and leveling beams.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>Pocket Torpedo Spirit Level:</strong> For leveling concrete pier tops and standoff brackets.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>Speed Square (Rafter Square):</strong> For marking 90° and 45° angles.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>8 m Steel Tape Measure:</strong> For layout and diagonal 5.0 m checks.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>Chalk Line &amp; Nylon Builder's String Line:</strong> For setting out post centres.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>Sharp Wood Chisels (25 mm / 1″ and 12 mm / 1/2″):</strong> For clearing kerfed notches.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>Rubber Mallet &amp; Claw Hammer:</strong> For tapping pavers and carriage bolts into place.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>F-Clamps / Quick-Grip Clamps (min. 2 units, 300 mm opening):</strong> Essential for holding beams during drilling.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>Digging Spade / Post Hole Digger:</strong> For excavating 500 mm deep pier footings.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>Step Ladder (min. 6-tread / 1.8 m platform):</strong> Stable access for raising beams and rafters.</li>
+</ul>
+<hr />
+<h2>3. Consumables &amp; Fastener Accessories</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>13 mm Wood Auger Drill Bit (min 200 mm length)</strong> (for M12 bolts)</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>12 mm SDS / Straight Shank Masonry Bit</strong> (for concrete wedge anchors)</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>4.5 mm / 5.0 mm Wood Drill Bit</strong> (for screw pilot holes)</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>Torx T30 and T25 Driver Bits</strong> (impact-rated)</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>20 mm Spade / Forstner Bit</strong> (for knee brace counterbores)</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>120-grit Sandpaper Sheets</strong> (for knocking off sharp cut edges)</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>75 mm Flat Paint Brush</strong> (for applying end-grain preserver and UV oil)</li>
+</ul>
+<hr />
+<h2>4. Personal Protective Equipment (PPE) &amp; Safety Protocols</h2>
+<div class="callout callout-caution"><div class="callout-header"><span class="callout-icon">🛑</span> Caution</div><div class="callout-body"><p><strong>Dust &amp; Stone Cutting Hazard:</strong>
+Cutting stone patio pavers with an angle grinder generates dangerous respirable crystalline silica dust. Always wear a tightly sealed <strong>FFP3 / N95 respirator mask</strong> and eye protection. Wet the stone cutting line with water to suppress airborne dust.</p></div></div>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>Eye Protection:</strong> Sealed safety goggles (essential during angle grinder cutting, routing, and overhead screw driving).</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>Respiratory Protection:</strong> FFP3 respirator mask during stone cutting and sanding.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>Hearing Protection:</strong> Ear defenders (class 2 or 3) for mitre saw, circular saw, and angle grinder operation.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>Gloves:</strong> Heavy work gloves for handling stone pavers and rough groundworks; dexterity gloves for timber assembly.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>Two-Person Lift Rule:</strong> Never attempt to raise the 4600 mm long beams (weighing ~25 kg each) or 150×150 mm posts alone. Always have a helper support one end while clamping and fastening.</li>
+</ul>
+
+</section>
+<hr />
+
+  </main>
+  
+<script>
+  function initTheme() {
+    const saved = localStorage.getItem('pergola-theme');
+    if (saved) {
+      document.documentElement.setAttribute('data-theme', saved);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  }
+  function toggleTheme() {
+    const current = document.documentElement.getAttribute('data-theme');
+    const target = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', target);
+    localStorage.setItem('pergola-theme', target);
+  }
+  initTheme();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05 — Step-by-Step Construction Guide — Pergola 4x3m</title>
+  <style>
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-tertiary: #f1f5f9;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --border-subtle: #cbd5e1;
+  --brand: #d97706;
+  --brand-hover: #b45309;
+  --brand-light: #fef3c7;
+  --accent-blue: #0284c7;
+  --accent-green: #059669;
+  --accent-purple: #7c3aed;
+  --accent-red: #dc2626;
+  --code-bg: #0f172a;
+  --code-text: #f8fafc;
+  --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.06);
+}
+
+[data-theme="dark"] {
+  --bg-primary: #0b1120;
+  --bg-secondary: #0f172a;
+  --bg-tertiary: #1e293b;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --border: #334155;
+  --border-subtle: #475569;
+  --brand: #f59e0b;
+  --brand-hover: #d97706;
+  --brand-light: #78350f40;
+  --accent-blue: #38bdf8;
+  --accent-green: #34d399;
+  --accent-purple: #a78bfa;
+  --accent-red: #f87171;
+  --code-bg: #030712;
+  --code-text: #f8fafc;
+  --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.65;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  transition: background-color 0.2s, color 0.2s;
+  padding-bottom: 80px;
+}
+
+/* Header & Navigation */
+header.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.05);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.logo-icon {
+  font-size: 1.4rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.15s ease-in-out;
+}
+
+.nav-item:hover {
+  background-color: var(--bg-tertiary);
+  color: var(--brand);
+}
+
+.nav-item.active {
+  background-color: var(--brand);
+  color: #ffffff;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-action {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  transition: all 0.15s;
+}
+
+.btn-action:hover {
+  border-color: var(--brand);
+  color: var(--brand);
+}
+
+.btn-action-primary {
+  background-color: var(--brand);
+  color: #fff;
+  border-color: var(--brand);
+}
+
+.btn-action-primary:hover {
+  background-color: var(--brand-hover);
+  color: #fff;
+}
+
+/* Main Layout */
+.page-container {
+  max-width: 980px;
+  margin: 32px auto;
+  padding: 0 24px;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.2rem;
+  line-height: 1.25;
+  color: var(--text-primary);
+  margin-top: 10px;
+  margin-bottom: 16px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  color: var(--text-primary);
+  margin-top: 36px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 16px;
+  color: var(--text-secondary);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 32px 0;
+}
+
+ul, ol {
+  margin-left: 24px;
+  margin-bottom: 18px;
+  color: var(--text-secondary);
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Tables */
+.table-wrapper {
+  overflow-x: auto;
+  margin: 20px 0 28px 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  background: var(--bg-primary);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.92rem;
+}
+
+thead th {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  font-weight: 600;
+  padding: 12px 16px;
+  border-bottom: 2px solid var(--border);
+  white-space: nowrap;
+}
+
+tbody td {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--bg-secondary);
+}
+
+tbody tr:hover {
+  background-color: var(--bg-tertiary);
+}
+
+/* Code & Pre Blocks */
+pre {
+  background-color: var(--code-bg);
+  color: var(--code-text);
+  padding: 18px 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin: 18px 0 24px 0;
+  border: 1px solid var(--border-subtle);
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.88em;
+  background-color: var(--bg-tertiary);
+  color: var(--brand);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+/* Callouts */
+.callout {
+  border-left: 4px solid;
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 20px 0;
+  background-color: var(--bg-secondary);
+}
+
+.callout-header {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.callout-body {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
+.callout-body p:last-child {
+  margin-bottom: 0;
+}
+
+.callout-note {
+  border-color: var(--accent-blue);
+  background-color: var(--bg-secondary);
+}
+.callout-note .callout-header { color: var(--accent-blue); }
+
+.callout-tip {
+  border-color: var(--accent-green);
+  background-color: var(--bg-secondary);
+}
+.callout-tip .callout-header { color: var(--accent-green); }
+
+.callout-important {
+  border-color: var(--accent-purple);
+  background-color: var(--bg-secondary);
+}
+.callout-important .callout-header { color: var(--accent-purple); }
+
+.callout-warning, .callout-caution {
+  border-color: var(--accent-red);
+  background-color: var(--bg-secondary);
+}
+.callout-warning .callout-header, .callout-caution .callout-header { color: var(--accent-red); }
+
+/* Task lists */
+.contains-task-list {
+  list-style: none;
+  margin-left: 4px;
+}
+
+.task-list-item-checkbox {
+  margin-right: 8px;
+  accent-color: var(--brand);
+  transform: scale(1.15);
+}
+
+/* SVG Diagram Containers */
+.diagram-card {
+  margin: 28px 0;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: var(--card-shadow);
+  text-align: center;
+}
+
+.diagram-card img, .diagram-card svg {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.diagram-caption {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* Math rendering */
+.math-inline {
+  font-family: "Cambria Math", "Latin Modern Math", serif;
+  font-style: italic;
+  padding: 0 4px;
+  color: var(--brand);
+}
+
+/* Print Styles */
+@media print {
+  header.site-header, .no-print, .btn-action {
+    display: none !important;
+  }
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 11pt;
+    line-height: 1.4;
+  }
+  .page-container {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .table-wrapper {
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+    page-break-inside: avoid;
+  }
+  thead th {
+    background-color: #eee !important;
+    color: #000 !important;
+  }
+  tr, img, svg, .diagram-card {
+    page-break-inside: avoid;
+  }
+  h1, h2, h3 {
+    page-break-after: avoid;
+    color: #000 !important;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+}
+</style>
+</head>
+<body>
+  
+<header class="site-header">
+  <div class="header-container">
+    <a href="index.html" class="logo-area">
+      <span class="logo-icon">🌲</span>
+      <span>Pergola 4×3m Build Plan</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-item">Overview</a>
+<a href="01_PROJECT_SPECIFICATIONS.html" class="nav-item">01 Specs</a>
+<a href="02_BILL_OF_MATERIALS.html" class="nav-item">02 Materials</a>
+<a href="03_CUT_LIST_AND_TIMBER_OPTIMIZATION.html" class="nav-item">03 Cut List</a>
+<a href="04_JOINERY_AND_CONNECTION_DETAILS.html" class="nav-item">04 Joinery</a>
+<a href="05_STEP_BY_STEP_BUILD_GUIDE.html" class="nav-item active">05 Build Guide</a>
+<a href="06_TOOL_AND_SAFETY_CHECKLIST.html" class="nav-item">06 Tools</a>
+<a href="complete_build_manual.html" class="nav-item" style="font-weight:700; color:var(--brand);">📖 Full Manual</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn-action" onclick="toggleTheme()" title="Toggle Dark/Light Mode">🌓 Mode</button>
+      <button class="btn-action btn-action-primary" onclick="window.print()" title="Print Current Document">🖨️ Print</button>
+    </div>
+  </div>
+</header>
+
+  <main class="page-container">
+    <h1>05 — Step-by-Step Construction Guide</h1>
+<p>This manual walks through the entire construction process from groundworks and concrete footings to timber framing, joinery, and finishing.</p>
+<hr />
+<h2>Phase 1: Site Setting Out &amp; Squaring (The 3-4-5 Method)</h2>
+<ol>
+<li><strong>Locate Corner 1 (Reference Post):</strong>
+<ul>
+<li>Choose the primary corner on your patio (e.g. rear-left corner). Mark this point on the paver surface with builder's chalk or masking tape.</li>
+</ul>
+</li>
+<li><strong>Establish the 4.0 m Baseline (Beam Line):</strong>
+<ul>
+<li>Stretch a tight builder's string line <strong>4000 mm</strong> from Post 1 to Post 2. Align this with your patio joint or reference edge. Mark Post 2.</li>
+</ul>
+</li>
+<li><strong>Establish the 3.0 m Perpendicular Line (Rafter Line):</strong>
+<ul>
+<li>From Post 1, run a second string line <strong>3000 mm</strong> towards Post 3.</li>
+</ul>
+</li>
+<li><strong>Square with the 5.0 m Diagonal:</strong>
+<ul>
+<li>Measure the diagonal distance between Post 2 and Post 3.</li>
+<li>Adjust the angle until the diagonal measures <strong>exactly 5000 mm</strong> (<span class="math-inline">√(4.0^2 + 3.0^2} = 5.0\text{ m)</span>).</li>
+<li>Once diagonal 2–3 is 5000 mm, the corner at Post 1 is a mathematically perfect 90° right angle!</li>
+</ul>
+</li>
+<li><strong>Locate Post 4:</strong>
+<ul>
+<li>Measure 4000 mm from Post 3, and 3000 mm from Post 2.</li>
+<li>Check the opposite diagonal (Post 1 to Post 4) — it must also measure <strong>exactly 5000 mm</strong>.</li>
+<li>When both diagonals match at 5000 mm, mark all 4 post centre points clearly on the patio pavers.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2>Phase 2: Lifting Patio Pavers &amp; Digging Footings</h2>
+<ol>
+<li><strong>Remove Pavers:</strong>
+<ul>
+<li>Using a bolster chisel, flat spade, or pry bar, gently lift the patio paver directly under each marked post location.</li>
+<li>Stack the lifted pavers carefully aside on a pallet or cardboard (they will be cut and re-laid later).</li>
+</ul>
+</li>
+<li><strong>Excavate Pier Holes:</strong>
+<ul>
+<li>Scrape away the sand bedding and dig down through the hardcore (MOT sub-base) using a digging spade, post-hole digger, or SDS breaker.</li>
+<li><strong>Dimensions:</strong> Dig a hole <strong>300 mm × 300 mm square</strong> (or 300 mm diameter round) to a depth of <strong>500 mm</strong> below finished patio level.</li>
+<li>Compact the bottom of each hole firmly with a hand tamper or timber offcut.</li>
+<li>Pour 50 mm of clean coarse gravel into the bottom of each hole for drainage.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2>Phase 3: Pouring Concrete Piers</h2>
+<ol>
+<li><strong>Concrete Elevation Datum:</strong>
+<ul>
+<li>The concrete pier should finish <strong>~35 mm below the finished paver level</strong> (flush with the sand bedding layer).</li>
+<li>This leaves exact room for the lifted paver to be cut and re-bedded over the pier.</li>
+</ul>
+</li>
+<li><strong>Pouring Postcrete (Rapid Set):</strong>
+<ul>
+<li>Fill the hole 1/3 full with clean water.</li>
+<li>Pour in 1 bag of Postcrete powder slowly without mixing; allow water to absorb.</li>
+<li>Add more water and pour in the second bag (and additional 0.5 bag to reach the desired height).</li>
+<li>Tap the side of the hole to release trapped air bubbles.</li>
+<li>Use a small hand float or trowel to smooth the top surface dead-flat and level (use a pocket spirit level).</li>
+<li>Allow to cure for 1 to 2 hours (Postcrete hardens in 15 minutes, but attains full anchor strength after 2–4 hours).</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2>Phase 4: Cutting &amp; Reinstating Patio Pavers</h2>
+<ol>
+<li><strong>Dry-Fit Anchor Bracket:</strong>
+<ul>
+<li>Set your elevated standoff post shoe (150 mm square) on top of the concrete pier to mark its outline.</li>
+</ul>
+</li>
+<li><strong>Mark the Paver:</strong>
+<ul>
+<li>Place the lifted paver over the hole. Scribe the square cutout needed to accommodate the post base collar and standoff plate.</li>
+</ul>
+</li>
+<li><strong>Precision Cutting:</strong>
+<ul>
+<li>Fit the <strong>115 mm continuous rim diamond blade</strong> to your angle grinder.</li>
+<li>Wear full safety goggles, ear protection, and an FFP3 dust mask.</li>
+<li>Cut neatly along your scribed lines on the stone/brick paver.</li>
+</ul>
+</li>
+<li><strong>Re-bedding:</strong>
+<ul>
+<li>Spread fresh paving sand over the concrete pier around the anchor point.</li>
+<li>Tap the cut paver back into position using a rubber mallet until it sits 100% flush and level with the surrounding patio.</li>
+<li>Brush kiln-dried jointing sand into the joints.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2>Phase 5: Anchoring Standoff Post Bases</h2>
+<ol>
+<li><strong>Drilling Anchor Holes:</strong>
+<ul>
+<li>Position the standoff post bracket directly over the centre point.</li>
+<li>Mark the central anchor hole on the concrete pier.</li>
+<li>Drill a <strong>12 mm hole × 100 mm deep</strong> into the concrete using your masonry drill bit.</li>
+<li>Vacuum or blow all dust out of the hole.</li>
+</ul>
+</li>
+<li><strong>Setting the Anchor:</strong>
+<ul>
+<li>Insert the M12 wedge anchor through the base bracket into the drilled hole.</li>
+<li>Tap it down firmly with a hammer until seated.</li>
+<li>Tighten the nut with a 19 mm socket wrench to expand the wedge collar and lock the bracket rigidly to the concrete.</li>
+</ul>
+</li>
+<li><strong>Level Verification:</strong>
+<ul>
+<li>Place a spirit level across all four post bases. Use thin stainless shims if slight adjustment is needed so all 4 bases sit at the exact same datum height.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2>Phase 6: Timber Post Preparation (Cutting &amp; Notching)</h2>
+<div class="callout callout-tip"><div class="callout-header"><span class="callout-icon">💡</span> Tip</div><div class="callout-body"><p>Perform all cutting, notching, and end-grain sealing on sawhorses on the ground before erecting posts!</p></div></div>
+<ol>
+<li><strong>Trim Base:</strong> Square the factory ends of all four 150×150 mm posts.</li>
+<li><strong>Length Measurement:</strong> Measure exactly <strong>2390 mm</strong> from the squared base to the top of the post. Crosscut square using your circular saw (making 4 cuts from each face to sever the 150 mm post cleanly).</li>
+<li><strong>Cut Top Shoulder Notches:</strong>
+<ul>
+<li>Scribe a line 225 mm down from the top on two opposite faces.</li>
+<li>Mark 47 mm depth on top and side edges.</li>
+<li>Make parallel kerf cuts with your circular saw set to 47 mm depth.</li>
+<li>Chisel out waste timber.</li>
+<li>Flatten shoulders dead-smooth with your router.</li>
+</ul>
+</li>
+<li><strong>Chemical Preservation:</strong>
+<ul>
+<li>Brush <strong>two heavy coats of Ronseal End Grain Preserver</strong> onto:
+<ul>
+<li>The bottom end-grain of the post (where it sits in the bracket).</li>
+<li>The top shoulders and central tongue.</li>
+</ul>
+</li>
+<li>Allow to dry for 30 minutes.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2>Phase 7: Raising Posts &amp; Temporary Bracing</h2>
+<ol>
+<li><strong>Slot Posts into Bases:</strong>
+<ul>
+<li>Stand Post 1 into its standoff shoe bracket.</li>
+<li>Secure loosely with structural timber screws through the bracket flanges.</li>
+</ul>
+</li>
+<li><strong>Plumb and Brace:</strong>
+<ul>
+<li>Place a 120 cm (or 180 cm) spirit level against two adjacent faces of the post.</li>
+<li>Adjust until the post is dead plumb (vertical in both directions).</li>
+<li>Fasten two temporary diagonal timber braces (38×75 mm) from the post down to stakes or weighted blocks on the patio.</li>
+</ul>
+</li>
+<li><strong>Repeat for Posts 2, 3, and 4:</strong>
+<ul>
+<li>Plumb each post and lock with temporary bracing.</li>
+<li>Tighten the structural connector screws in the bottom standoff shoes.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2>Phase 8: Main Sandwich Beams Installation</h2>
+<ol>
+<li><strong>Prepare Beams on Ground:</strong>
+<ul>
+<li>Cut all four 47×225 mm beams to <strong>4600 mm</strong> length.</li>
+<li>Cut matching 45° chamfers (75×75 mm) on both bottom end corners using your sliding mitre saw.</li>
+<li>Measure 300 mm from each end to mark post centreline.</li>
+<li>Treat all cut ends with End Grain Preserver.</li>
+</ul>
+</li>
+<li><strong>Mount Front Sandwich Beams (Posts 1 &amp; 2):</strong>
+<ul>
+<li>Lift the outer 47 mm beam into place so it rests on the outer post shoulders. Clamp with F-clamps.</li>
+<li>Lift the inner 47 mm beam onto the inner post shoulders. Clamp firmly.</li>
+<li>Verify that the beam overhangs are equal (300 mm at each end) and check beam with a spirit level.</li>
+</ul>
+</li>
+<li><strong>Drill &amp; Bolt (Bosch GSR 12V-35 FC):</strong>
+<ul>
+<li>Fit the <strong>13 mm wood auger bit</strong> to your Bosch drill in <strong>Gear 1</strong>.</li>
+<li>Drill the 4 staggered through-bolt holes through the outer beam, post tongue, and inner beam (150 mm total depth).</li>
+<li>Tap M12 × 160 mm carriage bolts through from the exterior.</li>
+<li>Fit M12 penny washers and hex nuts on the inside.</li>
+<li>Hand-tighten firmly with a <strong>19 mm socket on a ratchet wrench</strong>.</li>
+</ul>
+</li>
+<li><strong>Repeat for Rear Sandwich Beams (Posts 3 &amp; 4).</strong></li>
+</ol>
+<hr />
+<h2>Phase 9: Installing Corner Knee Braces</h2>
+<ol>
+<li><strong>Cut Braces:</strong>
+<ul>
+<li>Cut 8 knee braces from 100×100 mm timber on your sliding mitre saw at 45° parallel mitres (450 mm leg length, ~735 mm overall blank).</li>
+<li>Coat cut mitre faces with End Grain Preserver.</li>
+</ul>
+</li>
+<li><strong>Install 4 Beam Braces:</strong>
+<ul>
+<li>Fit braces between posts and the underside of the main beams.</li>
+<li>Pre-drill counterbores with a spade bit, drill 5 mm pilot holes with Bosch drill, and drive <strong>6.0 mm × 140 mm Torx structural screws</strong> to draw the joint rock-solid.</li>
+</ul>
+</li>
+<li><strong>Install 4 Side Braces:</strong>
+<ul>
+<li>Install braces along the 3.0 m sides connecting posts to the outer rafter locations.</li>
+</ul>
+</li>
+<li><strong>Remove Temporary Ground Bracing:</strong>
+<ul>
+<li>With the knee braces installed, the structure is now 100% self-supporting and rigid. Remove all temporary diagonal ground battens.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2>Phase 10: Rafter Preparation &amp; Installation</h2>
+<ol>
+<li><strong>Master Template:</strong>
+<ul>
+<li>Take one 47×150 mm × 3600 mm rafter.</li>
+<li>Cut 45° chamfers (75×75 mm) on both ends.</li>
+<li>Mark and cut the two 150 mm wide × 25 mm deep birdsmouth seat notches (centred at 300 mm and 3300 mm).</li>
+<li>Test fit across the raised beams. It should drop over both front and rear beam assemblies with a snug friction fit!</li>
+</ul>
+</li>
+<li><strong>Batch Cutting:</strong>
+<ul>
+<li>Use this master rafter to trace the notch locations onto the other 9 rafters.</li>
+<li>Cut all notches and chamfers. Treat all cut notches with End Grain Preserver.</li>
+</ul>
+</li>
+<li><strong>Installation &amp; Spacing:</strong>
+<ul>
+<li>Mark rafter positions across the 4600 mm beam:
+<ul>
+<li>Rafters 1 &amp; 10: Flush with outer post faces / overhang edges.</li>
+<li>Rafters 2 through 9: Evenly spaced at <strong>~510 mm centres</strong>.</li>
+</ul>
+</li>
+<li>Drop rafters into position into their birdsmouth seats.</li>
+<li>Secure each rafter by driving a <strong>6.0 mm × 100 mm Torx structural screw</strong> straight down into the beam/tongue (pre-drill 4.5 mm pilot hole).</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2>Phase 11: Top Shade Purlin Installation</h2>
+<ol>
+<li><strong>Preparation:</strong>
+<ul>
+<li>Trim 10 battens (38×50 mm) to <strong>4600 mm</strong>.</li>
+<li>Coat ends with preserver.</li>
+</ul>
+</li>
+<li><strong>Layout &amp; Spacing:</strong>
+<ul>
+<li>Across the 3600 mm rafter depth, mark purlin positions spaced <strong>~360 mm centres</strong> (10 purlins total).</li>
+</ul>
+</li>
+<li><strong>Fixing:</strong>
+<ul>
+<li>Lay purlins flat (50 mm wide face down, 38 mm high).</li>
+<li>Pre-drill pilot holes at each intersection with your Bosch drill to prevent splitting.</li>
+<li>Secure with <strong>5.0 mm × 80 mm exterior coated decking screws</strong>.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2>Phase 12: Wood Protection &amp; Finishing</h2>
+<ol>
+<li><strong>Sanding:</strong>
+<ul>
+<li>Lightly hand-sand any sharp cut edges with 120-grit sandpaper to break hard corners.</li>
+</ul>
+</li>
+<li><strong>UV Wood Oil Application:</strong>
+<ul>
+<li>Apply a generous coat of <strong>Osmo UV-Protection-Oil Extra 420</strong> (or Sadolin Classic) using a quality 75 mm flat natural bristle brush.</li>
+<li>Work along the grain of the wood.</li>
+<li>Allow to dry for 12 hours.</li>
+<li>Apply a second coat. The microporous finish repels water droplets while allowing timber to breathe without peeling or cracking.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2>Phase 13: Lighting Installation</h2>
+<ol>
+<li><strong>Screw Eye Hooks:</strong>
+<ul>
+<li>Screw stainless steel M5/M6 eye hooks into the inside faces of the main beams or rafter undersides every 1.5–2.0 m.</li>
+</ul>
+</li>
+<li><strong>Hang Festoon Lights:</strong>
+<ul>
+<li>String heavy-duty IP65 festoon lights around the perimeter or in a zig-zag canopy pattern using small stainless carabiners.</li>
+<li>Plug into an outdoor IP66 weatherproof RCD electrical socket.</li>
+</ul>
+</li>
+</ol>
+
+  </main>
+  
+<script>
+  function initTheme() {
+    const saved = localStorage.getItem('pergola-theme');
+    if (saved) {
+      document.documentElement.setAttribute('data-theme', saved);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  }
+  function toggleTheme() {
+    const current = document.documentElement.getAttribute('data-theme');
+    const target = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', target);
+    localStorage.setItem('pergola-theme', target);
+  }
+  initTheme();
+</script>
+
+</body>
+</html>
