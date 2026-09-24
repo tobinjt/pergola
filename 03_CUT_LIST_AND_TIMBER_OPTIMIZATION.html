@@ -33,9 +33,12 @@
 
   <main class="page-container">
     <h1>03 — Cut List &amp; Timber Optimization</h1>
-<p>This document specifies the exact cutting schedule for every piece of timber in the pergola, along with stock optimization layouts to minimize waste from standard merchant lumber lengths (4.8 m, 3.6 m, 2.7 m, 2.4 m).</p>
+<p>This document specifies the exact cutting schedule for every piece of timber in
+the pergola, along with stock optimization layouts to minimize waste from
+standard merchant lumber lengths (4.8 m, 3.6 m, 2.7 m, 2.4 m).</p>
 <hr />
 <h2>1. Master Component Cut Schedule</h2>
+<!-- markdownlint-disable MD013 -->
 <div class="table-wrapper"><table>
 <thead>
 <tr>
@@ -90,6 +93,7 @@
 </tr>
 </tbody>
 </table></div>
+<!-- markdownlint-enable MD013 -->
 <hr />
 <h2>2. Detailed Cutting Geometry</h2>
 <h3>2.1 Corner Posts (150 mm × 150 mm × 2390 mm)</h3>
@@ -106,7 +110,7 @@
 </ul>
 </li>
 </ul>
-<pre><code>       ◄── 150 mm ──►
+<pre><code class="language-text">       ◄── 150 mm ──►
        ┌───┬─────┬───┐ ▲
        │   │     │   │ │ 225 mm (Beam Depth)
        │   │  T  │   │ │
@@ -140,7 +144,7 @@
 </ul>
 </li>
 </ul>
-<pre><code>        ◄──────────────────────── 4600 mm Total Beam Length ────────────────────────►
+<pre><code class="language-text">        ◄──────────────────────── 4600 mm Total Beam Length ────────────────────────►
         300 mm                                                                300 mm
         Overhang               ◄─────── Post Centres: 4000 mm ───────►        Overhang
        ┌─────────────────────────────────────────────────────────────────────────────┐
@@ -168,7 +172,7 @@
 </ul>
 </li>
 </ul>
-<pre><code>       ◄─────────────────────── 3600 mm Total Rafter Length ───────────────────────►
+<pre><code class="language-text">       ◄─────────────────────── 3600 mm Total Rafter Length ───────────────────────►
         300 mm                                                               300 mm
        ┌───────────┬─────┬─────────────────────────────────────┬─────┬─────────────┐
        │           │     │                                     │     │             │ 150 mm
@@ -189,7 +193,7 @@
 <li><strong>Nesting:</strong> 3 knee braces cut per 2.4 m timber board (<span class="math-inline">3 \times 736 = 2208\text{ mm} \le 2400\text{ mm}</span>).</li>
 <li>Total stock needed: <strong>3 lengths of 2.4 m</strong> (yields 9 braces — 8 needed + 1 test/spare).</li>
 </ul>
-<pre><code>                 ◄────── 450 mm to Corner ──────►
+<pre><code class="language-text">                 ◄────── 450 mm to Corner ──────►
                ┌─────────────────────────────────┐
                │ Beam / Rafter                   │
                └───────────────┬─────────────────┘

@@ -1,24 +1,30 @@
 # 06 — Tool & Safety Checklist
 
-This checklist is tailored specifically to your workshop tools (Bosch GSR 12V-35 FC, router, planned mitre saw and circular saw), detailing setup parameters, blade choices, accessories, and safety precautions.
+This checklist is tailored specifically to your workshop tools (Bosch GSR
+12V-35 FC, router, planned mitre saw and circular saw), detailing setup
+parameters, blade choices, accessories, and safety precautions.
 
 ---
 
 ## 1. Power Tool Inventory & Setup Recommendations
 
 ### 1.1 Bosch GSR 12V-35 FC Drill / Driver
+
 * **Primary Roles:**
   * Drilling 13 mm through-holes for M12 carriage bolts (using 13 mm wood auger bit).
   * Drilling 4.5 mm / 5.0 mm pilot holes for structural screws.
   * Driving 5.0 mm × 80 mm purlin decking screws and 6.0 mm rafter screws.
 * **Gear & Clutch Settings:**
-  * **Auger Drilling (13 mm):** Set to **Gear 1 (Low Speed / Max Torque)** with the torque collar in **Drill Mode**. Let the lead screw pull the bit through; do not force it.
+  * **Auger Drilling (13 mm):** Set to **Gear 1 (Low Speed / Max Torque)** with
+    the torque collar in **Drill Mode**. Let the lead screw pull the bit
+    through; do not force it.
   * **Driving Screws:** Set to **Gear 1** for high torque when driving 6.0 mm structural screws. Use **Gear 2** for rapid driving of 5.0 mm purlin screws.
 * **Battery Tip:** Have two 12V batteries on hand with the charger active at your outdoor workstation.
 
 ---
 
-### 1.2 Sliding Compound Mitre Saw (To Purchase)
+## 2. Sliding Compound Mitre Saw (To Purchase)
+
 * **Recommended Specs:**
   * Blade diameter: **216 mm (8.5″)** or **254 mm (10″)** sliding compound mitre saw (e.g. Bosch Professional GCM 8 SJL, DeWalt DWS774, or Evolution R210SMS+).
   * Sliding action gives **300 mm+ crosscut capacity**, allowing you to cut the 225 mm wide beams and 150 mm rafters in a single clean stroke.
@@ -29,7 +35,8 @@ This checklist is tailored specifically to your workshop tools (Bosch GSR 12V-35
 
 ---
 
-### 1.3 Handheld Circular Saw (Recommended Addition)
+## 3. Handheld Circular Saw (Recommended Addition)
+
 * **Recommended Specs:**
   * Blade diameter: **165 mm or 190 mm** (e.g. Bosch GKS 190 or Makita 5007 / HS7601).
   * Cutting depth at 90°: min 55 mm – 66 mm.
@@ -39,7 +46,8 @@ This checklist is tailored specifically to your workshop tools (Bosch GSR 12V-35
 
 ---
 
-### 1.4 Wood Router
+## 4. Wood Router
+
 * **Recommended Bits:**
   * **Straight 2-flute carbide mortising bit (12 mm or 19 mm diameter)**.
   * Optional: **Flush trim bit with top bearing**.
@@ -50,7 +58,8 @@ This checklist is tailored specifically to your workshop tools (Bosch GSR 12V-35
 
 ---
 
-### 1.5 Angle Grinder
+## 5. Angle Grinder
+
 * **Recommended Specs:**
   * Standard 115 mm (4.5″) or 125 mm (5″) angle grinder.
   * Fitted with a **Continuous Rim or Turbo Diamond Masonry/Tile Blade**.
@@ -59,7 +68,7 @@ This checklist is tailored specifically to your workshop tools (Bosch GSR 12V-35
 
 ---
 
-## 2. Hand Tools Checklist
+## 6. Hand Tools Checklist
 
 * [ ] **19 mm Socket & Ratchet Wrench (1/2″ or 3/8″):** For torquing M12 carriage bolt hex nuts.
 * [ ] **120 cm (or 180 cm) Stabila / Stanley Box Spirit Level:** For plumbing posts and leveling beams.
@@ -75,7 +84,7 @@ This checklist is tailored specifically to your workshop tools (Bosch GSR 12V-35
 
 ---
 
-## 3. Consumables & Fastener Accessories
+## 7. Consumables & Fastener Accessories
 
 * [ ] **13 mm Wood Auger Drill Bit (min 200 mm length)** (for M12 bolts)
 * [ ] **12 mm SDS / Straight Shank Masonry Bit** (for concrete wedge anchors)
@@ -87,14 +96,19 @@ This checklist is tailored specifically to your workshop tools (Bosch GSR 12V-35
 
 ---
 
-## 4. Personal Protective Equipment (PPE) & Safety Protocols
+## 8. Personal Protective Equipment (PPE) & Safety Protocols
 
 > [!CAUTION]
 > **Dust & Stone Cutting Hazard:**
-> Cutting stone patio pavers with an angle grinder generates dangerous respirable crystalline silica dust. Always wear a tightly sealed **FFP3 / N95 respirator mask** and eye protection. Wet the stone cutting line with water to suppress airborne dust.
+> Cutting stone patio pavers with an angle grinder generates dangerous
+> respirable crystalline silica dust. Always wear a tightly sealed **FFP3 / N95
+> respirator mask** and eye protection. Wet the stone cutting line with water
+> to suppress airborne dust.
 
 * [ ] **Eye Protection:** Sealed safety goggles (essential during angle grinder cutting, routing, and overhead screw driving).
 * [ ] **Respiratory Protection:** FFP3 respirator mask during stone cutting and sanding.
 * [ ] **Hearing Protection:** Ear defenders (class 2 or 3) for mitre saw, circular saw, and angle grinder operation.
 * [ ] **Gloves:** Heavy work gloves for handling stone pavers and rough groundworks; dexterity gloves for timber assembly.
-* [ ] **Two-Person Lift Rule:** Never attempt to raise the 4600 mm long beams (weighing ~25 kg each) or 150×150 mm posts alone. Always have a helper support one end while clamping and fastening.
+* [ ] **Two-Person Lift Rule:** Never attempt to raise the 4600 mm long beams
+  (weighing ~25 kg each) or 150×150 mm posts alone. Always have a helper support
+  one end while clamping and fastening.

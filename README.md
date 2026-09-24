@@ -1,11 +1,21 @@
 # 4.0 m × 3.0 m Freestanding Timber Pergola Master Plan
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [🌲 Design Summary](#-design-summary)
+- [📐 Exact Dimensional Grid & Geometry](#-exact-dimensional-grid--geometry)
+- [📚 Document Index](#-document-index)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 A comprehensive, carpentry-grade design and construction package for a **4.0 m × 3.0 m freestanding garden pergola** built over an existing stone/brick paved patio.
 
 ---
 
 ## 🌲 Design Summary
 
+<!-- markdownlint-disable MD013 -->
 | Feature | Specification |
 | :--- | :--- |
 | **Structure Type** | Freestanding, self-supporting on 4 corner posts |
@@ -24,12 +34,13 @@ A comprehensive, carpentry-grade design and construction package for a **4.0 m �
 | **Main Fasteners** | Hot-dip galvanised / stainless **M12 carriage/coach bolts** through notched post joints (torqued with hand ratchet); exterior structural screws for rafters and braces |
 | **Finishing** | All cut ends treated with end-grain preserver; coated with exterior UV wood oil (e.g. Osmo / Sadolin) |
 | **Lighting** | Warm white festoon string lights suspended from stainless screw eye hooks |
+<!-- markdownlint-enable MD013 -->
 
 ---
 
 ## 📐 Exact Dimensional Grid & Geometry
 
-```
+```text
            ◄────────────────── Total Roof Length: 4600 mm ──────────────────►
           Overhang                                                    Overhang
            300 mm            ◄────── Post Centres: 4000 mm ──────►     300 mm
@@ -60,10 +71,22 @@ Depth: │ │                                                                  
 
 ## 📚 Document Index
 
-1. [**01_PROJECT_SPECIFICATIONS.md**](file:///Users/johntobin/src/pergola/01_PROJECT_SPECIFICATIONS.md) — Structural design calculations, elevations, height budgets, and building regulation notes.
-2. [**02_BILL_OF_MATERIALS.md**](file:///Users/johntobin/src/pergola/02_BILL_OF_MATERIALS.md) — Comprehensive shopping list of timber, post shoes, concrete, fasteners, and treatments.
-3. [**03_CUT_LIST_AND_TIMBER_OPTIMIZATION.md**](file:///Users/johntobin/src/pergola/03_CUT_LIST_AND_TIMBER_OPTIMIZATION.md) — Dimensioned cut list with stock nesting to minimise timber wastage from standard lumber lengths (4.8 m, 3.6 m, 2.4 m).
-4. [**04_JOINERY_AND_CONNECTION_DETAILS.md**](file:///Users/johntobin/src/pergola/04_JOINERY_AND_CONNECTION_DETAILS.md) — Technical joinery diagrams for post shoulder notching, birdsmouth cuts, 45° chamfer tails, and bolt patterns.
-5. [**05_STEP_BY_STEP_BUILD_GUIDE.md**](file:///Users/johntobin/src/pergola/05_STEP_BY_STEP_BUILD_GUIDE.md) — Phased construction manual from patio paver lifting and concrete pier pouring to timber assembly and finishing.
-6. [**06_TOOL_AND_SAFETY_CHECKLIST.md**](file:///Users/johntobin/src/pergola/06_TOOL_AND_SAFETY_CHECKLIST.md) — Tool recommendations tailored to your Bosch GSR 12V-35 FC drill/driver, router, and mitre saw, plus safety gear.
-7. [**diagrams/**](file:///Users/johntobin/src/pergola/diagrams) — Architectural scale SVG schematics of elevations, plans, and joinery.
+1. [**01_PROJECT_SPECIFICATIONS.md**](01_PROJECT_SPECIFICATIONS.md) — Structural
+   design calculations, elevations, height budgets, and building regulation
+   notes.
+2. [**02_BILL_OF_MATERIALS.md**](02_BILL_OF_MATERIALS.md) — Comprehensive
+   shopping list of timber, post shoes, concrete, fasteners, and treatments.
+3. [**03_CUT_LIST_AND_TIMBER_OPTIMIZATION.md**](03_CUT_LIST_AND_TIMBER_OPTIMIZATION.md) —
+   Dimensioned cut list with stock nesting to minimise timber wastage from
+   standard lumber lengths (4.8 m, 3.6 m, 2.4 m).
+4. [**04_JOINERY_AND_CONNECTION_DETAILS.md**](04_JOINERY_AND_CONNECTION_DETAILS.md) —
+   Technical joinery diagrams for post shoulder notching, birdsmouth cuts, 45°
+   chamfer tails, and bolt patterns.
+5. [**05_STEP_BY_STEP_BUILD_GUIDE.md**](05_STEP_BY_STEP_BUILD_GUIDE.md) —
+   Phased construction manual from patio paver lifting and concrete pier pouring
+   to timber assembly and finishing.
+6. [**06_TOOL_AND_SAFETY_CHECKLIST.md**](06_TOOL_AND_SAFETY_CHECKLIST.md) — Tool
+   recommendations tailored to your Bosch GSR 12V-35 FC drill/driver, router,
+   and mitre saw, plus safety gear.
+7. [**diagrams/**](diagrams) — Architectural scale SVG schematics of
+   elevations, plans, and joinery.

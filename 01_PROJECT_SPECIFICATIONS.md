@@ -1,6 +1,8 @@
 # 01 — Project Specifications & Structural Engineering
 
-This document establishes the structural parameters, dimensional constraints, and engineering considerations for the 4.0 m × 3.0 m freestanding timber pergola.
+This document establishes the structural parameters, dimensional constraints,
+and engineering considerations for the 4.0 m × 3.0 m freestanding timber
+pergola.
 
 ---
 
@@ -44,7 +46,7 @@ Every vertical elevation is calibrated from the **finished patio paver level (0 
 | **Rafter (47×150 mm) Effective Rise** | $150\text{ mm} - 25\text{ mm} = +125\text{ mm}$ | +2550 mm |
 | **Top Purlins (38×50 mm laid flat)** | Thickness: +38 mm | **+2588 mm (~2.59 m)** |
 
-```
+```text
  ▲ +2588 mm  ────────────────────────────────────────────────  Top of Purlins (38 mm)
  │
  │ +2550 mm  ════════════════════════════════════════════════  Top of Rafters (150 mm)
@@ -67,61 +69,87 @@ Every vertical elevation is calibrated from the **finished patio paver level (0 
 ## 3. Structural Engineering & Timber Calculations
 
 ### 3.1 Timber Grade: C24 Softwood
+
 * **Bending Strength ($f_{m,k}$):** $24\text{ N/mm}^2$ (vs $16\text{ N/mm}^2$ for C16).
 * **Modulus of Elasticity ($E_{0,\text{mean}}$):** $11.0\text{ kN/mm}^2$ (denser, 35% stiffer than C16).
 * **Density:** ~420 kg/m³ (tighter growth rings, minimal knots, straighter grain).
-* **Treatment:** High-pressure copper azole preservative (Use Class 3 external above-ground), kiln-dried to <20% moisture before profiling to planed-all-round (PAR) eased-edge.
+* **Treatment:** High-pressure copper azole preservative (Use Class 3 external
+  above-ground), kiln-dried to <20% moisture before profiling to planed-all-round
+  (PAR) eased-edge.
 
 ### 3.2 Main Support Beam Sizing (4.0 m Span)
-* Each side uses a **twin beam** (sandwich assembly) of **two 47 mm × 225 mm C24** members flanking the notched post.
+
+* Each side uses a **twin beam** (sandwich assembly) of **two 47 mm × 225 mm C24**
+  members flanking the notched post.
 * Total combined beam width: $47\text{ mm} \times 2 = 94\text{ mm}$.
 * **Effective Span with Knee Braces:**
   * 45° knee braces extend 500 mm horizontally from each post.
   * Clear beam span: $3850\text{ mm}$.
   * Effective unsupported span between brace points: $3850 - (2 \times 500) = \mathbf{2850\text{ mm} (2.85\text{ m})}$.
 * **Deflection Check:**
-  * For open rafters + purlins (dead load ~0.20 kN/m² + temporary snow load 0.60 kN/m²), total load per 4m beam is ~3.5 kN uniformly distributed.
-  * Maximum calculated deflection $\delta_{\text{max}} < 3.2\text{ mm}$, which is well inside the strict British/Irish architectural limit of $L / 360 = 2850 / 360 \approx 7.9\text{ mm}$.
+  * For open rafters + purlins (dead load ~0.20 kN/m² + temporary snow load 0.60 kN/m²),
+    total load per 4m beam is ~3.5 kN uniformly distributed.
+  * Maximum calculated deflection $\delta_{\text{max}} < 3.2\text{ mm}$, which is well
+    inside the strict British/Irish architectural limit of
+    $L / 360 = 2850 / 360 \approx 7.9\text{ mm}$.
   * **Result:** Zero perceptible sag, exceptionally rigid.
 
 ### 3.3 Rafter Sizing (3.0 m Span)
+
 * Rafters: **47 mm × 150 mm C24** spanning 3.0 m between front and back beams.
 * Number of rafters: **10 rafters total** across the 4.6 m length (spaced at ~510 mm centres).
 * Maximum rafter span is 3000 mm, reduced to 2000 mm by diagonal knee braces at the end bays.
 * Rafter capacity far exceeds requirements for open pergola purlin loads.
 
 ### 3.4 Racking & Wind Stability (Triangulation)
+
 * Freestanding outdoor pergolas are exposed to cyclic lateral wind pressure.
 * **Primary Anti-Racking Mechanism:**
   * Eight 45° solid timber knee braces (500 mm × 500 mm leg triangle).
   * 4 braces along the 4.0 m beam axis + 4 braces along the 3.0 m rafter axis.
   * This triangulation prevents the rectangular frame from shearing into a parallelogram.
 * **Secondary Anti-Racking Mechanism:**
-  * 25 mm birdsmouth notches cut into all 10 rafters lock the roof horizontally against the 150 mm wide beam assemblies, preventing any twisting or racking of the upper roof plane.
+  * 25 mm birdsmouth notches cut into all 10 rafters lock the roof horizontally
+    against the 150 mm wide beam assemblies, preventing any twisting or racking
+    of the upper roof plane.
 
 ---
 
 ## 4. Foundation & Groundworks Engineering
 
 ### 4.1 Wind Overturning & Uplift
-* Although open rafters have low aerodynamic profile compared to a solid roof, high gusts (e.g. 80–100 km/h Irish winter storms) exert significant uplift and overturning moments on the 2.6 m high posts.
-* Surface-anchoring into 30–50 mm patio pavers laid on loose sand will fail under lateral wind loads.
-* Therefore, each post is anchored into a **mass-concrete pier foundation** excavated through the patio sub-base.
+
+* Although open rafters have low aerodynamic profile compared to a solid roof,
+  high gusts (e.g. 80–100 km/h Irish winter storms) exert significant uplift
+  and overturning moments on the 2.6 m high posts.
+* Surface-anchoring into 30–50 mm patio pavers laid on loose sand will fail
+  under lateral wind loads.
+* Therefore, each post is anchored into a **mass-concrete pier foundation**
+  excavated through the patio sub-base.
 
 ### 4.2 Concrete Pier Sizing
+
 * **Hole Dimensions:** $300\text{ mm} \times 300\text{ mm}$ square (or 300 mm diameter round) $\times$ **500 mm deep** below patio paver level.
-* **Concrete Volume per Pier:** $\approx 0.045\text{ m}^3$ ($\approx 100\text{ kg}$ of cured concrete per post, providing $400\text{ kg}$ total ballast weight anchoring the structure down).
-* **Concrete Specification:** Rapid-setting Postcrete (2.5 bags per hole) or standard C25/30 mix (1 part cement, 2 parts sharp sand, 3 parts 20 mm gravel).
-* **Elevation of Pier Top:** Poured to finish **~30–40 mm below the top paver level** (flush with the bedding sand), allowing the lifted patio paver to be notched/cut and re-bedded around the post shoe for an unbroken patio appearance.
+* **Concrete Volume per Pier:** $\approx 0.045\text{ m}^3$ ($\approx 100\text{ kg}$
+  of cured concrete per post, providing $400\text{ kg}$ total ballast weight anchoring the structure down).
+* **Concrete Specification:** Rapid-setting Postcrete (2.5 bags per hole) or standard
+  C25/30 mix (1 part cement, 2 parts sharp sand, 3 parts 20 mm gravel).
+* **Elevation of Pier Top:** Poured to finish **~30–40 mm below the top paver level**
+  (flush with the bedding sand), allowing the lifted patio paver to be notched/cut
+  and re-bedded around the post shoe for an unbroken patio appearance.
 
 ---
 
 ## 5. Planning Permission & Building Regulations
 
 * **Ireland (Planning and Development Regulations — Class 3 Exempted Development):**
-  * Freestanding pergolas and garden structures for domestic recreation situated to the rear of the house are **exempt from planning permission** provided:
+  * Freestanding pergolas and garden structures for domestic recreation situated
+    to the rear of the house are **exempt from planning permission** provided:
     1. The structure is located in the rear garden (not in front of the house building line).
     2. Total area of all garden structures does not reduce remaining private open garden space below $25\text{ m}^2$. (Our covered area is $16.5\text{ m}^2$).
     3. Height does not exceed 3.0 m (our total height is 2.59 m).
 * **United Kingdom (Permitted Development — Class E):**
-  * If within 2.0 m of a boundary fence/wall, the maximum permitted height for a flat roof / pergola is 2.5 m. Because this build has a total height of ~2.59 m, ensure the posts/overhangs are positioned **at least 2.0 m away from boundary fences**, or consult your local planning authority if located closer.
+  * If within 2.0 m of a boundary fence/wall, the maximum permitted height for
+    a flat roof / pergola is 2.5 m. Because this build has a total height of
+    ~2.59 m, ensure the posts/overhangs are positioned **at least 2.0 m away from
+    boundary fences**, or consult your local planning authority if located closer.

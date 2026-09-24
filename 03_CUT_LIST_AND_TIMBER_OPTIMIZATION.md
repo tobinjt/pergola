@@ -1,11 +1,14 @@
 # 03 — Cut List & Timber Optimization
 
-This document specifies the exact cutting schedule for every piece of timber in the pergola, along with stock optimization layouts to minimize waste from standard merchant lumber lengths (4.8 m, 3.6 m, 2.7 m, 2.4 m).
+This document specifies the exact cutting schedule for every piece of timber in
+the pergola, along with stock optimization layouts to minimize waste from
+standard merchant lumber lengths (4.8 m, 3.6 m, 2.7 m, 2.4 m).
 
 ---
 
 ## 1. Master Component Cut Schedule
 
+<!-- markdownlint-disable MD013 -->
 | ID | Description | Count | Finished Dimensions (T × W × L) | Stock Purchased | Cut Details & Features |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **P-01 to P-04** | Corner Posts | 4 | **150 × 150 × 2390 mm** | 4 × 2.7 m (150×150) | Top notched 47 mm deep × 225 mm tall on 2 opposing faces; bottom squared |
@@ -13,12 +16,14 @@ This document specifies the exact cutting schedule for every piece of timber in 
 | **R-01 to R-10** | Roof Rafters | 10 | **47 × 150 × 3600 mm** | 10 × 3.6 m (47×150) | 45° chamfer (75×75 mm) cut on both bottom corners; two 150 mm wide × 25 mm deep birdsmouth notches |
 | **S-01 to S-10** | Top Shade Purlins | 10 | **38 × 50 × 4600 mm** | 10 × 4.8 m (38×50) | Ends cut square or 45° pencil chamfer (25×25 mm); pre-drilled for 5 mm screws |
 | **K-01 to K-08** | Corner Knee Braces | 8 | **100 × 100 × ~735 mm** | 3 × 2.4 m (or 2 × 3.0 m) | Both ends mitred at parallel 45° angles (450 mm × 450 mm right-angle leg projection) |
+<!-- markdownlint-enable MD013 -->
 
 ---
 
 ## 2. Detailed Cutting Geometry
 
 ### 2.1 Corner Posts (150 mm × 150 mm × 2390 mm)
+
 * **Starting Stock:** 2700 mm length.
 * **Bottom Cut:** Trim 10–20 mm off the factory end to ensure a crisp, 90° square base to sit squarely inside the standoff post shoe.
 * **Finished Height:** Measure exactly **2390 mm** from the squared base to the top of the post.
@@ -28,7 +33,7 @@ This document specifies the exact cutting schedule for every piece of timber in 
   * Leaves a central **56 mm tongue** ($150 - 47 - 47 = 56\text{ mm}$) to receive the two 47 mm sandwich beams.
   * *Tip:* Kerf multiple saw cuts across the 225 mm face using a circular saw set to 47 mm depth, then chisel out and smooth with a router or chisel.
 
-```
+```text
        ◄── 150 mm ──►
        ┌───┬─────┬───┐ ▲
        │   │     │   │ │ 225 mm (Beam Depth)
@@ -49,6 +54,7 @@ This document specifies the exact cutting schedule for every piece of timber in 
 ---
 
 ### 2.2 Main Support Beams (47 mm × 225 mm × 4600 mm)
+
 * **Starting Stock:** 4800 mm length.
 * **Length Cut:** Trim 100 mm off each end to achieve a clean **4600 mm** finished length.
 * **Post Position Layout:**
@@ -58,7 +64,7 @@ This document specifies the exact cutting schedule for every piece of timber in 
   * From bottom corner, measure **75 mm** inward along the bottom edge, and **75 mm** upward along the vertical end edge.
   * Connect points with a straight line at 45° and cut with the sliding mitre saw.
 
-```
+```text
         ◄──────────────────────── 4600 mm Total Beam Length ────────────────────────►
         300 mm                                                                300 mm
         Overhang               ◄─────── Post Centres: 4000 mm ───────►        Overhang
@@ -73,6 +79,7 @@ This document specifies the exact cutting schedule for every piece of timber in 
 ---
 
 ### 2.3 Roof Rafters (47 mm × 150 mm × 3600 mm)
+
 * **Starting Stock:** 3600 mm length (standard merchant length; zero waste!).
 * **Decorative Tail Chamfers:**
   * Cut 45° chamfer (75 mm × 75 mm) on both bottom corners, exactly matching the beam tails.
@@ -82,7 +89,7 @@ This document specifies the exact cutting schedule for every piece of timber in 
   * **Notch 2 (Rear Beam):** Centred at **3300 mm** from front end (cut from 3225 mm to 3375 mm).
   * *Distance between notch centres:* Exactly **3000 mm** (locks the front and back beam frames in parallel!).
 
-```
+```text
        ◄─────────────────────── 3600 mm Total Rafter Length ───────────────────────►
         300 mm                                                               300 mm
        ┌───────────┬─────┬─────────────────────────────────────┬─────┬─────────────┐
@@ -98,6 +105,7 @@ This document specifies the exact cutting schedule for every piece of timber in 
 ---
 
 ### 2.4 Corner Knee Braces (100 mm × 100 mm × ~735 mm)
+
 * **Geometry:** 45° isosceles right triangle against post and beam/rafter.
 * **Leg Projections:** 450 mm along post vertical, 450 mm along beam/rafter horizontal.
 * **Cut Angles:** Both ends cut at **45° parallel mitres**.
@@ -105,7 +113,7 @@ This document specifies the exact cutting schedule for every piece of timber in 
 * **Nesting:** 3 knee braces cut per 2.4 m timber board ($3 \times 736 = 2208\text{ mm} \le 2400\text{ mm}$).
 * Total stock needed: **3 lengths of 2.4 m** (yields 9 braces — 8 needed + 1 test/spare).
 
-```
+```text
                  ◄────── 450 mm to Corner ──────►
                ┌─────────────────────────────────┐
                │ Beam / Rafter                   │
@@ -125,6 +133,7 @@ This document specifies the exact cutting schedule for every piece of timber in 
 ---
 
 ### 2.5 Top Shade Purlins (38 mm × 50 mm × 4600 mm)
+
 * **Starting Stock:** 4800 mm length.
 * **Finished Length:** Trim to **4600 mm** (matching total beam length).
 * **End Profiles:** Clean 90° square crosscut or subtle 25 mm × 25 mm 45° chamfer.
@@ -139,6 +148,6 @@ This document specifies the exact cutting schedule for every piece of timber in 
 | **150 × 150 mm C24 PAR** | 2.7 m | **4** | Posts P-01 to P-04 | 4 × ~310 mm offcuts (useful for test cuts) |
 | **47 × 225 mm C24 PAR** | 4.8 m | **4** | Main Beams B-01 to B-04 | 4 × 200 mm offcuts |
 | **47 × 150 mm C24 PAR** | 3.6 m | **10** | Rafters R-01 to R-10 | **0 mm waste** (exact fit) |
-| **38 × 50 mm Treated Batten**| 4.8 m | **10** | Purlins S-01 to S-10 | 10 × 200 mm offcuts |
+| **38 × 50 mm Treated Batten** | 4.8 m | **10** | Purlins S-01 to S-10 | 10 × 200 mm offcuts |
 | **100 × 100 mm C24 PAR** | 2.4 m | **3** | Knee Braces K-01 to K-08 | 3 × ~190 mm offcuts |
 | **38 × 75 mm Rough Timber** | 3.0 m | **4** | Temporary Post Braces | Reusable scrap timber |

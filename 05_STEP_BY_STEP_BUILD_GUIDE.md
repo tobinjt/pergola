@@ -90,7 +90,9 @@ This manual walks through the entire construction process from groundworks and c
 > Perform all cutting, notching, and end-grain sealing on sawhorses on the ground before erecting posts!
 
 1. **Trim Base:** Square the factory ends of all four 150×150 mm posts.
-2. **Length Measurement:** Measure exactly **2390 mm** from the squared base to the top of the post. Crosscut square using your circular saw (making 4 cuts from each face to sever the 150 mm post cleanly).
+2. **Length Measurement:** Measure exactly **2390 mm** from the squared base
+   to the top of the post. Crosscut square using your circular saw (making 4
+   cuts from each face to sever the 150 mm post cleanly).
 3. **Cut Top Shoulder Notches:**
    * Scribe a line 225 mm down from the top on two opposite faces.
    * Mark 47 mm depth on top and side edges.
@@ -99,8 +101,8 @@ This manual walks through the entire construction process from groundworks and c
    * Flatten shoulders dead-smooth with your router.
 4. **Chemical Preservation:**
    * Brush **two heavy coats of Ronseal End Grain Preserver** onto:
-     - The bottom end-grain of the post (where it sits in the bracket).
-     - The top shoulders and central tongue.
+     * The bottom end-grain of the post (where it sits in the bracket).
+     * The top shoulders and central tongue.
    * Allow to dry for 30 minutes.
 
 ---
@@ -168,8 +170,8 @@ This manual walks through the entire construction process from groundworks and c
    * Cut all notches and chamfers. Treat all cut notches with End Grain Preserver.
 3. **Installation & Spacing:**
    * Mark rafter positions across the 4600 mm beam:
-     - Rafters 1 & 10: Flush with outer post faces / overhang edges.
-     - Rafters 2 through 9: Evenly spaced at **~510 mm centres**.
+     * Rafters 1 & 10: Flush with outer post faces / overhang edges.
+     * Rafters 2 through 9: Evenly spaced at **~510 mm centres**.
    * Drop rafters into position into their birdsmouth seats.
    * Secure each rafter by driving a **6.0 mm × 100 mm Torx structural screw** straight down into the beam/tongue (pre-drill 4.5 mm pilot hole).
 
