@@ -159,10 +159,68 @@ Knee braces provide diagonal triangulation against wind gusts and racking:
 * **Dimensions:** 100 mm × 100 mm C24 timber.
 * **Mitre Angles:** Cut at 45° on your sliding compound mitre saw.
 * **Leg Distances:** Scribed at 450 mm down from post top, and 450 mm inward along beam/rafter.
-* **Fastening:**
-  * Pre-drill a 15 mm deep counterbore using a 20 mm spade/forstner bit on the outer face of the brace (to recess the screw head).
-  * Drill a 5.0 mm pilot hole with your Bosch drill.
-  * Drive a **6.0 mm × 140 mm Torx structural screw** in Gear 1 through each end into the post and beam.
+* **Fastener Specification:** **6.0 mm × 140 mm (or 160 mm) Torx T30 structural timber screws**
+  with integrated wide washer/flange heads (approx. 13–15 mm head diameter).
+
+### 4.1 Screw Mechanics: Why Partial Threading Matters
+
+Structural screws for face-to-face timber joints **must be partially threaded**:
+
+* **Preventing "Jacking" (Thread Binding):** If a screw is fully threaded across the joint,
+  its threads bite into the knee brace and the post at the same time, locking both pieces at a
+  fixed distance. If there is even a 1 mm gap, the threads will prevent the joint from drawing
+  tight (a defect known in carpentry as *jacking*).
+* **The Clamping Mechanism:** With a partially threaded screw, the smooth unthreaded shank spins
+  freely inside the knee brace, while the threads bite exclusively into the receiving post or beam.
+  As you drive the screw home, the wide washer head pushes against the counterbore shoulder while
+  the threads pull the post inward, generating **200–300 kg of clamping pressure** to suck the
+  45° mitre seam dead-tight.
+* **Shear Strength:** The solid unthreaded steel shank provides significantly higher shear
+  resistance against cyclic wind racking than a threaded shank.
+
+```text
+       ◄────────────── 100 mm Knee Brace Timber ──────────────►
+                                                                   ◄── Solid Post
+      ┌────────────────────────────────────────────────────────┐  │
+      │                                                        │  │
+      │     20 mm Counterbore                                  │  │
+      │     (15 mm Deep)                                       │  │
+      │    ┌──────────────────┐                                │  │
+      │    │ [ Washer Head ]  │  Smooth Unthreaded Shank       │  │ Deep Threads
+      │    │  (14 mm wide)    │================================│══│►►►►►►►►►►►
+      │    └──────────────────┘                                │  │ (Bites 60 mm+
+      │                                                        │  │  into Post)
+      │                                                        │  │
+      └────────────────────────────────────────────────────────┘  │
+            ▲                                                     ▲
+            │                                                     │
+      Screw head pushes                                    Threads pull post
+      brace firmly inward                                  tight against brace
+```
+
+### 4.2 Why a 20 mm Counterbore?
+
+Although the screw's integrated washer head is ~13–15 mm wide, a **20 mm counterbore** is
+specified for three reasons:
+
+1. **Tool & Bit Holder Clearance:** A standard magnetic Torx T30 bit holder sleeve is 12–15 mm in
+   diameter. A 20 mm counterbore ensures the spinning bit holder clears the timber walls without
+   rubbing, binding, or chewing up the hole edges.
+2. **Flat Bearing Surface:** Creates a clean, flat 90° shoulder for the screw head to seat
+   perpendicularly against.
+3. **Optional Timber Dowel Plugging:** 20 mm is a standard diameter for wood plug cutters.
+   You can tap a 20 mm timber plug in with wood glue and trim flush for a concealed finish.
+
+### 4.3 Step-by-Step Drilling & Driving Procedure
+
+1. **Counterbore:** Drill **15 mm deep** into the outer diagonal face of the brace using a
+   **20 mm spade bit or Forstner bit**.
+2. **Clearance Hole:** Drill a **6.0 mm or 6.5 mm clearance hole** through the remainder of the
+   knee brace timber. The screw shank should slide through without threading into the brace.
+3. **Pilot Hole:** Hold the brace firmly in place against the post/beam and drill a **4.5 mm pilot
+   hole** into the receiving post or beam.
+4. **Drive:** Drive the **6.0 mm × 140 mm Torx structural screw** in **Gear 1 (Low Speed / Max
+   Torque)** on your Bosch GSR 12V-35 FC. The screw head will pull the mitred joint completely flush.
 
 ---
 

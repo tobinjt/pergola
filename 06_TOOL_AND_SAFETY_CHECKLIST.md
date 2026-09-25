@@ -88,9 +88,10 @@ parameters, blade choices, accessories, and safety precautions.
 
 * [ ] **13 mm Wood Auger Drill Bit (min 200 mm length)** (for M12 bolts)
 * [ ] **12 mm SDS / Straight Shank Masonry Bit** (for concrete wedge anchors)
-* [ ] **4.5 mm / 5.0 mm Wood Drill Bit** (for screw pilot holes)
+* [ ] **4.5 mm Wood Drill Bit** (for structural screw pilot holes)
+* [ ] **6.0 mm / 6.5 mm Wood Drill Bit** (for knee brace shank clearance holes)
 * [ ] **Torx T30 and T25 Driver Bits** (impact-rated)
-* [ ] **20 mm Spade / Forstner Bit** (for knee brace counterbores)
+* [ ] **20 mm Spade / Forstner Bit** (for knee brace counterbores; ensures clearance for magnetic bit holder)
 * [ ] **120-grit Sandpaper Sheets** (for knocking off sharp cut edges)
 * [ ] **75 mm Flat Paint Brush** (for applying end-grain preserver and UV oil)
 

@@ -159,11 +159,16 @@ This manual walks through the entire construction process from groundworks and c
 1. **Cut Braces:**
    * Cut 8 knee braces from 100×100 mm timber on your sliding mitre saw at 45° parallel mitres (450 mm leg length, ~735 mm overall blank).
    * Coat cut mitre faces with End Grain Preserver.
-2. **Install 4 Beam Braces:**
+2. **Install 4 Beam Braces (Fastening Procedure):**
    * Fit braces between posts and the underside of the main beams.
-   * Pre-drill counterbores with a spade bit, drill 5 mm pilot holes with Bosch drill, and drive **6.0 mm × 140 mm Torx structural screws** to draw the joint rock-solid.
+   * Drill a **15 mm deep counterbore using a 20 mm spade/Forstner bit** into the outer diagonal face of the brace (provides clearance for your magnetic Torx bit
+     holder and screw washer head).
+   * Drill a **6.0 mm or 6.5 mm clearance hole** through the remainder of the brace so the screw shank slides freely.
+   * Drill a **4.5 mm pilot hole** into the receiving post / beam.
+   * Drive a partially threaded **6.0 mm × 140 mm Torx structural screw** in **Gear 1** on your Bosch drill. The integrated washer head will suck the mitred
+     joint completely tight without jacking.
 3. **Install 4 Side Braces:**
-   * Install braces along the 3.0 m sides connecting posts to the outer rafter locations.
+   * Repeat the exact same drilling and driving sequence along the 3.0 m sides connecting posts to the outer rafter positions.
 4. **Remove Temporary Ground Bracing:**
    * With the knee braces installed, the structure is now 100% self-supporting and rigid. Remove all temporary diagonal ground battens.
 
