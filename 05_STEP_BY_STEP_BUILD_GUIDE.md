@@ -110,6 +110,7 @@ This manual walks through the entire construction process from groundworks and c
 ## Phase 7: Raising Posts & Temporary Bracing
 
 1. **Slot Posts into Bases:**
+   * Each finished 150×150 mm post weighs **~25–28 kg** (treated); lift with good posture or a helper.
    * Stand Post 1 into its standoff shoe bracket.
    * Secure loosely with structural timber screws through the bracket flanges.
 2. **Plumb and Brace:**
@@ -130,6 +131,8 @@ This manual walks through the entire construction process from groundworks and c
    * Measure 300 mm from each end to mark post centreline.
    * Treat all cut ends with End Grain Preserver.
 2. **Mount Front Sandwich Beams (Posts 1 & 2):**
+   * Each 4600 mm beam board weighs **~24–27 kg** (treated); due to the 4.6 m leverage, use two people or clamp a temporary support block to the post below the
+     shoulder to rest one end while raising the other.
    * Lift the outer 47 mm beam into place so it rests on the outer post shoulders. Clamp with F-clamps.
    * Lift the inner 47 mm beam onto the inner post shoulders. Clamp firmly.
    * Verify that the beam overhangs are equal (300 mm at each end) and check beam with a spirit level.

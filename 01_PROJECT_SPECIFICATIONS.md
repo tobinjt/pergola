@@ -112,6 +112,33 @@ Every vertical elevation is calibrated from the **finished patio paver level (0 
     against the 150 mm wide beam assemblies, preventing any twisting or racking
     of the upper roof plane.
 
+### 3.5 Component Weight Breakdown & Manual Handling
+
+Timber weights are calculated using standard C24 structural softwood density
+(~420 kg/m³ dry, rising to ~500–550 kg/m³ when freshly pressure-treated and
+retaining moisture):
+
+<!-- markdownlint-disable MD013 -->
+| Component | Quantity | Finished Dimensions | Net Volume (Each) | Dry Weight (~420 kg/m³) | Treated/Moist Weight (~500–550 kg/m³) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Corner Post (T-01)** | 4 | 150 × 150 mm × 2390 mm (net of shoulder notches) | 0.0506 m³ | **~21.3 kg** (47 lbs) | **~25.3 – 27.8 kg** (56–61 lbs) |
+| **Main Support Beam (T-02)** | 4 | 47 × 225 mm × 4600 mm (net of 45° chamfers) | 0.0484 m³ | **~20.3 kg** (45 lbs) | **~24.2 – 26.6 kg** (53–59 lbs) |
+| **Rafter (T-03)** | 10 | 47 × 150 mm × 3600 mm (net of birdsmouth cuts) | 0.0248 m³ | **~10.4 kg** (23 lbs) | **~12.4 – 13.6 kg** (27–30 lbs) |
+| **Top Purlin (T-04)** | 10 | 38 × 50 mm × 4600 mm | 0.0087 m³ | **~3.7 kg** (8 lbs) | **~4.4 – 4.8 kg** (10–11 lbs) |
+| **Knee Brace (T-05)** | 8 | 100 × 100 mm × ~735 mm (mitred blank) | 0.0074 m³ | **~3.1 kg** (7 lbs) | **~3.7 – 4.1 kg** (8–9 lbs) |
+<!-- markdownlint-enable MD013 -->
+
+* **Heaviest Single Component:** The **150 × 150 mm Corner Post** is the heaviest
+  single timber element in the structure (~21.3 kg dry / ~25–28 kg treated).
+  The raw 2.7 m uncut blank as delivered from the merchant weighs ~25.5 kg dry
+  (~30–33 kg treated).
+* **Handling Leverage:** The **47 × 225 mm Main Support Beams** are a very close
+  second in mass (~20.3 kg dry / ~24–27 kg treated each), but due to their 4.6 m
+  length, they present the highest leverage and awkwardness during overhead lifting.
+  Each assembled twin-beam pair represents ~41 kg of timber across the post tongue.
+* **Total Timber Dead Load:** The complete timber superstructure totals
+  **~330 kg** dry (**~390–430 kg** if freshly pressure-treated).
+
 ---
 
 ## 4. Foundation & Groundworks Engineering

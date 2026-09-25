@@ -9,13 +9,13 @@ standard merchant lumber lengths (4.8 m, 3.6 m, 2.7 m, 2.4 m).
 ## 1. Master Component Cut Schedule
 
 <!-- markdownlint-disable MD013 -->
-| ID | Description | Count | Finished Dimensions (T × W × L) | Stock Purchased | Cut Details & Features |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **P-01 to P-04** | Corner Posts | 4 | **150 × 150 × 2390 mm** | 4 × 2.7 m (150×150) | Top notched 47 mm deep × 225 mm tall on 2 opposing faces; bottom squared |
-| **B-01 to B-04** | Main Sandwich Beams | 4 | **47 × 225 × 4600 mm** | 4 × 4.8 m (47×225) | 45° chamfer (75×75 mm) cut on both bottom corners; pre-drilled for M12 coach bolts |
-| **R-01 to R-10** | Roof Rafters | 10 | **47 × 150 × 3600 mm** | 10 × 3.6 m (47×150) | 45° chamfer (75×75 mm) cut on both bottom corners; two 150 mm wide × 25 mm deep birdsmouth notches |
-| **S-01 to S-10** | Top Shade Purlins | 10 | **38 × 50 × 4600 mm** | 10 × 4.8 m (38×50) | Ends cut square or 45° pencil chamfer (25×25 mm); pre-drilled for 5 mm screws |
-| **K-01 to K-08** | Corner Knee Braces | 8 | **100 × 100 × ~735 mm** | 3 × 2.4 m (or 2 × 3.0 m) | Both ends mitred at parallel 45° angles (450 mm × 450 mm right-angle leg projection) |
+| ID | Description | Count | Finished Dimensions (T × W × L) | Finished Weight (Treated) | Stock Purchased | Cut Details & Features |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **P-01 to P-04** | Corner Posts | 4 | **150 × 150 × 2390 mm** | **~25–28 kg** (heaviest) | 4 × 2.7 m (150×150) | Top notched 47 mm deep × 225 mm tall on 2 opposing faces; bottom squared |
+| **B-01 to B-04** | Main Sandwich Beams | 4 | **47 × 225 × 4600 mm** | **~24–27 kg** | 4 × 4.8 m (47×225) | 45° chamfer (75×75 mm) cut on both bottom corners; pre-drilled for M12 coach bolts |
+| **R-01 to R-10** | Roof Rafters | 10 | **47 × 150 × 3600 mm** | **~12–14 kg** | 10 × 3.6 m (47×150) | 45° chamfer (75×75 mm) cut on both bottom corners; two 150 mm wide × 25 mm deep birdsmouth notches |
+| **S-01 to S-10** | Top Shade Purlins | 10 | **38 × 50 × 4600 mm** | **~4.4–4.8 kg** | 10 × 4.8 m (38×50) | Ends cut square or 45° pencil chamfer (25×25 mm); pre-drilled for 5 mm screws |
+| **K-01 to K-08** | Corner Knee Braces | 8 | **100 × 100 × ~735 mm** | **~3.7–4.1 kg** | 3 × 2.4 m (or 2 × 3.0 m) | Both ends mitred at parallel 45° angles (450 mm × 450 mm right-angle leg projection) |
 <!-- markdownlint-enable MD013 -->
 
 ---
@@ -24,7 +24,8 @@ standard merchant lumber lengths (4.8 m, 3.6 m, 2.7 m, 2.4 m).
 
 ### 2.1 Corner Posts (150 mm × 150 mm × 2390 mm)
 
-* **Starting Stock:** 2700 mm length.
+* **Starting Stock:** 2700 mm length (uncut blank weighs ~30–33 kg treated; ~25.5 kg dry).
+* **Finished Weight:** **~25–28 kg treated** (~21.3 kg dry), making it the heaviest single component in the build.
 * **Bottom Cut:** Trim 10–20 mm off the factory end to ensure a crisp, 90° square base to sit squarely inside the standoff post shoe.
 * **Finished Height:** Measure exactly **2390 mm** from the squared base to the top of the post.
 * **Post Shoulder Notches (Top):**

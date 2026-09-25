@@ -15,14 +15,16 @@ Travis Perkins).
 > pressure-treated (tanalised) softwood**. Kiln-dried treated timber is
 > straighter, lighter, and ready to oil.
 
-| Item | Component | Finished Cross-Section | Commercial Stock Length to Order | Quantity | Notes / Purpose |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **T-01** | **Corner Posts** | 150 mm × 150 mm (6″ × 6″) | **2.7 m** (or 3.0 m) | **4 lengths** | Cut to 2390 mm; enables squaring factory ends |
-| **T-02** | **Main Support Beams** | 47 mm × 225 mm (2″ × 9″) | **4.8 m** | **4 lengths** | Cut to 4600 mm; 2 front beam boards, 2 back |
-| **T-03** | **Rafters (Crossbeams)** | 47 mm × 150 mm (2″ × 6″) | **3.6 m** | **10 lengths** | Exact 3600 mm finished length (zero waste!) |
-| **T-04** | **Top Purlins (Battens)** | 38 mm × 50 mm (or 47×50 mm) | **4.8 m** | **10 lengths** | Cut to 4600 mm; laid flat on rafters |
-| **T-05** | **Corner Knee Braces** | 100 mm × 100 mm (4″ × 4″) | **2.4 m** | **2 lengths** | Cut into eight 45° diagonal struts (~750 mm) |
-| **T-06** | **Temporary Bracing** | 38 mm × 75 mm (or 25×50 mm) | **3.0 m** | **4 lengths** | Budget rough timber for bracing posts during erection |
+<!-- markdownlint-disable MD013 -->
+| Item | Component | Finished Cross-Section | Commercial Stock Length to Order | Quantity | Approx. Unit Weight (Treated) | Notes / Purpose |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **T-01** | **Corner Posts** | 150 mm × 150 mm (6″ × 6″) | **2.7 m** (or 3.0 m) | **4 lengths** | ~30–33 kg stock (~25–28 kg finished) | Cut to 2390 mm; heaviest single timber element |
+| **T-02** | **Main Support Beams** | 47 mm × 225 mm (2″ × 9″) | **4.8 m** | **4 lengths** | ~25–28 kg stock (~24–27 kg finished) | Cut to 4600 mm; 2 front beam boards, 2 back |
+| **T-03** | **Rafters (Crossbeams)** | 47 mm × 150 mm (2″ × 6″) | **3.6 m** | **10 lengths** | ~13–15 kg stock (~12–14 kg finished) | Exact 3600 mm finished length (zero waste!) |
+| **T-04** | **Top Purlins (Battens)** | 38 mm × 50 mm (or 47×50 mm) | **4.8 m** | **10 lengths** | ~4.5–5.5 kg stock (~4.4–4.8 kg finished) | Cut to 4600 mm; laid flat on rafters |
+| **T-05** | **Corner Knee Braces** | 100 mm × 100 mm (4″ × 4″) | **2.4 m** | **2 lengths** | ~12–14 kg stock (~3.7–4.1 kg per brace) | Cut into eight 45° diagonal struts (~750 mm) |
+| **T-06** | **Temporary Bracing** | 38 mm × 75 mm (or 25×50 mm) | **3.0 m** | **4 lengths** | ~4–5 kg each | Budget rough timber for bracing posts during erection |
+<!-- markdownlint-enable MD013 -->
 
 ---
 
@@ -89,4 +91,5 @@ Travis Perkins).
 * *Fasteners, Coach Bolts & Screws:* ~€70 – €95 / £60 – £80
 * *Preservatives & UV Finishing Oil:* ~€90 – €130 / £80 – £115
 * *Lighting & Consumables:* ~€50 – €80 / £45 – £70
+* *Estimated Timber Delivery Weight:* ~380 kg – 440 kg total (requires flatbed delivery or sturdy roof rack/trailer)
 * **Total Approximate Project Material Cost:** **~€930 – €1,215 (approx. £800 – £1,050)**

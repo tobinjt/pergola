@@ -110,5 +110,5 @@ parameters, blade choices, accessories, and safety precautions.
 * [ ] **Hearing Protection:** Ear defenders (class 2 or 3) for mitre saw, circular saw, and angle grinder operation.
 * [ ] **Gloves:** Heavy work gloves for handling stone pavers and rough groundworks; dexterity gloves for timber assembly.
 * [ ] **Two-Person Lift Rule:** Never attempt to raise the 4600 mm long beams
-  (weighing ~25 kg each) or 150×150 mm posts alone. Always have a helper support
-  one end while clamping and fastening.
+  (weighing ~24–27 kg each, with high leverage) or 150×150 mm posts (~25–28 kg)
+  alone. Always have a helper support one end while clamping and fastening.
