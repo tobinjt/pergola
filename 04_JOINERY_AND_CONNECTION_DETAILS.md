@@ -113,14 +113,17 @@ notches**:
       │                                                                        │
       │                      125 mm Uncut Meat                                 │
       │                                                                        │
-      ├──────────────────────┐                          ┌──────────────────────┤
-      │ 25 mm Notch Depth    │                          │                      │
-      └──────────────────────┤                          ├──────────────────────┘
-                             │   Sandwich Beam (150 mm) │
-                             │                          │
+Screw 1 ──► \                                                    / ◄── Screw 2
+(45° Angle)  \                                                  /  (45° Angle)
+      ├───────\──────────────┐                  ┌──────────────/───────────────┤
+      │ 25 mm  \             │                  │             /                │
+      └─────────▼────────────┤                  ├────────────▼─────────────────┘
+      │                      │   56 mm Air Gap  │                              │
+      │  Outer 47 mm Beam    │    (or Tongue)   │  Inner 47 mm Beam            │
+      │  (225 mm Deep)       │                  │  (225 mm Deep)               │
 ```
 
-### 3.1 Batch-Cutting Rafters
+### 3.1 Batch-Cutting & Fastening Rafters
 
 1. **Master Template:** Cut the first rafter with extreme care. Check its fit
    across your raised beams. Mark it as **"MASTER TEMPLATE"**.
@@ -131,9 +134,21 @@ notches**:
    * Set circular saw depth to **25 mm**.
    * Cut multiple kerfs across the 150 mm marked zone.
    * Knock out with a chisel and clean flat with your router or hand rasp.
-4. **Fastening:** Drive one **6.0 mm × 100 mm Torx structural screw** straight
-   down through the rafter into the post tongue / beam top, or toenail two
-   screws from each side. Pre-drill a 4.5 mm pilot hole with your Bosch drill.
+4. **Fastening via 45° Skew-Screwing (Toenailing):**
+   * **Why 100 mm screws cannot be driven vertically from above:** The rafter has
+     **125 mm of uncut timber meat** above the 25 mm seat notch. A 100 mm screw driven
+     vertically from the top face would stop 25 mm inside the rafter without ever
+     reaching the beam below! (Driving vertically straight down would require
+     180–200 mm screws, and between posts would risk hitting the 56 mm open space
+     between the sandwich beams).
+   * **The Correct Technique:** Drive two **6.0 mm × 100 mm Torx structural screws**
+     per seat at a **45° downward angle (toenailed)**:
+     * **Screw 1:** Drive through the outer rafter flank starting ~35–40 mm above
+       the notch seat, angled down into the outer 47 mm beam.
+     * **Screw 2:** Drive through the inner rafter flank angled down into the inner
+       47 mm beam.
+   * Pre-drill 4.5 mm pilot holes at 45° with your Bosch GSR 12V drill to ensure
+     the screws pull the rafter down tight against both beam boards without splitting.
 
 ---
 

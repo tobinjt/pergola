@@ -176,7 +176,12 @@ This manual walks through the entire construction process from groundworks and c
      * Rafters 1 & 10: Flush with outer post faces / overhang edges.
      * Rafters 2 through 9: Evenly spaced at **~510 mm centres**.
    * Drop rafters into position into their birdsmouth seats.
-   * Secure each rafter by driving a **6.0 mm × 100 mm Torx structural screw** straight down into the beam/tongue (pre-drill 4.5 mm pilot hole).
+   * Secure each rafter seat by toenailing two **6.0 mm × 100 mm Torx structural
+     screws** at a 45° downward angle (pre-drill 4.5 mm pilot holes with your Bosch
+     drill). Drive one screw from the outer rafter face into the outer 47 mm beam,
+     and one from the inner rafter face into the inner 47 mm beam. *(Note: Do not
+     attempt to drive vertically from above, as the 125 mm uncut rafter meat is
+     thicker than a 100 mm screw).*
 
 ---
 

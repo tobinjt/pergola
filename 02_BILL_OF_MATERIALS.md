@@ -49,7 +49,7 @@ Travis Perkins).
 | **F-01** | **M12 Carriage / Coach Bolts** | M12 × **160 mm** Hot-Dip Galvanised (or A2 Stainless Steel) with round dome head and square neck | **16 bolts** | Through-bolting the two 47 mm beams through the 56 mm post tongue (4 bolts per post) |
 | **F-02** | **M12 Large Washers** | M12 Form G / Penny Washers (Galvanised or Stainless) | **16 washers** | Placed under nuts on inner face to prevent timber crushing |
 | **F-03** | **M12 Hex Nuts / Nyloc** | M12 Galvanised or Stainless Hex Nuts (or Nylon locking nuts) | **16 nuts** | Torqued by hand socket wrench on M12 coach bolts |
-| **F-04** | **Rafter Structural Screws** | **6.0 mm × 100 mm (or 120 mm)** Exterior Coated Structural Wood Screws (Torx T30 drive, washer/countersunk head) | **1 box (50 pcs)** | Fastening rafters down through birdsmouth notches into beams |
+| **F-04** | **Rafter Structural Screws** | **6.0 mm × 100 mm (or 120 mm)** Exterior Coated Structural Wood Screws (Torx T30 drive, washer/countersunk head) | **1 box (50 pcs)** | Toenailing rafters at 45° into outer and inner beams (2 screws per seat × 2 seats × 10 rafters = 40 screws + 10 spares) |
 | **F-05** | **Knee Brace Screws** | **6.0 mm × 140 mm (or 160 mm)** Heavy Exterior Structural Screws (Torx T30 drive) | **1 box (50 pcs)** | Securing 45° knee braces to posts, beams, and rafters |
 | **F-06** | **Purlin Screws** | **5.0 mm × 80 mm** Exterior Green/Brown Coated Decking Screws (Torx T25 drive) | **1 box (150 pcs)** | Screwing top purlins down into each rafter intersection |
 | **F-07** | **Post-to-Base Screws** | Heavy structural timber connector screws (e.g. Simpson Strong-Tie SD 6.3×64 mm or M8 Coach Screws) | **16–24 pcs** | Securing bottom of 150×150 posts into standoff shoe flanges |
