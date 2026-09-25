@@ -10,7 +10,6 @@ import pathlib
 import re
 
 import markdown_it
-import mdit_py_plugins.dollarmath
 import mdit_py_plugins.tasklists
 
 BASE_DIR: pathlib.Path = pathlib.Path(__file__).resolve().parent.parent
@@ -115,7 +114,6 @@ def create_markdown_parser() -> markdown_it.MarkdownIt:
     _ = md.enable("table")
     _ = md.enable("strikethrough")
     mdit_py_plugins.tasklists.tasklists_plugin(md)
-    mdit_py_plugins.dollarmath.dollarmath_plugin(md)
     return md
 
 
@@ -181,17 +179,6 @@ def post_process_html(html_content: str, current_page_dest: str = "") -> str:
         return match.group(0)
 
     processed = re.sub(r'href="([^"]+\.md)"', rewrite_link, processed)
-
-    processed = re.sub(
-        r'<span class="math inline">\\sqrt\{(.*?)\}</span>',
-        r'<span class="math-inline">√(\1)</span>',
-        processed,
-    )
-    processed = re.sub(
-        r'<span class="math inline">(.*?)</span>',
-        r'<span class="math-inline">\1</span>',
-        processed,
-    )
 
     return processed
 

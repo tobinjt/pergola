@@ -17,9 +17,9 @@ on **solid timber shoulders**:
 
 * **Post Thickness:** 150 mm
 * **Shoulder Cut Depth:** 47 mm on the outer face, 47 mm on the inner face
-* **Central Tongue Width:** $150 - (2 \times 47) = \mathbf{56\text{ mm}}$
+* **Central Tongue Width:** 150 − (2 × 47) = **56 mm**
 * **Shoulder Height:** Exactly **225 mm** (matching beam depth)
-* **Total Sandwich Thickness:** $47\text{ mm (Outer Beam)} + 56\text{ mm (Tongue)} + 47\text{ mm (Inner Beam)} = \mathbf{150\text{ mm}}$
+* **Total Sandwich Thickness:** 47 mm (Outer Beam) + 56 mm (Tongue) + 47 mm (Inner Beam) = **150 mm**
   *(The assembled beam sandwich is completely flush with the sides of the post!)*
 
 ```text
@@ -103,7 +103,7 @@ prevent twisting and lock the frame square, each rafter features two **flat seat
 notches**:
 
 * **Notch Width:** **150 mm** (exact match for the twin-beam sandwich width)
-* **Notch Depth:** **25 mm** (leaving $150 - 25 = 125\text{ mm}$ of solid timber meat above the beam)
+* **Notch Depth:** **25 mm** (leaving 150 − 25 = 125 mm of solid timber meat above the beam)
 * **Notch Spacing:** Exactly **3000 mm** on-centre between front and back notches.
 
 ```text

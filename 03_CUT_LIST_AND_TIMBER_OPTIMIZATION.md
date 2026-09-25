@@ -30,7 +30,8 @@ standard merchant lumber lengths (4.8 m, 3.6 m, 2.7 m, 2.4 m).
 * **Post Shoulder Notches (Top):**
   * Measure down **225 mm** from the top end.
   * Cut a shoulder notch **47 mm deep** into the outer and inner faces.
-  * Leaves a central **56 mm tongue** ($150 - 47 - 47 = 56\text{ mm}$) to receive the two 47 mm sandwich beams.
+  * Leaves a central **56 mm tongue** (150 − 47 − 47 = 56 mm) to receive
+    the two 47 mm sandwich beams.
   * *Tip:* Kerf multiple saw cuts across the 225 mm face using a circular saw set to 47 mm depth, then chisel out and smooth with a router or chisel.
 
 ```text
@@ -110,7 +111,7 @@ standard merchant lumber lengths (4.8 m, 3.6 m, 2.7 m, 2.4 m).
 * **Leg Projections:** 450 mm along post vertical, 450 mm along beam/rafter horizontal.
 * **Cut Angles:** Both ends cut at **45° parallel mitres**.
 * **Cut Blank Length:** **736 mm** (long point to long point = 877 mm).
-* **Nesting:** 3 knee braces cut per 2.4 m timber board ($3 \times 736 = 2208\text{ mm} \le 2400\text{ mm}$).
+* **Nesting:** 3 knee braces cut per 2.4 m timber board (3 × 736 = 2208 mm ≤ 2400 mm).
 * Total stock needed: **3 lengths of 2.4 m** (yields 9 braces — 8 needed + 1 test/spare).
 
 ```text
@@ -137,7 +138,7 @@ standard merchant lumber lengths (4.8 m, 3.6 m, 2.7 m, 2.4 m).
 * **Starting Stock:** 4800 mm length.
 * **Finished Length:** Trim to **4600 mm** (matching total beam length).
 * **End Profiles:** Clean 90° square crosscut or subtle 25 mm × 25 mm 45° chamfer.
-* **Count:** 10 battens laid flat ($50\text{ mm}$ face horizontal, $38\text{ mm}$ vertical).
+* **Count:** 10 battens laid flat (50 mm face horizontal, 38 mm vertical).
 
 ---
 

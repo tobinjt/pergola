@@ -14,7 +14,7 @@ This manual walks through the entire construction process from groundworks and c
    * From Post 1, run a second string line **3000 mm** towards Post 3.
 4. **Square with the 5.0 m Diagonal:**
    * Measure the diagonal distance between Post 2 and Post 3.
-   * Adjust the angle until the diagonal measures **exactly 5000 mm** ($\sqrt{4.0^2 + 3.0^2} = 5.0\text{ m}$).
+   * Adjust the angle until the diagonal measures **exactly 5000 mm** (√(4.0² + 3.0²) = 5.0 m).
    * Once diagonal 2–3 is 5000 mm, the corner at Post 1 is a mathematically perfect 90° right angle!
 5. **Locate Post 4:**
    * Measure 4000 mm from Post 3, and 3000 mm from Post 2.

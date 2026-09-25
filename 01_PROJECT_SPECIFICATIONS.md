@@ -15,18 +15,18 @@ pergola.
   * Short direction (Rafter run): **3000 mm (3.00 m)**
   * Diagonal (Corner-to-Corner check): **5000 mm (5.00 m)** *(Exact 3-4-5 right triangle)*
 * **Post Outside-to-Outside Dimensions:**
-  * Long dimension: $4000\text{ mm} + 150\text{ mm} = \mathbf{4150\text{ mm}}$
-  * Short dimension: $3000\text{ mm} + 150\text{ mm} = \mathbf{3150\text{ mm}}$
+  * Long dimension: 4000 mm + 150 mm = **4150 mm**
+  * Short dimension: 3000 mm + 150 mm = **3150 mm**
 * **Usable Interior Clearance (Inside Face to Inside Face of Posts):**
-  * Long opening: $4000\text{ mm} - 150\text{ mm} = \mathbf{3850\text{ mm}}$
-  * Short opening: $3000\text{ mm} - 150\text{ mm} = \mathbf{2850\text{ mm}}$
+  * Long opening: 4000 mm − 150 mm = **3850 mm**
+  * Short opening: 3000 mm − 150 mm = **2850 mm**
 * **Cantilever Overhangs:**
   * Beams: **300 mm** overhang beyond post centre on each end
   * Rafters: **300 mm** overhang beyond beam centreline on each end
 * **Overall Roof Footprint:**
-  * Length: $4000\text{ mm} + (2 \times 300\text{ mm}) = \mathbf{4600\text{ mm}}$
-  * Width: $3000\text{ mm} + (2 \times 300\text{ mm}) = \mathbf{3600\text{ mm}}$
-  * Covered area: $4.6\text{ m} \times 3.6\text{ m} = \mathbf{16.56\text{ m}^2}$
+  * Length: 4000 mm + (2 × 300 mm) = **4600 mm**
+  * Width: 3000 mm + (2 × 300 mm) = **3600 mm**
+  * Covered area: 4.6 m × 3.6 m = **16.56 m²**
 
 ---
 
@@ -39,11 +39,11 @@ Every vertical elevation is calibrated from the **finished patio paver level (0 
 | **Finished Patio Level** | **Datum (0 mm)** | 0 mm |
 | **Standoff Post Base Clearance** | +35 mm air gap | +35 mm |
 | **Clearance Under Main Beams** | **2200 mm (~7 ft 2.5 in)** | **+2200 mm** *(Headroom)* |
-| **Post Shoulder Cut Height** | Timber height: $2200 - 35 = 2165\text{ mm}$ | +2200 mm |
+| **Post Shoulder Cut Height** | Timber height: 2200 − 35 = 2165 mm | +2200 mm |
 | **Main Support Beams (47×225 mm)** | Depth: 225 mm | +2425 mm |
-| **Post Total Top Height (Tongue)** | Timber height: $2165 + 225 = 2390\text{ mm}$ | +2425 mm *(flush with beams)* |
+| **Post Total Top Height (Tongue)** | Timber height: 2165 + 225 = 2390 mm | +2425 mm *(flush with beams)* |
 | **Rafter Birdsmouth Seat** | Depth of notch: 25 mm into rafter | — |
-| **Rafter (47×150 mm) Effective Rise** | $150\text{ mm} - 25\text{ mm} = +125\text{ mm}$ | +2550 mm |
+| **Rafter (47×150 mm) Effective Rise** | 150 mm − 25 mm = +125 mm | +2550 mm |
 | **Top Purlins (38×50 mm laid flat)** | Thickness: +38 mm | **+2588 mm (~2.59 m)** |
 
 ```text
@@ -70,8 +70,8 @@ Every vertical elevation is calibrated from the **finished patio paver level (0 
 
 ### 3.1 Timber Grade: C24 Softwood
 
-* **Bending Strength ($f_{m,k}$):** $24\text{ N/mm}^2$ (vs $16\text{ N/mm}^2$ for C16).
-* **Modulus of Elasticity ($E_{0,\text{mean}}$):** $11.0\text{ kN/mm}^2$ (denser, 35% stiffer than C16).
+* **Bending Strength (f_m,k):** 24 N/mm² (vs 16 N/mm² for C16).
+* **Modulus of Elasticity (E_0,mean):** 11.0 kN/mm² (denser, 35% stiffer than C16).
 * **Density:** ~420 kg/m³ (tighter growth rings, minimal knots, straighter grain).
 * **Treatment:** High-pressure copper azole preservative (Use Class 3 external
   above-ground), kiln-dried to <20% moisture before profiling to planed-all-round
@@ -81,17 +81,16 @@ Every vertical elevation is calibrated from the **finished patio paver level (0 
 
 * Each side uses a **twin beam** (sandwich assembly) of **two 47 mm × 225 mm C24**
   members flanking the notched post.
-* Total combined beam width: $47\text{ mm} \times 2 = 94\text{ mm}$.
+* Total combined beam width: 47 mm × 2 = 94 mm.
 * **Effective Span with Knee Braces:**
   * 45° knee braces extend 500 mm horizontally from each post.
-  * Clear beam span: $3850\text{ mm}$.
-  * Effective unsupported span between brace points: $3850 - (2 \times 500) = \mathbf{2850\text{ mm} (2.85\text{ m})}$.
+  * Clear beam span: 3850 mm.
+  * Effective unsupported span between brace points: 3850 − (2 × 500) = **2850 mm (2.85 m)**.
 * **Deflection Check:**
   * For open rafters + purlins (dead load ~0.20 kN/m² + temporary snow load 0.60 kN/m²),
     total load per 4m beam is ~3.5 kN uniformly distributed.
-  * Maximum calculated deflection $\delta_{\text{max}} < 3.2\text{ mm}$, which is well
-    inside the strict British/Irish architectural limit of
-    $L / 360 = 2850 / 360 \approx 7.9\text{ mm}$.
+  * Maximum calculated deflection δ_max < 3.2 mm, which is well inside the strict
+    British/Irish architectural limit of *L* / 360 = 2850 / 360 ≈ 7.9 mm.
   * **Result:** Zero perceptible sag, exceptionally rigid.
 
 ### 3.3 Rafter Sizing (3.0 m Span)
@@ -129,9 +128,9 @@ Every vertical elevation is calibrated from the **finished patio paver level (0 
 
 ### 4.2 Concrete Pier Sizing
 
-* **Hole Dimensions:** $300\text{ mm} \times 300\text{ mm}$ square (or 300 mm diameter round) $\times$ **500 mm deep** below patio paver level.
-* **Concrete Volume per Pier:** $\approx 0.045\text{ m}^3$ ($\approx 100\text{ kg}$
-  of cured concrete per post, providing $400\text{ kg}$ total ballast weight anchoring the structure down).
+* **Hole Dimensions:** 300 mm × 300 mm square (or 300 mm diameter round) × **500 mm deep** below patio paver level.
+* **Concrete Volume per Pier:** ≈ 0.045 m³ (≈ 100 kg
+  of cured concrete per post, providing 400 kg total ballast weight anchoring the structure down).
 * **Concrete Specification:** Rapid-setting Postcrete (2.5 bags per hole) or standard
   C25/30 mix (1 part cement, 2 parts sharp sand, 3 parts 20 mm gravel).
 * **Elevation of Pier Top:** Poured to finish **~30–40 mm below the top paver level**
@@ -146,7 +145,7 @@ Every vertical elevation is calibrated from the **finished patio paver level (0 
   * Freestanding pergolas and garden structures for domestic recreation situated
     to the rear of the house are **exempt from planning permission** provided:
     1. The structure is located in the rear garden (not in front of the house building line).
-    2. Total area of all garden structures does not reduce remaining private open garden space below $25\text{ m}^2$. (Our covered area is $16.5\text{ m}^2$).
+    2. Total area of all garden structures does not reduce remaining private open garden space below 25 m². (Our covered area is 16.5 m²).
     3. Height does not exceed 3.0 m (our total height is 2.59 m).
 * **United Kingdom (Permitted Development — Class E):**
   * If within 2.0 m of a boundary fence/wall, the maximum permitted height for

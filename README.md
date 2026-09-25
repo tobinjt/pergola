@@ -64,7 +64,7 @@ Depth: │ │                                                                  
 
 > [!TIP]
 > **Perfect 3-4-5 Triangle for On-Site Squaring:**
-> The post centres form a classic right triangle: **3.0 m × 4.0 m × 5.0 m** diagonal ($\sqrt{3^2 + 4^2} = 5.0\text{ m}$).
+> The post centres form a classic right triangle: **3.0 m × 4.0 m × 5.0 m** diagonal (√(3² + 4²) = 5.0 m).
 > When laying out string lines, measuring exactly **5000 mm** diagonally between opposite post centres guarantees a 100% square layout without complex math!
 
 ---
