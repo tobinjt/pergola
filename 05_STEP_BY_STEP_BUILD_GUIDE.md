@@ -54,9 +54,14 @@ This manual walks through the entire construction process from groundworks and c
 ## Phase 4: Cutting & Reinstating Patio Pavers
 
 1. **Dry-Fit Anchor Bracket:**
-   * Set your elevated standoff post shoe (150 mm square) on top of the concrete pier to mark its outline.
+   * **Option 1 (150 mm Box Shoe):** Place the 150 mm square shoe over the centre
+     of the concrete pier to verify position and mark anchor holes.
+   * **Option 2 (Simpson APB100/150):** Position the bottom base plate over the
+     centre of the concrete pier and mark the central anchor hole.
 2. **Mark the Paver:**
-   * Place the lifted paver over the hole. Scribe the square cutout needed to accommodate the post base collar and standoff plate.
+   * Place the lifted paver over the hole. Scribe the cutout needed:
+     * For Option 1: A square opening matching the outer dimensions of the 150 mm post shoe collar.
+     * For Option 2: A neat circular or square opening around the central threaded riser.
 3. **Precision Cutting:**
    * Fit the **115 mm continuous rim diamond blade** to your angle grinder.
    * Wear full safety goggles, ear protection, and an FFP3 dust mask.
@@ -68,19 +73,22 @@ This manual walks through the entire construction process from groundworks and c
 
 ---
 
-## Phase 5: Anchoring Standoff Post Bases
+## Phase 5: Anchoring Post Bases
 
 1. **Drilling Anchor Holes:**
-   * Position the standoff post bracket directly over the centre point.
-   * Mark the central anchor hole on the concrete pier.
-   * Drill a **12 mm hole × 100 mm deep** into the concrete using your masonry drill bit.
-   * Vacuum or blow all dust out of the hole.
-2. **Setting the Anchor:**
-   * Insert the M12 wedge anchor through the base bracket into the drilled hole.
-   * Tap it down firmly with a hammer until seated.
-   * Tighten the nut with a 19 mm socket wrench to expand the wedge collar and lock the bracket rigidly to the concrete.
-3. **Level Verification:**
-   * Place a spirit level across all four post bases. Use thin stainless shims if slight adjustment is needed so all 4 bases sit at the exact same datum height.
+   * Position your chosen post base directly over the marked anchor points on the concrete pier.
+   * Drill **12 mm holes × 100 mm (or 120 mm) deep** into the concrete using your masonry drill bit.
+   * Vacuum or blow all stone dust thoroughly out of the holes.
+2. **Setting the Anchors:**
+   * Insert the M12 wedge anchors through the base plate holes into the drilled concrete holes.
+   * Tap down firmly with a hammer until fully seated.
+   * Tighten the nuts with a 19 mm socket wrench to expand the wedge collars and clamp the base solidly to the concrete pier.
+3. **Level Verification & Adjustment:**
+   * **Option 1 (Box Shoe):** Place a spirit level across all four post bases.
+     Use thin stainless shims beneath base plates if slight adjustment is needed
+     so all 4 bases sit at the exact same level.
+   * **Option 2 (Simpson APB100/150):** Turn the threaded adjustment nuts to bring
+     all 4 top bearing plates to the exact same datum elevation.
 
 ---
 

@@ -164,6 +164,22 @@ retaining moisture):
   (flush with the bedding sand), allowing the lifted patio paver to be notched/cut
   and re-bedded around the post shoe for an unbroken patio appearance.
 
+### 4.3 Post Base Anchorage & Moisture Isolation Options
+
+To attach the 150 mm × 150 mm timber posts securely to the concrete piers while
+preventing end-grain moisture rot, two approved hardware options may be used:
+
+* **Option 1: 150 mm Heavy-Duty Galvanised Bolt-Down Shoe (Box Collar — Recommended):**
+  * Heavy-duty square steel collar (e.g. Securall Fastenings / Huws Gray).
+  * Fastened to the concrete pier using four M12 × 100 mm or 120 mm through-bolts.
+  * A 5 mm drainage spacer/shim is placed under the post inside the shoe, keeping
+    the cut timber end-grain elevated above water that enters the shoe.
+* **Option 2: Simpson Strong-Tie APB100/150 (Adjustable Elevated Standoff Base):**
+  * Heavy-duty bracket with an M20/M24 threaded riser providing 100–150 mm of
+    adjustable elevation above the concrete.
+  * Completely separates the timber post from the ground, providing total
+    isolation from standing water and allowing precision height leveling.
+
 ---
 
 ## 5. Planning Permission & Building Regulations

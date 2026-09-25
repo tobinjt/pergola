@@ -166,11 +166,50 @@ Knee braces provide diagonal triangulation against wind gusts and racking:
 
 ---
 
-## 5. Elevated Standoff Post Base Details
+## 5. Post Base & Concrete Pier Connection Details
 
-* **Bracket:** Simpson Strong-Tie APB150 (or equivalent heavy galvanised 150 mm square standoff bracket).
-* **Clearance Gap:** 35 mm to 50 mm between concrete/paver and the bottom of the timber.
-* **Anchorage:**
-  * 1 × M12 × 100 mm wedge anchor drilled into the centre of the cured concrete pier.
-  * Torqued to 50 Nm.
-* **Post Connection:** Four heavy-duty connector screws or M8 coach screws driven through the bracket side flanges into the bottom corners of the post.
+Two proven bracket options are supported for mounting the 150 mm × 150 mm corner
+posts to the concrete piers:
+
+### 5.1 Option 1: 150 mm Heavy-Duty Galvanised Bolt-Down Shoe (Box Collar — Recommended)
+
+This is the most straightforward, rigid method for DIY installation:
+
+* **Bracket:** Fabricated heavy-duty steel box shoe with 150 mm × 150 mm internal
+  clearance (e.g. Securall Fastenings, Huws Gray, Speedy Fixings).
+* **Anchorage to Pier:**
+  * Base plate features 4 corner fixing holes.
+  * Drilled with 12 mm masonry bit into the concrete pier; secured using four
+    **M12 × 100 mm or 120 mm through-bolts** (wedge anchors) torqued to 50 Nm.
+* **Post Connection:**
+  * Post drops straight into the square steel collar, which holds the post upright
+    during temporary bracing and plumbing.
+  * Fastened through side collar holes using four **M8 × 50 mm coach screws** or
+    heavy-duty timber connector screws (pre-drilled with a 5.0 mm pilot bit).
+* **Moisture & Drainage Protocol:**
+  * Insert a **5 mm composite/plastic packer or thick stainless washer** in the
+    bottom of the shoe under the centre of the post end-grain.
+  * Ensures rainwater drains out of the shoe's pre-drilled drain weep holes and
+    prevents the post from sitting in standing water.
+
+### 5.2 Option 2: Simpson Strong-Tie APB100/150 (Adjustable Elevated Standoff Base)
+
+An architectural solution that elevates the timber post entirely clear of the
+patio:
+
+* **Bracket:** Simpson Strong-Tie APB100/150 comprising a bottom mounting plate,
+  an M20/M24 central threaded adjustment screw, and a top post-bearing plate.
+* **Adjustable Standoff:**
+  * Provides **100 mm to 150 mm of height adjustment**.
+  * Allows precision leveling of all 4 posts individually across uneven patio
+    slopes even after posts are erected.
+* **Anchorage to Pier:**
+  * Centrally anchored to the concrete pier with one **M12 or M16 through-bolt**
+    or chemical anchor stud.
+* **Post Connection:**
+  * Top bearing plate fixed to the bottom face of the 150×150 mm post using four
+    heavy structural screws before standing the post upright.
+* **Moisture Protection:**
+  * Complete physical separation: the post floats 100 mm+ above patio pavers and
+    concrete, offering the highest possible protection against ground moisture
+    and splashback.
