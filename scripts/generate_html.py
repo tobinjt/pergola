@@ -114,8 +114,8 @@ def create_markdown_parser() -> markdown_it.MarkdownIt:
     md: markdown_it.MarkdownIt = markdown_it.MarkdownIt("commonmark")
     _ = md.enable("table")
     _ = md.enable("strikethrough")
-    _ = mdit_py_plugins.tasklists.tasklists_plugin(md)
-    _ = mdit_py_plugins.dollarmath.dollarmath_plugin(md)
+    mdit_py_plugins.tasklists.tasklists_plugin(md)
+    mdit_py_plugins.dollarmath.dollarmath_plugin(md)
     return md
 
 
