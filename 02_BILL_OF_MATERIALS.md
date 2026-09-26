@@ -33,8 +33,8 @@ Travis Perkins).
 <!-- markdownlint-disable MD013 -->
 | Item | Component | Specification | Quantity | Notes |
 | :--- | :--- | :--- | :--- | :--- |
-| **G-01A** | **Option 1: 150 mm Bolt-Down Post Shoe (Recommended)** | Heavy-duty hot-dip galvanised 150 mm × 150 mm (6″ × 6″) square bolt-down post shoe (e.g. Securall Fastenings, Huws Gray, Speedy Fixings, B&Q/DIY.ie) | **4 units** | Easiest installation; rigid box collar self-aligns post; use with 5 mm drainage shim |
-| **G-01B** | **Option 2: Adjustable Elevated Post Base (Architectural)** | Simpson Strong-Tie APB100/150 adjustable post base with threaded M20/M24 standoff rod (e.g. Metro Fixings, TC Fixings, IronmongeryDirect) | **4 units** | 100–150 mm adjustable height clearance; complete isolation from ground moisture |
+| **G-01A** | **Option 1: 150 mm Bolt-Down Post Shoe (Recommended)** | Heavy-duty hot-dip galvanised 150 mm × 150 mm (6″ × 6″) square bolt-down post shoe (e.g. Securall Fastenings, Clarkes of Cavan, Timbertrove) | **4 units** | Easiest installation; rigid box collar self-aligns post; use with 5 mm drainage shim |
+| **G-01B** | **Option 2: Adjustable Elevated Post Base (Architectural)** | Simpson Strong-Tie APB100/150 adjustable post base with threaded M20/M24 standoff rod (e.g. Fastbuild Supplies, Metro Fixings, TC Fixings) | **4 units** | 100–150 mm adjustable height clearance; complete isolation from ground moisture |
 | **G-02** | **Concrete Pier Foundation** | **Postcrete (Rapid Set Concrete)** 20 kg bags (e.g. Blue Circle / Kilsaran / Hanson) | **10 bags** | 2.5 bags per 300×300×500 mm hole. Fast 15-minute set |
 | **G-03** | **Foundation Anchors** | **M12 × 100 mm (or 120 mm) Through-Bolts / Wedge Anchors** (Hot-Dip Galvanised or A4 Stainless Steel, e.g. Rawlplug / ForgeFix from Screwfix / Toolstation) | **4–8 units** | Anchors base plate into cured concrete pier (1 to 4 per post depending on base) |
 | **G-04** | **Paver Bedding Sand** | Kiln-dried paving sand / sharp sand | **1 bag (25 kg)** | For re-bedding cut pavers around post collars |
@@ -44,22 +44,24 @@ Travis Perkins).
 ### 2.1 Post Base Buying Guide & Supplier Links
 
 * **Option 1: 150 mm Heavy-Duty Galvanised Bolt-Down Post Shoe (Box Collar — Easiest / Most Rigid)**
-  * [Securall Fastenings (Ireland) — 150mm Bolt Down Fence Post Shoe Support Galvanised](https://securallfastenings.ie/product/150mm-bolt-down-fence-post-shoe-support-galvanised/) *(Nationwide delivery across all 32 Irish counties)*.
-  * [Huws Gray (UK / Ireland) — Perry 150mm x 150mm Galvanised Bolt Down Post Support](https://www.huwsgray.co.uk/).
-  * [Speedy Fixings (UK / Ireland) — 150mm x 150mm Heavy Duty Bolt Down Shoe](https://www.speedyfixings.com/).
-  * [B&Q / DIY.ie — 150mm Bolt Down Post Support](https://www.diy.ie/).
-  * *Fastening:* Secure base plate to concrete with M12 through-bolts; fix post through side collar holes using M8 × 50 mm coach screws or heavy timber screws. Place a 5 mm composite shim or stainless washer under the post end-grain inside the shoe for drainage.
+  * [Securall Fastenings (Ireland) — 150x150 Base Plate Post Anchor Supports](https://www.securallfastenings.ie/products/150x150-base-plate-post-anchor-supports/) *(Hot-dipped galvanised heavy steel bracket with bolt clamp; Sandyford, Dublin & nationwide delivery across Ireland)*.
+  * [Securall Fastenings (Ireland) — 150mm (6 Inch) Hot Dipped Galvanised Fence Shoe Support](https://www.securallfastenings.ie/products/150mm-6-inch-hot-dipped-galvanised-fence-shoe-support/) *(Alternative bolt-grip shoe with drainage holes)*.
+  * [Clarkes of Cavan (Ireland) — 150mm Galvanised Bolt Down Post Support](https://clarkesofcavan.ie/products/bolt-down-150mm) *(Heavy-duty hot-dip galvanised post support for decking & pergolas)*.
+  * [Timbertrove (Ireland) — Bolt Down Post Support Shoe (150mm / 6x6")](https://timbertrove.com/products/bolt-down-post-support-shoe) *(Irish timber merchant; Dublin collection & nationwide delivery)*.
+  * *Fastening:* Secure base plate to concrete with M12 through-bolts; fix post through side collar holes using M8 coach screws or heavy structural timber screws. Place a 5 mm composite shim or stainless washer under the post end-grain inside the shoe for drainage.
 
 * **Option 2: Simpson Strong-Tie APB100/150 (Adjustable Elevated Standoff Base — Architectural)**
-  * [Simpson Strong-Tie APB100/150 Official Technical Specification](https://www.strongtie.co.uk/products/detail/adjustable-elevated-post-base/717).
-  * [Metro Fixings — Simpson Strong-Tie APB100/150 Adjustable Post Base](https://www.metrofixings.co.uk/products/simpson-strong-tie-apb100-150-adjustable-post-base).
-  * [TC Fixings — Simpson APB100/150 Adjustable Post Base](https://www.tcfixings.co.uk/product/simpson-apb100-150-adjustable-elevated-post-base/14467).
-  * [IronmongeryDirect — Simpson Strong-Tie APB100/150 Post Base](https://www.ironmongerydirect.co.uk/product/simpson-strong-tie-apb100-150-adjustable-post-base-100-150mm-galvanised-each-261595).
+  * [Simpson Strong-Tie APB100/150 Official Technical Specification](https://www.strongtie.co.uk/en-UK/products/adjustable-elevated-post-base-apb100150) *(Official manufacturer product sheet, dimensional drawings, load tables, and installation instructions)*.
+  * [Fastbuild Supplies — Simpson Strong-Tie APB100/150 Adjustable Post Base](https://www.fastbuildsupplies.co.uk/20472-apb100-150-adjustable-post-base).
+  * [Metro Fixings — Simpson Strong-Tie APB100/150 Post Base (100mm–150mm)](https://www.metrofixings.co.uk/product/simpson-strong-tie-apb100150-100mm-150mm/18766).
+  * [TC Fixings — Simpson Strong-Tie APB100/150 Adjustable Post Base](https://www.tcfixings.co.uk/product/simpson-strong-tie-apb100150-adjustable-post-base/12824).
+  * [F.H. Brundle — Simpson Strong-Tie APB100/150 Elevated Adjustable Post Base](https://www.fhbrundle.co.uk/products/75APB100150__Elevated_Adjustable_Post_Base_Galvanised_For_100&200mm_Posts_-_Simpson_Strong-Tie).
   * *Fastening:* Bolt bottom plate to concrete using M12/M16 anchor; screw top plate to post underside with structural screws. Rotate threaded collar to adjust post height (100–150 mm) for millimeter-perfect leveling across all 4 footings.
 
 * **Concrete Anchors & Post Screws:**
-  * [Screwfix — M12 × 100mm / 120mm Through-Bolts (Wedge Anchors)](https://www.screwfix.ie/c/screws-nails-fixings/through-bolts/cat840020) (or [Toolstation Through-Bolts](https://www.toolstation.com/)).
-  * [Screwfix — Heavy Duty Timber Screws / M8 Coach Screws (50–60 mm length)](https://www.screwfix.ie/) for securing post sides into shoe collar flanges.
+  * [Screwfix Ireland — M12 Through-Bolts (Wedge Anchors)](https://www.screwfix.ie/c/screws-nails-fixings/through-bolts/cat840020) *(For anchoring post base plate into cured concrete piers)*.
+  * [Toolstation — M12 Through-Bolts / Anchor Bolts](https://www.toolstation.com/ff-through-bolt/p71910) *(Alternative supplier for M12 masonry through-bolts)*.
+  * [Screwfix Ireland — M8 Coach Screws](https://www.screwfix.ie/c/screws-nails-fixings/coach-screws/cat840476) *(For securing post sides into shoe collar flanges)*.
 <!-- markdownlint-enable MD013 -->
 
 ---
