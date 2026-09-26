@@ -73,6 +73,8 @@ parameters, blade choices, accessories, and safety precautions.
 * [ ] **19 mm Socket & Ratchet Wrench (1/2″ or 3/8″):** For torquing M12 carriage bolt hex nuts.
 * [ ] **120 cm (or 180 cm) Stabila / Stanley Box Spirit Level:** For plumbing posts and leveling beams.
 * [ ] **Pocket Torpedo Spirit Level:** For leveling concrete pier tops and standoff brackets.
+* [ ] **Builder's Water Level (10 m clear PVC tube, 8–10 mm diameter) or Laser Level:**
+  For measuring patio fall and transferring a dead-level datum across all four corners.
 * [ ] **Speed Square (Rafter Square):** For marking 90° and 45° angles.
 * [ ] **8 m Steel Tape Measure:** For layout and diagonal 5.0 m checks.
 * [ ] **Chalk Line & Nylon Builder's String Line:** For setting out post centres.
@@ -92,6 +94,7 @@ parameters, blade choices, accessories, and safety precautions.
 * [ ] **6.0 mm / 6.5 mm Wood Drill Bit** (for knee brace shank clearance holes)
 * [ ] **Torx T30 and T25 Driver Bits** (impact-rated)
 * [ ] **20 mm Spade / Forstner Bit** (for knee brace counterbores; ensures clearance for magnetic bit holder)
+* [ ] **Horseshoe Shims / Plastic Packers (1 mm, 2 mm, 3 mm) or Stainless Washers:** For micro-leveling base plates on sloping pavers.
 * [ ] **120-grit Sandpaper Sheets** (for knocking off sharp cut edges)
 * [ ] **75 mm Flat Paint Brush** (for applying end-grain preserver and UV oil)
 

@@ -64,6 +64,26 @@ Every vertical elevation is calibrated from the **finished patio paver level (0 
  ▼     0 mm  ════════════════════════════════════════════════  Finished Patio Pavers
 ```
 
+### 2.1 Accommodating Patio Slope (Fall) & Level Datum
+
+Standard exterior patios are built with an intentional drainage slope (typically
+a 1:60 to 1:80 fall away from the house), resulting in a **25 mm to 60 mm+
+vertical drop** across a 4.0 m or 3.0 m footprint.
+
+The pergola superstructure (beams, rafter birdsmouth seats, and purlins) **must
+be dead level**. How the patio slope is resolved depends on the post base hardware:
+
+* **With Option 2 (Simpson Strong-Tie APB100/150):** The M20/M24 threaded standoff
+  rod provides **50 mm of vertical adjustment (100–150 mm)**. The collars on lower
+  corners are simply adjusted upward so all four post bearing plates sit at the
+  identical horizontal datum plane. All four posts are cut to the standard
+  **2390 mm** length.
+* **With Option 1 (Fixed Box Shoes):** Shoes are anchored flush with the patio
+  pavers (with local shimming to ensure base plates are flat and posts stand plumb).
+  The patio slope is compensated by **cutting each post to a custom length**
+  ($2390\text{ mm} + \Delta h$ relative to the highest corner). The 2.7 m (2700 mm)
+  purchased post stock provides ample surplus length.
+
 ---
 
 ## 3. Structural Engineering & Timber Calculations

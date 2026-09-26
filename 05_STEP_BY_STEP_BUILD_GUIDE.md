@@ -20,6 +20,30 @@ This manual walks through the entire construction process from groundworks and c
    * Measure 4000 mm from Post 3, and 3000 mm from Post 2.
    * Check the opposite diagonal (Post 1 to Post 4) — it must also measure **exactly 5000 mm**.
    * When both diagonals match at 5000 mm, mark all 4 post centre points clearly on the patio pavers.
+6. **Measure Patio Slope & Establish Level Datum:**
+   * Exterior patios are almost never level; they are laid with an intentional
+     drainage fall away from the house (typically 1:60 to 1:80, or a 25 mm to 60 mm+
+     drop across a 4.0 m span).
+   * **The Pergola Must Be Level:** The main sandwich beams and rafter seats must
+     sit dead horizontal regardless of patio slope, or the joinery will be skewed
+     and the roofline visibly tilted.
+   * **Identify Highest Point (Reference Datum):** Find the highest of the 4 marked
+     post locations (typically the corner closest to the house). Designate this as
+     **Post 1 (Datum = 0 mm)**.
+   * **Measure Elevation Differences:** Determine the vertical drop from Post 1 to
+     Posts 2, 3, and 4 using one of three methods:
+     * *Method A (Builder's Water Level — Recommended):* Fill a 10 m clear plastic
+       hose (8–10 mm diameter) with water. Hold one end at Post 1 and the other at
+       each corner; measure the difference from the water level down to the paver
+       surface. (100% accurate, foolproof, and zero calibration needed).
+     * *Method B (Straight Edge & Spirit Level):* Place one of your 4.6 m beam
+       timbers on edge between post centres with a 1.2 m or 1.8 m spirit level on top.
+       Raise the low end until level and measure the gap underneath.
+     * *Method C (Cross-Line Laser Level):* Set up a self-leveling laser at dusk or
+       on an overcast day and measure with a staff or tape measure from the laser beam
+       to the paver at each corner.
+   * Record each corner's drop ($\Delta h_2, \Delta h_3, \Delta h_4$ in mm) in your
+     build notes.
 
 ---
 
@@ -84,11 +108,21 @@ This manual walks through the entire construction process from groundworks and c
    * Tap down firmly with a hammer until fully seated.
    * Tighten the nuts with a 19 mm socket wrench to expand the wedge collars and clamp the base solidly to the concrete pier.
 3. **Level Verification & Adjustment:**
-   * **Option 1 (Box Shoe):** Place a spirit level across all four post bases.
-     Use thin stainless shims beneath base plates if slight adjustment is needed
-     so all 4 bases sit at the exact same level.
-   * **Option 2 (Simpson APB100/150):** Turn the threaded adjustment nuts to bring
-     all 4 top bearing plates to the exact same datum elevation.
+   * **Local Flatness (Plumb Protection):** Use a pocket torpedo level directly
+     on each base plate. If a paver has a slight local tilt, slip thin stainless
+     steel horseshoe washers or 1–3 mm composite shims under the base plate corners
+     before torquing the M12 wedge anchors. This ensures the post stands at a true
+     90° vertical.
+   * **Overall Height Leveling Across the 4 Posts:**
+     * **If Using Option 2 (Simpson Strong-Tie APB100/150):** This base solves
+       patio slope effortlessly. Turn the threaded M20/M24 collar on the lower
+       posts upward to elevate their top bearing plates by the exact measured drop
+       ($\Delta h$). Use your water level or laser level across the four bearing
+       plates until all four sit at the exact same horizontal elevation datum!
+     * **If Using Option 1 (Fixed Box Shoes):** Anchor the shoes flush with the
+       reinstated pavers at each corner. Do not attempt to raise the concrete pier
+       above patio level (which creates an unsightly trip hazard). Instead, the
+       patio drop is accommodated by cutting the posts to custom lengths in Phase 6.
 
 ---
 
@@ -98,9 +132,24 @@ This manual walks through the entire construction process from groundworks and c
 > Perform all cutting, notching, and end-grain sealing on sawhorses on the ground before erecting posts!
 
 1. **Trim Base:** Square the factory ends of all four 150×150 mm posts.
-2. **Length Measurement:** Measure exactly **2390 mm** from the squared base
-   to the top of the post. Crosscut square using your circular saw (making 4
-   cuts from each face to sever the 150 mm post cleanly).
+2. **Length Measurement (Accommodating Patio Slope):**
+   * **If using Option 2 (Simpson APB100/150):** Because all four base plates were
+     brought to the identical horizontal level datum via the threaded risers in
+     Phase 5, cut all four posts to the **standard identical length of 2390 mm**.
+   * **If using Option 1 (Fixed Box Shoe):** The posts must compensate for the patio
+     drop so that the top beam shoulders finish dead level:
+     * Post 1 (Highest corner / Datum): Cut to **2390 mm**.
+     * Posts 2, 3, and 4 (Lower corners): Cut to **$2390\text{ mm} + \Delta h$**
+       (where $\Delta h$ is that corner's measured drop below Post 1, e.g., if
+       Post 4 is 45 mm lower, cut it to $2390 + 45 = 2435\text{ mm}$).
+     * *Note:* The purchased 2.7 m (2700 mm) post blanks provide 310 mm of
+       surplus length, easily accommodating even severe patio falls.
+     * *(Alternative In-Situ Carpenter's Method):* Erect the posts uncut, brace
+       them plumb, transfer the level datum across all four posts using a water
+       level or laser level, scribe the exact 2165 mm shoulder line, and cut the
+       shoulder notches in place.
+   * Crosscut square using your circular saw (making 4 cuts from each face to
+     sever the 150 mm post cleanly).
 3. **Cut Top Shoulder Notches:**
    * Scribe a line 225 mm down from the top on two opposite faces.
    * Mark 47 mm depth on top and side edges.

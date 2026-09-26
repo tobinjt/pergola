@@ -249,6 +249,11 @@ This is the most straightforward, rigid method for DIY installation:
     bottom of the shoe under the centre of the post end-grain.
   * Ensures rainwater drains out of the shoe's pre-drilled drain weep holes and
     prevents the post from sitting in standing water.
+* **Accommodating Patio Slope:**
+  * Fixed shoes sit flush with the finished patio grade; local base flatness is ensured
+    with thin shims under plate corners so posts stand plumb.
+  * Overall patio fall across the 4 corners is absorbed by custom-cutting the lengths
+    of posts 2, 3, and 4 ($2390\text{ mm} + \Delta h$) so that the top beam shoulders finish dead level.
 
 ### 5.2 Option 2: Simpson Strong-Tie APB100/150 (Adjustable Elevated Standoff Base)
 
@@ -258,9 +263,11 @@ patio:
 * **Bracket:** Simpson Strong-Tie APB100/150 comprising a bottom mounting plate,
   an M20/M24 central threaded adjustment screw, and a top post-bearing plate.
 * **Adjustable Standoff:**
-  * Provides **100 mm to 150 mm of height adjustment**.
+  * Provides **100 mm to 150 mm of height adjustment** (50 mm vertical stroke).
   * Allows precision leveling of all 4 posts individually across uneven patio
     slopes even after posts are erected.
+  * Eliminates the need to cut posts to different lengths: all four posts are cut
+    identically to 2390 mm.
 * **Anchorage to Pier:**
   * Centrally anchored to the concrete pier with one **M12 or M16 through-bolt**
     or chemical anchor stud.

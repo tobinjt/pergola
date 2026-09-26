@@ -27,7 +27,14 @@ standard merchant lumber lengths (4.8 m, 3.6 m, 2.7 m, 2.4 m).
 * **Starting Stock:** 2700 mm length (uncut blank weighs ~30–33 kg treated; ~25.5 kg dry).
 * **Finished Weight:** **~25–28 kg treated** (~21.3 kg dry), making it the heaviest single component in the build.
 * **Bottom Cut:** Trim 10–20 mm off the factory end to ensure a crisp, 90° square base to sit squarely inside the standoff post shoe.
-* **Finished Height:** Measure exactly **2390 mm** from the squared base to the top of the post.
+* **Finished Height:**
+  * **Option 2 (Simpson APB100/150):** Measure exactly **2390 mm** for all four
+    posts, since the base plates are leveled via the threaded standoff hardware.
+  * **Option 1 (Fixed Box Shoes):** Measure **2390 mm** for Post 1 (highest corner),
+    and **$2390\text{ mm} + \Delta h$** for Posts 2, 3, and 4 (where $\Delta h$
+    is that corner's measured drop below Post 1) so that the top beam shoulders
+    finish dead level across the sloping patio. The 2700 mm stock provides 310 mm
+    of surplus length to accommodate any standard patio fall.
 * **Post Shoulder Notches (Top):**
   * Measure down **225 mm** from the top end.
   * Cut a shoulder notch **47 mm deep** into the outer and inner faces.
