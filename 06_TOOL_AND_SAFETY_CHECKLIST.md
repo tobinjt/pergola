@@ -55,6 +55,17 @@ parameters, blade choices, accessories, and safety precautions.
   * Flattening the 47 mm post shoulders to a dead-smooth bearing surface.
   * Cleaning the bottom of the 25 mm birdsmouth rafter notches.
   * Optional: Easing / rounding over fresh cut edges with a 3 mm (1/8″) roundover bit to match the factory planed timber.
+* **Router Base Support & Anti-Tipping Techniques:**
+  * *Post Shoulders (47 mm):* Never balance the router base on the narrow 47 mm
+    shoulder. Clamp a scrap timber board tightly alongside the post (outrigger board)
+    to create a 100–150 mm wide platform, or clamp a guide fence board across the
+    225 mm line. Alternatively, pare the saw kerf bottoms flat using a sharp 25 mm chisel.
+  * *Rafter Birdsmouths (25 mm):* Gang-clamp 3 to 5 rafters side-by-side to create
+    a 235 mm wide deck; the router rides flat across the bundle with zero tipping risk.
+    Clamp a scrap backer at the exit to prevent grain tearout.
+  * *Pass Depth:* Clear bulk waste with circular saw kerfs and a chisel first; use
+    the router only to take a light 1–2 mm flattening skim. Always feed left-to-right
+    against bit rotation.
 
 ---
 

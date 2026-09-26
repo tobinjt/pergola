@@ -47,10 +47,25 @@ on **solid timber shoulders**:
    both faces.
 3. **Chiseling:** Knock out the waste wood fingers with a sharp 25 mm (1″) wood
    chisel.
-4. **Router Clean-up:** Set your router with a straight mortising bit (or
-   flush-trim bit with a scrap-wood guide clamped to the post) set to 47 mm depth.
-   Run the router across the shoulder to create a dead-flat, glass-smooth bearing
-   surface.
+4. **Router Clean-up & Base Support Techniques:**
+   * *The Problem:* A standard router base is 150–160 mm wide. Running it along
+     a 47 mm shoulder leaves two-thirds of the base hanging in mid-air, causing
+     the router to tip and the bit to gouge into the shoulder or tongue.
+   * *Method A (Clamped Outrigger / Sister Board — Recommended):* Clamp a piece
+     of scrap timber (such as a 47×150 or 47×225 offcut) tightly against the side
+     of the post, flush with the uncut post face. This creates a solid 100–150 mm
+     wide platform that fully supports the router base and prevents any rocking.
+   * *Method B (Clamped Guide Fence):* Clamp a straight timber board across the
+     post exactly on the 225 mm shoulder line. This provides rear support for the
+     router base plate while serving as a physical stop preventing the bit from
+     cutting into the central tongue.
+   * *Method C (Sharp Chisel Alternative):* Because the circular saw kerfs provide
+     a consistent 47 mm depth datum, paring along the kerf bottoms with a sharp
+     25 mm chisel held bevel-down takes only 1–2 minutes per shoulder with zero
+     router setup.
+   * *Routing Rule:* Chisel out the bulk waste first; use the router only to skim
+     the final 1–2 mm flat. Always move the router from left to right against bit
+     rotation.
 5. **Preserver:** Generously saturate the exposed end-grain shoulders and tongue
    with **Ronseal End Grain Preserver**; allow to soak in for 15 minutes and repeat.
 
@@ -129,11 +144,19 @@ Screw 1 ──► \                                                    / ◄─�
    across your raised beams. Mark it as **"MASTER TEMPLATE"**.
 2. **Transfer:** Trace the notches and end chamfers from the master template onto
    the remaining 9 rafters.
-3. **Cutting with Mitre Saw / Circular Saw:**
-   * Clamp 3 or 4 rafters side-by-side.
-   * Set circular saw depth to **25 mm**.
-   * Cut multiple kerfs across the 150 mm marked zone.
-   * Knock out with a chisel and clean flat with your router or hand rasp.
+3. **Cutting & "Gang Routing" the Birdsmouth Notches:**
+   * Clamp 3 to 5 rafters tightly side-by-side with top edges aligned.
+   * *Circular Saw Kerfing:* Set saw depth to **25 mm** and cut closely spaced kerfs
+     across the 150 mm marked zone across the clamped bundle.
+   * *Chiseling:* Knock out the waste wood fingers with a hammer and chisel.
+   * *Gang Routing (Rock-Solid Base Support):* A single 47 mm rafter is too narrow
+     to support a router base safely. Five 47 mm rafters clamped face-to-face form
+     a massive **235 mm wide solid deck** ($5 \times 47\text{ mm} = 235\text{ mm}$).
+     The router rests completely flat on top of the bundle with zero tipping risk,
+     cleaning all notches to an exact, uniform depth in continuous smooth passes.
+   * *Sacrificial Backer:* Clamp an offcut of scrap timber to the exit side of the
+     rafter bundle to prevent the router bit from tearing out the wood grain on the
+     last rafter.
 4. **Fastening via 45° Skew-Screwing (Toenailing):**
    * **Why 100 mm screws cannot be driven vertically from above:** The rafter has
      **125 mm of uncut timber meat** above the 25 mm seat notch. A 100 mm screw driven

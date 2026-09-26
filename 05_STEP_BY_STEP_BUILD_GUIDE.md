@@ -154,8 +154,13 @@ This manual walks through the entire construction process from groundworks and c
    * Scribe a line 225 mm down from the top on two opposite faces.
    * Mark 47 mm depth on top and side edges.
    * Make parallel kerf cuts with your circular saw set to 47 mm depth.
-   * Chisel out waste timber.
-   * Flatten shoulders dead-smooth with your router.
+   * Chisel out waste timber fingers.
+   * Flatten shoulders dead-smooth:
+     * *Router Technique:* Never balance the router base on the narrow 47 mm ledge.
+       Clamp a scrap timber offcut tightly alongside the post (outrigger deck) so
+       the router base has a solid 100–150 mm wide platform that cannot tip.
+     * *Chisel Technique (Fast Alternative):* Simply pare along the saw kerf
+       bottoms with a sharp 25 mm wood chisel held bevel-down (takes ~2 minutes).
 4. **Chemical Preservation:**
    * Brush **two heavy coats of Ronseal End Grain Preserver** onto:
      * The bottom end-grain of the post (where it sits in the bracket).
@@ -230,9 +235,15 @@ This manual walks through the entire construction process from groundworks and c
    * Cut 45° chamfers (75×75 mm) on both ends.
    * Mark and cut the two 150 mm wide × 25 mm deep birdsmouth seat notches (centred at 300 mm and 3300 mm).
    * Test fit across the raised beams. It should drop over both front and rear beam assemblies with a snug friction fit!
-2. **Batch Cutting:**
+2. **Batch Cutting & Gang Routing:**
    * Use this master rafter to trace the notch locations onto the other 9 rafters.
-   * Cut all notches and chamfers. Treat all cut notches with End Grain Preserver.
+   * *Gang Routing:* Clamp 3 to 5 rafters side-by-side with top edges aligned to
+     create a 235 mm wide solid deck. This supports your circular saw and router
+     base with zero tipping.
+   * Make 25 mm kerf cuts across the clamped bundle, knock out waste fingers with
+     a chisel, and clean the notch bottoms dead-flat with your router (clamping a
+     scrap backer at the exit edge to eliminate tearout).
+   * Cut all end chamfers and treat every notch with End Grain Preserver.
 3. **Installation & Spacing:**
    * Mark rafter positions across the 4600 mm beam:
      * Rafters 1 & 10: Flush with outer post faces / overhang edges.
