@@ -81,7 +81,7 @@ be dead level**. How the patio slope is resolved depends on the post base hardwa
 * **With Option 1 (Fixed Box Shoes):** Shoes are anchored flush with the patio
   pavers (with local shimming to ensure base plates are flat and posts stand plumb).
   The patio slope is compensated by **cutting each post to a custom length**
-  ($2390\text{ mm} + \Delta h$ relative to the highest corner). The 2.7 m (2700 mm)
+  (2390 mm + corner drop relative to the highest corner). The 2.7 m (2700 mm)
   purchased post stock provides ample surplus length.
 
 ---

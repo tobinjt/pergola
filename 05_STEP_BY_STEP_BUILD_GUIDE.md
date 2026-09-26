@@ -42,7 +42,7 @@ This manual walks through the entire construction process from groundworks and c
      * *Method C (Cross-Line Laser Level):* Set up a self-leveling laser at dusk or
        on an overcast day and measure with a staff or tape measure from the laser beam
        to the paver at each corner.
-   * Record each corner's drop ($\Delta h_2, \Delta h_3, \Delta h_4$ in mm) in your
+   * Record each corner's drop (e.g. Drop 2, Drop 3, Drop 4 in mm) in your
      build notes.
 
 ---
@@ -117,7 +117,7 @@ This manual walks through the entire construction process from groundworks and c
      * **If Using Option 2 (Simpson Strong-Tie APB100/150):** This base solves
        patio slope effortlessly. Turn the threaded M20/M24 collar on the lower
        posts upward to elevate their top bearing plates by the exact measured drop
-       ($\Delta h$). Use your water level or laser level across the four bearing
+       for that corner. Use your water level or laser level across the four bearing
        plates until all four sit at the exact same horizontal elevation datum!
      * **If Using Option 1 (Fixed Box Shoes):** Anchor the shoes flush with the
        reinstated pavers at each corner. Do not attempt to raise the concrete pier
@@ -139,9 +139,9 @@ This manual walks through the entire construction process from groundworks and c
    * **If using Option 1 (Fixed Box Shoe):** The posts must compensate for the patio
      drop so that the top beam shoulders finish dead level:
      * Post 1 (Highest corner / Datum): Cut to **2390 mm**.
-     * Posts 2, 3, and 4 (Lower corners): Cut to **$2390\text{ mm} + \Delta h$**
-       (where $\Delta h$ is that corner's measured drop below Post 1, e.g., if
-       Post 4 is 45 mm lower, cut it to $2390 + 45 = 2435\text{ mm}$).
+     * Posts 2, 3, and 4 (Lower corners): Cut to **2390 mm + corner drop**
+       (where the drop is that corner's measured fall below Post 1, e.g. if
+       Post 4 is 45 mm lower, cut it to 2390 mm + 45 mm = 2435 mm).
      * *Note:* The purchased 2.7 m (2700 mm) post blanks provide 310 mm of
        surplus length, easily accommodating even severe patio falls.
      * *(Alternative In-Situ Carpenter's Method):* Erect the posts uncut, brace

@@ -151,7 +151,7 @@ Screw 1 ──► \                                                    / ◄─�
    * *Chiseling:* Knock out the waste wood fingers with a hammer and chisel.
    * *Gang Routing (Rock-Solid Base Support):* A single 47 mm rafter is too narrow
      to support a router base safely. Five 47 mm rafters clamped face-to-face form
-     a massive **235 mm wide solid deck** ($5 \times 47\text{ mm} = 235\text{ mm}$).
+     a massive **235 mm wide solid deck** (5 × 47 mm = 235 mm).
      The router rests completely flat on top of the bundle with zero tipping risk,
      cleaning all notches to an exact, uniform depth in continuous smooth passes.
    * *Sacrificial Backer:* Clamp an offcut of scrap timber to the exit side of the
@@ -276,7 +276,7 @@ This is the most straightforward, rigid method for DIY installation:
   * Fixed shoes sit flush with the finished patio grade; local base flatness is ensured
     with thin shims under plate corners so posts stand plumb.
   * Overall patio fall across the 4 corners is absorbed by custom-cutting the lengths
-    of posts 2, 3, and 4 ($2390\text{ mm} + \Delta h$) so that the top beam shoulders finish dead level.
+    of posts 2, 3, and 4 (2390 mm + corner drop) so that the top beam shoulders finish dead level.
 
 ### 5.2 Option 2: Simpson Strong-Tie APB100/150 (Adjustable Elevated Standoff Base)
 

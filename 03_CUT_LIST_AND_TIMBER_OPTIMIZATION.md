@@ -31,10 +31,10 @@ standard merchant lumber lengths (4.8 m, 3.6 m, 2.7 m, 2.4 m).
   * **Option 2 (Simpson APB100/150):** Measure exactly **2390 mm** for all four
     posts, since the base plates are leveled via the threaded standoff hardware.
   * **Option 1 (Fixed Box Shoes):** Measure **2390 mm** for Post 1 (highest corner),
-    and **$2390\text{ mm} + \Delta h$** for Posts 2, 3, and 4 (where $\Delta h$
-    is that corner's measured drop below Post 1) so that the top beam shoulders
-    finish dead level across the sloping patio. The 2700 mm stock provides 310 mm
-    of surplus length to accommodate any standard patio fall.
+    and **2390 mm + corner drop** for Posts 2, 3, and 4 (where the drop is that
+    corner's measured fall below Post 1) so that the top beam shoulders finish dead
+    level across the sloping patio. The 2700 mm stock provides 310 mm of surplus
+    length to accommodate any standard patio fall.
 * **Post Shoulder Notches (Top):**
   * Measure down **225 mm** from the top end.
   * Cut a shoulder notch **47 mm deep** into the outer and inner faces.
