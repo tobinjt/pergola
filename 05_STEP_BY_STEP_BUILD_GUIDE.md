@@ -49,12 +49,35 @@ This manual walks through the entire construction process from groundworks and c
 
 ## Phase 2: Lifting Patio Pavers & Digging Footings
 
-1. **Remove Pavers:**
-   * Using a bolster chisel, flat spade, or pry bar, gently lift the patio paver directly under each marked post location.
-   * Stack the lifted pavers carefully aside on a pallet or cardboard (they will be cut and re-laid later).
+1. **Remove Pavers (Small Brick / Block Pavers vs. Large Slabs):**
+   * *Why Block Pavers Feel Locked:* Small, thick concrete/clay brick pavers
+     (typically 200 mm × 100 mm × 50–60 mm) are held together by compacted
+     kiln-dried sand in the 2–4 mm joints (frictional interlock). You cannot pry
+     them straight up without clearing this joint sand first.
+   * *Step A — Scrape Joint Sand:* Use an old flat-head screwdriver, thin putty
+     knife, or wire joint brush to scrape out the joint sand around the target
+     brick to a depth of 20–30 mm. Blow or vacuum the loose dust clear.
+   * *Step B — Break Joint Bond:* Tap the target brick and its surrounding neighbours
+     sharply with a rubber mallet to break the compacted sand crust underneath.
+   * *Step C — The Two-Screwdriver Walk (Lifting the First "Key" Brick):*
+     * Push two sturdy flat-head screwdrivers (or thin pry bars) down into opposite
+       joints on either side of the brick.
+     * Angle the handles inward toward each other so the tips pinch the lower edges
+       of the brick, then lever upward simultaneously.
+     * "Walk" the brick upward 5 mm at a time by alternating pressure until you can
+       grip and lift it out. (A hired or purchased block paver extractor tool also
+       works well).
+   * *Step D — Pop Out Remaining Footing Bricks:* With the first cavity open, slide
+     a bolster chisel or spade under the exposed side edges of adjacent bricks.
+     They pop out effortlessly in seconds.
+   * *Excavation Footprint:* Remove roughly **4 to 6 bricks** per corner to expose
+     the required **300 mm × 300 mm** ground area. Stack the lifted bricks neatly
+     aside on a board (they will be trimmed and reinstated later).
 2. **Excavate Pier Holes:**
-   * Scrape away the sand bedding and dig down through the hardcore (MOT sub-base) using a digging spade, post-hole digger, or SDS breaker.
-   * **Dimensions:** Dig a hole **300 mm × 300 mm square** (or 300 mm diameter round) to a depth of **500 mm** below finished patio level.
+   * Scrape away the sand bedding and dig down through the hardcore (MOT sub-base)
+     using a digging spade, post-hole digger, or SDS breaker.
+   * **Dimensions:** Dig a hole **300 mm × 300 mm square** (or 300 mm diameter round)
+     to a depth of **500 mm** below finished patio level.
    * Compact the bottom of each hole firmly with a hand tamper or timber offcut.
    * Pour 50 mm of clean coarse gravel into the bottom of each hole for drainage.
 
@@ -82,18 +105,23 @@ This manual walks through the entire construction process from groundworks and c
      of the concrete pier to verify position and mark anchor holes.
    * **Option 2 (Simpson APB100/150):** Position the bottom base plate over the
      centre of the concrete pier and mark the central anchor hole.
-2. **Mark the Paver:**
-   * Place the lifted paver over the hole. Scribe the cutout needed:
-     * For Option 1: A square opening matching the outer dimensions of the 150 mm post shoe collar.
-     * For Option 2: A neat circular or square opening around the central threaded riser.
+2. **Mark the Bricks for Cutting:**
+   * Re-lay all uncut outer perimeter bricks around the hole first.
+   * Place the 2 or 3 central bricks that overlap the post base over their original
+     positions and scribe the necessary cut lines:
+     * *For Option 1:* Scribe notches matching the square outer collar of the 150 mm
+       shoe.
+     * *For Option 2:* Scribe a neat opening around the central M20 threaded riser rod.
 3. **Precision Cutting:**
    * Fit the **115 mm continuous rim diamond blade** to your angle grinder.
    * Wear full safety goggles, ear protection, and an FFP3 dust mask.
-   * Cut neatly along your scribed lines on the stone/brick paver.
-4. **Re-bedding:**
-   * Spread fresh paving sand over the concrete pier around the anchor point.
-   * Tap the cut paver back into position using a rubber mallet until it sits 100% flush and level with the surrounding patio.
-   * Brush kiln-dried jointing sand into the joints.
+   * Cut neatly along your scribed lines on the stone/brick pavers.
+4. **Re-bedding & Jointing:**
+   * Spread fresh paving sharp sand over the concrete pier around the anchor point.
+   * Tap the cut and whole bricks back into position using a rubber mallet until
+     they sit 100% flush and level with the surrounding patio pattern.
+   * Brush dry kiln-dried jointing sand into the joints to restore full frictional
+     interlock across the reinstated pavers.
 
 ---
 

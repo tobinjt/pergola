@@ -90,7 +90,9 @@ parameters, blade choices, accessories, and safety precautions.
 * [ ] **8 m Steel Tape Measure:** For layout and diagonal 5.0 m checks.
 * [ ] **Chalk Line & Nylon Builder's String Line:** For setting out post centres.
 * [ ] **Sharp Wood Chisels (25 mm / 1″ and 12 mm / 1/2″):** For clearing kerfed notches.
-* [ ] **Rubber Mallet & Claw Hammer:** For tapping pavers and carriage bolts into place.
+* [ ] **Two Sturdy Flat-Head Screwdrivers / Thin Pry Bars (or Block Paver Extractor):**
+  For scraping joint sand and levering out the initial key brick paver without chipping.
+* [ ] **Rubber Mallet & Claw Hammer:** For vibrating paver joint sand, tapping cut bricks flush, and setting carriage bolts.
 * [ ] **F-Clamps / Quick-Grip Clamps (min. 2 units, 300 mm opening):** Essential for holding beams during drilling.
 * [ ] **Digging Spade / Post Hole Digger:** For excavating 500 mm deep pier footings.
 * [ ] **Step Ladder (min. 6-tread / 1.8 m platform):** Stable access for raising beams and rafters.
@@ -106,6 +108,7 @@ parameters, blade choices, accessories, and safety precautions.
 * [ ] **Torx T30 and T25 Driver Bits** (impact-rated)
 * [ ] **20 mm Spade / Forstner Bit** (for knee brace counterbores; ensures clearance for magnetic bit holder)
 * [ ] **Horseshoe Shims / Plastic Packers (1 mm, 2 mm, 3 mm) or Stainless Washers:** For micro-leveling base plates on sloping pavers.
+* [ ] **Kiln-Dried Paving Sand & Sharp Bedding Sand:** For re-bedding cut pavers and restoring joint interlock.
 * [ ] **120-grit Sandpaper Sheets** (for knocking off sharp cut edges)
 * [ ] **75 mm Flat Paint Brush** (for applying end-grain preserver and UV oil)
 
